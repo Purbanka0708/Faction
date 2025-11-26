@@ -12,7 +12,7 @@ const bgStyle = {
 
 const Subscribe = () => {
   return (
-    <section className="bg-[#f7f7f7]">
+    <section className="bg-[#FEFCED]">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
@@ -22,25 +22,30 @@ const Subscribe = () => {
         <motion.div
           initial={{ opacity: 0, scale: 0.5 }}
           whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.6, ease: "easeInOut" }}
+          transition={{ duration: 0.6, ease: 'easeInOut' }}
           className="flex flex-col justify-center"
         >
           <div className="text-center space-y-4 lg:max-w-[430px] mx-auto">
-            <h1 className="text-4xl font-bold !leading-snug">
+
+            <h1 className="text-4xl font-bold !leading-snug text-[#A767FF]">
               Thousands of Students Trust Faction for Their Success
             </h1>
-            <p className="text-gray-700">
+
+            <p className="text-slate-700">
               From foundation classes to NEET & IIT/JEE preparation, we help
               students build strong concepts, gain confidence, and achieve
               top results every year.
             </p>
+
             <a
               href="#"
-              className="primary-btn !mt-8 inline-flex items-center gap-4 group"
+              className="inline-flex items-center gap-4 group bg-[#F0D200] text-slate-900 font-semibold px-8 py-3 rounded-full !mt-8
+              hover:bg-[#A767FF] hover:text-white transition-all duration-300"
             >
               Enroll Now
-              <FaBell className="group-hover:animate-bounce group-hover:text-lg duration-200" />
+              <FaBell className="group-hover:text-white group-hover:animate-bounce text-lg duration-200" />
             </a>
+
           </div>
         </motion.div>
       </motion.div>

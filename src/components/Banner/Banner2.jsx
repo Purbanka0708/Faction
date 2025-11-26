@@ -4,8 +4,9 @@ import { motion } from "framer-motion";
 
 const Banner2 = () => {
   return (
-    <section>
+    <section className="bg-[#FEFCED]">
       <div className="container py-14 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 space-y-6 md:space-y-0">
+        
         {/* Banner Text */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -13,20 +14,25 @@ const Banner2 = () => {
           className="flex flex-col justify-center"
         >
           <div className="text-center md:text-left space-y-4 lg:max-w-[450px]">
-            <h1 className="text-4xl font-bold !leading-snug">
+
+            <h1 className="text-4xl font-bold !leading-snug text-[#A767FF]">
               Join Faction and Begin Your Success Journey
             </h1>
-            <p className="text-dark2">
+
+            <p className="text-slate-700">
               Become a part of our growing student community where learning,
               discipline, and mentorship come together to build strong
               foundations for NEET & IIT/JEE success.
             </p>
+
             <a
               href="https://chat.whatsapp.com/FQSKgJ5f1eIAhlyF5sVym0"
-              className="primary-btn !mt-8"
+              className="inline-block bg-[#F0D200] text-slate-900 font-semibold px-8 py-3 rounded-full !mt-8
+              hover:bg-[#A767FF] hover:text-white transition-all duration-300"
             >
               Join Now
             </a>
+
           </div>
         </motion.div>
 
@@ -40,6 +46,7 @@ const Banner2 = () => {
             className="w-[350px] md:max-w-[450px] object-cover drop-shadow"
           />
         </div>
+
       </div>
     </section>
   );

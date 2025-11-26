@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <footer className="py-28 bg-[#f7f7f7]">
+    <footer className="py-28 bg-[#FEFCED]">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -15,8 +15,8 @@ const Footer = () => {
           
           {/* About Faction */}
           <div className="space-y-4 max-w-[300px]">
-            <h1 className="text-2xl font-bold">About Faction</h1>
-            <p className="text-dark2">
+            <h1 className="text-2xl font-bold text-[#A767FF]">About Faction</h1>
+            <p className="text-slate-700">
               Faction (A Plan in Progress) is a dedicated coaching institute 
               focused on building strong foundations for students. 
               From Classes 6–10 to NEET & IIT/JEE aspirants, 
@@ -30,19 +30,19 @@ const Footer = () => {
             
             {/* Courses */}
             <div className="space-y-4">
-              <h1 className="text-2xl font-bold">Courses</h1>
-              <div className="text-dark2">
+              <h1 className="text-2xl font-bold text-[#A767FF]">Courses</h1>
+              <div className="text-slate-700">
                 <ul className="space-y-2 text-lg">
-                  <li className="cursor-pointer hover:text-secondary duration-200">
+                  <li className="cursor-pointer hover:text-[#A767FF] duration-200">
                     Foundation (Class 6–10)
                   </li>
-                  <li className="cursor-pointer hover:text-secondary duration-200">
+                  <li className="cursor-pointer hover:text-[#A767FF] duration-200">
                     IIT/JEE Preparation
                   </li>
-                  <li className="cursor-pointer hover:text-secondary duration-200">
+                  <li className="cursor-pointer hover:text-[#A767FF] duration-200">
                     NEET Preparation
                   </li>
-                  <li className="cursor-pointer hover:text-secondary duration-200">
+                  <li className="cursor-pointer hover:text-[#A767FF] duration-200">
                     Test Series & Mentorship
                   </li>
                 </ul>
@@ -51,19 +51,19 @@ const Footer = () => {
 
             {/* Links */}
             <div className="space-y-4">
-              <h1 className="text-2xl font-bold">Links</h1>
-              <div className="text-dark2">
+              <h1 className="text-2xl font-bold text-[#A767FF]">Links</h1>
+              <div className="text-slate-700">
                 <ul className="space-y-2 text-lg">
-                  <li className="cursor-pointer hover:text-secondary duration-200">
+                  <li className="cursor-pointer hover:text-[#A767FF] duration-200">
                     Home
                   </li>
-                  <li className="cursor-pointer hover:text-secondary duration-200">
+                  <li className="cursor-pointer hover:text-[#A767FF] duration-200">
                     Courses
                   </li>
-                  <li className="cursor-pointer hover:text-secondary duration-200">
+                  <li className="cursor-pointer hover:text-[#A767FF] duration-200">
                     About Us
                   </li>
-                  <li className="cursor-pointer hover:text-secondary duration-200">
+                  <li className="cursor-pointer hover:text-[#A767FF] duration-200">
                     Contact
                   </li>
                 </ul>
@@ -74,31 +74,32 @@ const Footer = () => {
 
           {/* Contact & Social */}
           <div className="space-y-4 max-w-[300px]">
-            <h1 className="text-2xl font-bold">Get In Touch</h1>
+            <h1 className="text-2xl font-bold text-[#A767FF]">Get In Touch</h1>
+
             <div className="flex items-center">
               <input
                 type="text"
                 placeholder="Enter your email"
-                className="p-3 rounded-s-xl bg-white w-full py-4 focus:ring-0 focus:outline-none placeholder:text-dark2"
+                className="p-3 rounded-s-xl bg-white w-full py-4 focus:ring-0 focus:outline-none placeholder:text-slate-500"
               />
-              <button className="bg-primary text-white font-semibold py-4 px-6 rounded-e-xl">
+              <button className="bg-[#F0D200] text-slate-900 font-semibold py-4 px-6 rounded-e-xl hover:bg-[#A767FF] hover:text-white transition-all duration-300">
                 Go
               </button>
             </div>
 
             {/* Social Icons */}
-            <div className="flex space-x-6 py-3">
+            <div className="flex space-x-6 py-3 text-slate-800">
               <a href="">
-                <FaWhatsapp className="cursor-pointer hover:text-primary hover:scale-105 duration-200" />
+                <FaWhatsapp className="cursor-pointer hover:text-[#A767FF] hover:scale-105 duration-200" />
               </a>
               <a href="">
-                <FaInstagram className="cursor-pointer hover:text-primary hover:scale-105 duration-200" />
+                <FaInstagram className="cursor-pointer hover:text-[#A767FF] hover:scale-105 duration-200" />
               </a>
               <a href="">
-                <TbWorldWww className="cursor-pointer hover:text-primary hover:scale-105 duration-200" />
+                <TbWorldWww className="cursor-pointer hover:text-[#A767FF] hover:scale-105 duration-200" />
               </a>
               <a href="">
-                <FaYoutube className="cursor-pointer hover:text-primary hover:scale-105 duration-200" />
+                <FaYoutube className="cursor-pointer hover:text-[#A767FF] hover:scale-105 duration-200" />
               </a>
             </div>
           </div>

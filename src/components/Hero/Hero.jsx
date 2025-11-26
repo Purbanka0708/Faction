@@ -27,20 +27,22 @@ export const FadeUp = (delay) => {
 
 const Hero = () => {
   return (
-    <section className="bg-light overflow-hidden relative">
+    <section className="bg-[#FEFCED] overflow-hidden relative">
       <Navbar />
+
       <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[650px]">
         {/* Brand Info */}
         <div className="flex flex-col justify-center py-14 md:py-0 relative z-20">
           <div className="text-center md:text-left space-y-8 lg:max-w-[400px]">
+
             <motion.h1
               variants={FadeUp(0.6)}
               initial="initial"
               animate="animate"
-              className="text-3xl lg:text-5xl font-bold !leading-snug"
+              className="text-3xl lg:text-5xl font-bold !leading-snug text-slate-900"
             >
               Let&apos;s build a strong{" "}
-              <span className="text-secondary">Career Foundation</span> for your
+              <span className="text-[#A767FF]">Career Foundation</span> for your
               future
             </motion.h1>
 
@@ -48,9 +50,9 @@ const Hero = () => {
               variants={FadeUp(0.7)}
               initial="initial"
               animate="animate"
-              className="text-sm md:text-base text-gray-600"
+              className="text-sm md:text-base text-slate-700"
             >
-              At <span className="font-semibold">Faction (A Plan in Progress)</span>, 
+              At <span className="font-semibold text-slate-900">Faction (A Plan in Progress)</span>, 
               we guide students from foundation classes to NEET &amp; IIT/JEE
               preparation with structured learning, expert faculty, and regular tests.
             </motion.p>
@@ -61,7 +63,7 @@ const Hero = () => {
               animate="animate"
               className="flex justify-center md:justify-start"
             >
-              <button className="primary-btn flex items-center gap-2 group">
+              <button className="flex items-center gap-2 group bg-[#F0D200] text-slate-900 font-semibold px-6 py-3 rounded-full hover:bg-[#A767FF] hover:text-white transition-all duration-300">
                 Start Learning
                 <IoIosArrowRoundForward className="text-xl group-hover:translate-x-2 group-hover:-rotate-45 duration-300" />
               </button>
@@ -79,13 +81,14 @@ const Hero = () => {
             alt="Student preparing for NEET and IIT/JEE at Faction coaching"
             className="w-[400px] xl:w-[600px] relative z-10 drop-shadow"
           />
+
           <motion.img
             initial={{ x: -50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.2, ease: "easeInOut" }}
             src={Blob}
             alt="Decorative background shape"
-            className="absolute -bottom-32 w-[800px] md:w-[1500px] z-[1] hidden md:block"
+            className="absolute -bottom-32 w-[800px] md:w-[1500px] z-[1] hidden md:block opacity-80"
           />
         </div>
       </div>
