@@ -1,7 +1,8 @@
-
+// src/components/Auth/SignUp.jsx
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import AuthLayout from "./AuthLayout";
+import HeroPng from "../../assets/hero.png"; // IMPORT from src/assets
 
 const SignUp = () => {
   const navigate = useNavigate();
@@ -35,7 +36,7 @@ const SignUp = () => {
       <div className="bg-white rounded-2xl shadow-lg overflow-hidden grid grid-cols-1 md:grid-cols-2">
         <div className="hidden md:flex items-center justify-center bg-gradient-to-br from-[#A767FF]/10 to-[#F0D200]/10 p-8">
           <div className="text-center px-6">
-            <img src="/src/assets/hero.png" alt="Faction" className="w-48 mx-auto drop-shadow" />
+            <img src={HeroPng} alt="Faction" className="w-48 mx-auto drop-shadow" />
             <h3 className="mt-6 text-2xl font-semibold text-[#A767FF]">Create your Faction account</h3>
             <p className="mt-2 text-slate-600">Join and start learning for NEET & IIT/JEE</p>
           </div>

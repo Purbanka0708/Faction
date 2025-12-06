@@ -1,11 +1,12 @@
-
+// src/components/Auth/SignIn.jsx
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import AuthLayout from "./AuthLayout";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import HeroPng from "../../assets/hero.png"; // IMPORT from src/assets
 
 const SignIn = () => {
-  const navigate = useNavigate(); // for redirect after sign in (placeholder)
+  const navigate = useNavigate();
   const [form, setForm] = useState({ email: "", password: "", remember: false });
   const [showPassword, setShowPassword] = useState(false);
   const [error, setError] = useState("");
@@ -27,14 +28,9 @@ const SignIn = () => {
     e.preventDefault();
     const v = validate();
     if (v) return setError(v);
-
     setError("");
-    // TODO: call your auth API here
-    // mock success:
-    setTimeout(() => {
-      // on success navigate to dashboard/home
-      navigate("/");
-    }, 500);
+    // TODO: replace with real auth API call
+    setTimeout(() => navigate("/"), 500);
   };
 
   return (
@@ -43,7 +39,7 @@ const SignIn = () => {
         {/* Left - visual */}
         <div className="hidden md:flex items-center justify-center bg-gradient-to-br from-[#A767FF]/10 to-[#F0D200]/10 p-8">
           <div className="text-center px-6">
-            <img src="/src/assets/hero.png" alt="Faction" className="w-48 mx-auto drop-shadow" />
+            <img src={HeroPng} alt="Faction" className="w-48 mx-auto drop-shadow" />
             <h3 className="mt-6 text-2xl font-semibold text-[#A767FF]">Welcome back to Faction</h3>
             <p className="mt-2 text-slate-600">Sign in to continue your learning journey</p>
           </div>
@@ -116,7 +112,6 @@ const SignIn = () => {
               <Link to="/signup" className="text-[#A767FF] font-semibold">Sign up</Link>
             </div>
 
-            {/* Social (optional) */}
             <div className="mt-3 flex gap-3 items-center justify-center">
               <button className="px-4 py-2 rounded-lg border border-slate-200 hover:bg-[#A767FF] hover:text-white transition">Continue with Google</button>
               <button className="px-4 py-2 rounded-lg border border-slate-200 hover:bg-[#A767FF] hover:text-white transition">Continue with WhatsApp</button>

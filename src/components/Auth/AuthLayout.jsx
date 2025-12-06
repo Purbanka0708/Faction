@@ -1,4 +1,4 @@
-
+// src/components/Auth/AuthLayout.jsx
 import React from "react";
 import Navbar from "../Navbar/Navbar";
 
