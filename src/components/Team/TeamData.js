@@ -5,8 +5,9 @@ const TeamData = [
   { id: 2, name: "Er. Soumyadeep Nandi", role: "Co-Founder", img: null },
 
   { id: 3, name: "Trisha Saha", role: "Mathematics - Junior Faculty", img: null },
-  { id: 4, name: "Swarupa Aich", role: "Expansion Head", img: null },
-  { id: 5, name: "Arghyadeep Majumder", role: "Science - Junior Faculty", img: null },
+  { id: 4, name: "Arghyadeep Majumder", role: "Science - Junior Faculty", img: null },
+  { id: 5, name: "Swarupa Aich", role: "Expansion Head", img: null },
+  
   { id: 6, name: "Abhishek Dey", role: "Operations Coordinator", img: null },
 
   { id: 7, name: "Suvam Das", role: "Operations Coordinator", img: null },
