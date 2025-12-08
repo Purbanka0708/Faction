@@ -1,4 +1,4 @@
-// src/App.jsx
+
 import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -11,10 +11,12 @@ import Footer from "./components/Footer/Footer";
 
 import SignIn from "./components/Auth/SignIn";
 import SignUp from "./components/Auth/SignUp";
+import OurTeam from "./components/Team/OurTeam"; 
+
 
 const Home = () => {
   return (
-    <main className="overflow-x-hidden bg-[#FEFCED] text-dark">
+    <main className="overflow-x-hidden bg-[#FEFCED] text-[#1e1e1e]">
       <Hero />
       <Services />
       <Banner />
@@ -24,12 +26,16 @@ const Home = () => {
   );
 };
 
+
 const App = () => {
   return (
     <Router>
       <Routes>
-       
+        
         <Route path="/" element={<Home />} />
+        <Route path="/team" element={<OurTeam />} />
+
+        
         <Route path="/signin" element={<SignIn />} />
         <Route path="/signup" element={<SignUp />} />
 
