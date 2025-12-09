@@ -1,4 +1,4 @@
-
+import swarupaImg from "../../assets/team/swarupa-aich.jpg";
 
 const TeamData = [
   // Educators
@@ -36,7 +36,7 @@ const TeamData = [
     id: 5,
     name: "Swarupa Aich",
     role: "Expansion Head",
-    img: null,
+    img: swarupaImg,
     group: "operations",
   },
   {
