@@ -12,6 +12,7 @@ import Footer from "./components/Footer/Footer";
 import SignIn from "./components/Auth/SignIn";
 import SignUp from "./components/Auth/SignUp";
 import OurTeam from "./components/Team/OurTeam"; 
+import Contact from "./components/Contact/Contact";
 
 
 const Home = () => {
@@ -34,6 +35,7 @@ const App = () => {
         
         <Route path="/" element={<Home />} />
         <Route path="/team" element={<OurTeam />} />
+        <Route path="/contact" element={<Contact />} />
 
         
         <Route path="/signin" element={<SignIn />} />
