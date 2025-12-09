@@ -3,7 +3,7 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Hero from "./components/Hero/Hero";
-import Services from "./components/Services/Services";
+import Courses from "./components/Courses/Courses";
 import Banner from "./components/Banner/Banner";
 import Subscribe from "./components/Subscribe/Subscribe";
 import Banner2 from "./components/Banner/Banner2";
@@ -18,7 +18,7 @@ const Home = () => {
   return (
     <main className="overflow-x-hidden bg-[#FEFCED] text-[#1e1e1e]">
       <Hero />
-      <Services />
+      <Courses />
       <Banner />
       <Subscribe />
       <Banner2 />

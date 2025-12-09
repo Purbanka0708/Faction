@@ -1,9 +1,9 @@
-// src/components/Auth/SignIn.jsx
+
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import AuthLayout from "./AuthLayout";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import HeroPng from "../../assets/hero.png"; // IMPORT from src/assets
+import HeroPng from "../../assets/hero.png"; 
 
 const SignIn = () => {
   const navigate = useNavigate();
@@ -29,25 +29,25 @@ const SignIn = () => {
     const v = validate();
     if (v) return setError(v);
     setError("");
-    // TODO: replace with real auth API call
+    
     setTimeout(() => navigate("/"), 500);
   };
 
   return (
     <AuthLayout>
       <div className="bg-white rounded-2xl shadow-lg overflow-hidden grid grid-cols-1 md:grid-cols-2">
-        {/* Left - visual */}
+        
         <div className="hidden md:flex items-center justify-center bg-gradient-to-br from-[#A767FF]/10 to-[#F0D200]/10 p-8">
           <div className="text-center px-6">
             <img src={HeroPng} alt="Faction" className="w-48 mx-auto drop-shadow" />
-            <h3 className="mt-6 text-2xl font-semibold text-[#A767FF]">Welcome back to Faction</h3>
+            <h3 className="mt-6 text-2xl font-semibold text-[black]">Welcome back to Faction</h3>
             <p className="mt-2 text-slate-600">Sign in to continue your learning journey</p>
           </div>
         </div>
 
-        {/* Right - form */}
+        
         <div className="p-8 md:p-12">
-          <h2 className="text-2xl font-bold text-[#A767FF]">Sign In</h2>
+          <h2 className="text-2xl font-bold text-[black]">Sign In</h2>
           <p className="mt-2 text-slate-700">Enter your details to access your account</p>
 
           <form onSubmit={handleSubmit} className="mt-6 space-y-4">
@@ -97,7 +97,7 @@ const SignIn = () => {
                 />
                 Remember me
               </label>
-              <Link to="/forgot" className="text-[#A767FF] hover:underline">Forgot password?</Link>
+              <Link to="/forgot" className="text-[black] hover:underline">Forgot password?</Link>
             </div>
 
             <button
@@ -109,7 +109,7 @@ const SignIn = () => {
 
             <div className="text-center text-sm text-slate-600">
               Don’t have an account?{" "}
-              <Link to="/signup" className="text-[#A767FF] font-semibold">Sign up</Link>
+              <Link to="/signup" className="text-[black] font-semibold">Sign up</Link>
             </div>
 
             <div className="mt-3 flex gap-3 items-center justify-center">

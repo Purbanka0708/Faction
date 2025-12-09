@@ -14,7 +14,7 @@ const roleColorMap = [
 
 function pickBadgeColor(role = "") {
   const r = roleColorMap.find((m) => m.test.test(role));
-  return r ? r.color : "#E2E8F0"; // default gray-ish
+  return r ? r.color : "#E2E8F0"; 
 }
 
 const InitialsFallback = ({ name }) => {

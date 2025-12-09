@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 const Footer = () => {
   return (
-    <footer className="py-28 bg-[#FEFCED]">
+    <footer className="py-28 bg-[#F8F4E8]">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -13,9 +13,9 @@ const Footer = () => {
       >
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-14 md:gap-4">
           
-          {/* About Faction */}
+          
           <div className="space-y-4 max-w-[300px]">
-            <h1 className="text-2xl font-bold text-[#A767FF]">About Faction</h1>
+            <h1 className="text-2xl font-bold text-[black]">About Faction</h1>
             <p className="text-slate-700">
               Faction (A Plan in Progress) is a dedicated coaching institute 
               focused on building strong foundations for students. 
@@ -25,12 +25,12 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Courses + Links */}
+          
           <div className="grid grid-cols-2 gap-10">
             
-            {/* Courses */}
+            
             <div className="space-y-4">
-              <h1 className="text-2xl font-bold text-[#A767FF]">Courses</h1>
+              <h1 className="text-2xl font-bold text-[black]">Courses</h1>
               <div className="text-slate-700">
                 <ul className="space-y-2 text-lg">
                   <li className="cursor-pointer hover:text-[#A767FF] duration-200">
@@ -49,9 +49,9 @@ const Footer = () => {
               </div>
             </div>
 
-            {/* Links */}
+            
             <div className="space-y-4">
-              <h1 className="text-2xl font-bold text-[#A767FF]">Links</h1>
+              <h1 className="text-2xl font-bold text-[black]">Links</h1>
               <div className="text-slate-700">
                 <ul className="space-y-2 text-lg">
                   <li className="cursor-pointer hover:text-[#A767FF] duration-200">
@@ -72,9 +72,9 @@ const Footer = () => {
 
           </div>
 
-          {/* Contact & Social */}
+          
           <div className="space-y-4 max-w-[300px]">
-            <h1 className="text-2xl font-bold text-[#A767FF]">Get In Touch</h1>
+            <h1 className="text-2xl font-bold text-[black]">Get In Touch</h1>
 
             <div className="flex items-center">
               <input
@@ -87,7 +87,7 @@ const Footer = () => {
               </button>
             </div>
 
-            {/* Social Icons */}
+            
             <div className="flex space-x-6 py-3 text-slate-800">
               <a href="">
                 <FaWhatsapp className="cursor-pointer hover:text-[#A767FF] hover:scale-105 duration-200" />

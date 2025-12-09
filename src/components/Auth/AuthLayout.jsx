@@ -4,7 +4,7 @@ import Navbar from "../Navbar/Navbar";
 
 const AuthLayout = ({ children }) => {
   return (
-    <section className="min-h-screen bg-[#FEFCED] flex flex-col">
+    <section className="min-h-screen bg-[#F8F4E8] flex flex-col">
       <Navbar />
       <div className="flex-1 flex items-center justify-center py-16 px-6">
         <div className="w-full max-w-4xl">

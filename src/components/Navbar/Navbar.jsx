@@ -5,7 +5,7 @@ import { Link, useLocation } from "react-router-dom";
 
 const NavbarMenu = [
   { id: 1, title: "Home", path: "/" },
-  { id: 2, title: "Services", path: "/#services" },
+  { id: 2, title: "Courses", path: "/#courses" },
   { id: 3, title: "About Us", path: "/#about" },
   { id: 4, title: "Our Team", path: "/team" },   
   { id: 5, title: "Contact Us", path: "/#contact" },
@@ -15,7 +15,7 @@ const Navbar = () => {
   const location = useLocation();
 
   return (
-    <nav className="relative z-20 bg-[#FEFCED] shadow-sm">
+    <nav className="relative z-20 bg-[#F8F4E8] shadow-sm">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}

@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 
 const Banner2 = () => {
   return (
-    <section className="bg-[#FEFCED]">
+    <section className="bg-[#F8F4E8]">
       <div className="container py-14 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 space-y-6 md:space-y-0">
         
-        {/* Banner Text */}
+        
         <motion.div
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
@@ -15,7 +15,7 @@ const Banner2 = () => {
         >
           <div className="text-center md:text-left space-y-4 lg:max-w-[450px]">
 
-            <h1 className="text-4xl font-bold !leading-snug text-[#A767FF]">
+            <h1 className="text-4xl font-bold !leading-snug text-[black]">
               Join Faction and Begin Your Success Journey
             </h1>
 
@@ -36,7 +36,7 @@ const Banner2 = () => {
           </div>
         </motion.div>
 
-        {/* Banner Image */}
+        
         <div className="flex justify-center items-center">
           <motion.img
             initial={{ opacity: 0, x: 50 }}
