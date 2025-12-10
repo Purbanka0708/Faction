@@ -52,9 +52,8 @@ const Hero = () => {
               animate="animate"
               className="text-sm md:text-base text-slate-700"
             >
-              At <span className="font-semibold text-slate-900">Faction (A Plan in Progress)</span>, 
-              we guide students from foundation classes to NEET &amp; IIT/JEE
-              preparation with structured learning, expert faculty, and regular tests.
+              At <span className="font-semibold text-slate-900">Faction Education</span>, 
+              academic strength, tech-driven learning, and mentorship unite to empower students and bridge the Northeast’s education gap in JEE, NEET, and foundational studies. 
             </motion.p>
 
             <motion.div

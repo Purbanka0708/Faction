@@ -1,104 +1,110 @@
 // src/components/Contact/Contact.jsx
 import React, { useState } from "react";
-import Chatbot from "./Chatbot";
+import FactionBot from "./FactionBot";
 import Navbar from "../Navbar/Navbar";
+import botIcon from "../../assets/factionbot.png"; 
+import { motion } from "framer-motion";
 
 const Contact = () => {
+  const [botOpen, setBotOpen] = useState(false);
   const [form, setForm] = useState({
     name: "",
     phone: "",
     email: "",
+    address: "",
     message: "",
     callback: false,
   });
-  const [status, setStatus] = useState(""); // 'sent' | 'error' | ''
 
-  function handleChange(e) {
+  const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
-    setForm((s) => ({ ...s, [name]: type === "checkbox" ? checked : value }));
-  }
+    setForm((f) => ({ ...f, [name]: type === "checkbox" ? checked : value }));
+  };
 
-  function validate() {
-    if (!form.name.trim()) return "Enter name";
-    if (!form.email.trim() || !/^\S+@\S+\.\S+$/.test(form.email)) return "Enter valid email";
-    if (!form.phone.trim() || !/^[\d+\-\s]{6,15}$/.test(form.phone)) return "Enter valid phone";
-    return null;
-  }
-
-  async function handleSubmit(e) {
+  const submit = (e) => {
     e.preventDefault();
-    setStatus("");
-    const err = validate();
-    if (err) {
-      setStatus(err);
-      return;
-    }
-
-    // Replace this with your real backend endpoint later
-    // Example: await fetch("/api/contact", {method: "POST", body: JSON.stringify(form)})
-    try {
-      console.log("Contact form submit:", form);
-      setStatus("sent");
-      setForm({ name: "", phone: "", email: "", message: "", callback: false });
-    } catch (err) {
-      console.error(err);
-      setStatus("error");
-    }
-  }
+    alert("Message sent (demo).");
+    setForm({
+      name: "",
+      phone: "",
+      email: "",
+      address: "",
+      message: "",
+      callback: false,
+    });
+  };
 
   return (
-    <section className="min-h-screen bg-[#FEFCED]">
+    <main className="min-h-screen pb-20 
+      bg-gradient-to-br from-[#02203c] via-[#043a64] to-[#074b87] text-white">
+
+      {/* ⭐ NAVBAR ALWAYS ON TOP */}
       <Navbar />
-      <div className="container py-16 grid grid-cols-1 lg:grid-cols-2 gap-10">
-        {/* Form */}
-        <div className="bg-white rounded-2xl p-8 shadow-md">
-          <h2 className="text-3xl font-bold text-[black] mb-2">Contact Us</h2>
-          <p className="text-slate-700 mb-6">
+
+      {/* ⭐ Centered Contact Form */}
+      <div className="container mx-auto py-16 flex justify-center">
+        <div className="bg-white text-black rounded-2xl p-10 shadow-xl w-full md:w-[520px]">
+
+          <h1 className="text-3xl font-bold mb-2">Contact Us</h1>
+          <p className="text-gray-600 mb-6">
             Have a question or want to request a callback? Fill the form and our team will connect with you.
           </p>
 
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form onSubmit={submit} className="space-y-4">
+
             <div>
-              <label className="block text-sm font-medium text-slate-700 mb-1">Name</label>
+              <label className="block text-sm font-medium">Name</label>
               <input
                 name="name"
                 value={form.name}
                 onChange={handleChange}
-                className="w-full p-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-[#A767FF] outline-none"
+                className="mt-2 w-full rounded-lg border px-4 py-3"
                 placeholder="Your name"
               />
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-slate-700 mb-1">Contact number</label>
+              <label className="block text-sm font-medium">Contact number</label>
               <input
                 name="phone"
                 value={form.phone}
                 onChange={handleChange}
-                className="w-full p-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-[#A767FF] outline-none"
-                placeholder="+91 98xxxxxxx"
+                className="mt-2 w-full rounded-lg border px-4 py-3"
+                placeholder="+91 98xxxxxxxx"
               />
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-slate-700 mb-1">Email</label>
+              <label className="block text-sm font-medium">Email</label>
               <input
                 name="email"
                 value={form.email}
                 onChange={handleChange}
-                className="w-full p-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-[#A767FF] outline-none"
+                className="mt-2 w-full rounded-lg border px-4 py-3"
                 placeholder="you@example.com"
               />
             </div>
 
             <div>
-              <label className="block text-sm font-medium text-slate-700 mb-1">Message</label>
+              <label className="block text-sm font-medium">Address</label>
+              <textarea
+                name="address"
+                value={form.address}
+                onChange={handleChange}
+                className="mt-2 w-full rounded-lg border px-4 py-3"
+                rows={3}
+                placeholder="Your address"
+              />
+            </div>
+
+            <div>
+              <label className="block text-sm font-medium">Message</label>
               <textarea
                 name="message"
                 value={form.message}
                 onChange={handleChange}
-                rows={4}
-                className="w-full p-3 rounded-lg border border-slate-200 focus:ring-2 focus:ring-[#A767FF] outline-none"
+                className="mt-2 w-full rounded-lg border px-4 py-3"
+                rows={5}
                 placeholder="Tell us about your query"
               />
             </div>
@@ -110,38 +116,55 @@ const Contact = () => {
                 type="checkbox"
                 checked={form.callback}
                 onChange={handleChange}
-                className="w-4 h-4"
               />
-              <label htmlFor="callback" className="text-slate-700">
+              <label htmlFor="callback" className="text-sm">
                 Request a callback
               </label>
             </div>
 
-            <div className="flex items-center gap-4">
-              <button
-                type="submit"
-                className="bg-[#F0D200] hover:bg-[#A767FF] hover:text-white transition-colors px-6 py-3 rounded-full font-semibold"
-              >
-                Send Message
-              </button>
-
-              <div className="text-sm text-slate-600">
-                {status === "sent" && <span className="text-green-600">Sent — we will contact you soon.</span>}
-                {status === "error" && <span className="text-red-600">Something went wrong. Try again.</span>}
-                {status && typeof status === "string" && status !== "sent" && status !== "error" && (
-                  <span className="text-red-600">{status}</span>
-                )}
-              </div>
-            </div>
+            <button
+              type="submit"
+              className="mt-4 bg-[#F0D200] text-slate-900 px-6 py-3 rounded-full font-semibold hover:bg-[#c9b000] transition"
+            >
+              Send Message
+            </button>
           </form>
         </div>
-
-        {/* Chatbot */}
-        <div>
-          <Chatbot />
-        </div>
       </div>
-    </section>
+
+      {/* ⭐ Floating Bot Icon + Panel */}
+      <div className="fixed bottom-6 right-6 z-50 flex items-end space-x-4">
+
+        {/* Bot Panel (Desktop Only) */}
+        <div className="hidden md:block">
+          <FactionBot open={botOpen} onClose={() => setBotOpen(false)} />
+        </div>
+
+        {/* Floating Icon */}
+        <motion.button
+          onClick={() => setBotOpen((s) => !s)}
+          whileTap={{ scale: 0.95 }}
+          className="relative w-14 h-14 rounded-full bg-[#A767FF] text-white 
+          flex items-center justify-center shadow-xl border-4 border-white"
+        >
+          <img src={botIcon} alt="FactionBot" className="w-10 h-10 rounded-full" />
+          <span
+            className={`absolute -top-1 -right-1 w-3 h-3 rounded-full border-2 border-white ${
+              botOpen ? "bg-green-400" : "bg-yellow-400"
+            }`}
+          />
+        </motion.button>
+      </div>
+
+      {/* Mobile Bot Overlay */}
+      <div className="md:hidden">
+        {botOpen && (
+          <div className="fixed left-4 right-4 bottom-24 z-40">
+            <FactionBot open={botOpen} onClose={() => setBotOpen(false)} />
+          </div>
+        )}
+      </div>
+    </main>
   );
 };
 

@@ -1,113 +1,83 @@
 // src/components/Team/OurTeam.jsx
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import TeamData from "./TeamData";
-import TeamMember from "./TeamMember";
 import Navbar from "../Navbar/Navbar";
-
-const SectionHeader = ({ id, title, desc }) => (
-  <div id={id} className="mb-8 text-center">
-    <h2 className="text-3xl md:text-4xl font-bold text-[black]">{title}</h2>
-    <p className="mt-2 text-slate-700 max-w-2xl mx-auto">{desc}</p>
-  </div>
-);
+import FactionBot from "../Contact/FactionBot";
+import botIcon from "../../assets/factionbot.png";
+import { motion } from "framer-motion";
 
 const OurTeam = () => {
-  // split groups
-  const educators = TeamData.filter((m) => m.group === "educators");
-  const operations = TeamData.filter((m) => m.group === "operations");
-  const content = TeamData.filter((m) => m.group === "content");
+  const [botOpen, setBotOpen] = useState(false);
 
   return (
-    <section className="min-h-screen bg-[#FEFCED]">
+    <main className="min-h-screen pb-20 bg-gradient-to-b from-[#042c47] via-[#083a5c] to-[#0c4b74] text-white">
       <Navbar />
 
-      <div className="container py-12">
-        <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-extrabold text-[#1e1e1e]">
-            Meet The Faction Team
-          </h1>
-          <p className="mt-3 text-slate-700 max-w-2xl mx-auto">
-            Our experienced faculty and mentors guide students from foundations through NEET &amp; IIT/JEE.
-            Every member brings subject mastery and real mentoring experience.
-          </p>
+      <div className="container mx-auto py-20 text-center">
+        <h1 className="text-4xl md:text-5xl font-bold mb-4">Meet The Faction Team</h1>
+        <p className="max-w-2xl mx-auto text-gray-200 mb-10">
+          Our experienced faculty and team guide students from foundations through NEET &amp; IIT/JEE.
+          Click a category to view members of that group.
+        </p>
 
-          {/* quick in-page links */}
-          <div className="mt-6 flex items-center justify-center gap-3">
-            <a href="#educators" className="px-3 py-1 rounded-md bg-[#E2B2FF] text-[#1e1e1e] hover:bg-[#A767FF] hover:text-white transition">
-              Educators
-            </a>
-            <a href="#operations" className="px-3 py-1 rounded-md bg-[#A7E6C1] text-[#1e1e1e] hover:bg-[#F0D200] transition">
-              Operations
-            </a>
-            <a href="#content" className="px-3 py-1 rounded-md bg-[#FFD6D6] text-[#1e1e1e] hover:bg-[#E2B2FF] transition">
-              Content Team
-            </a>
-          </div>
-        </div>
+        {/* Category buttons (only these on this page) */}
+        <div className="flex justify-center gap-6">
+          <Link
+            to="/team/educators"
+            className="px-6 py-3 rounded-full bg-white text-[#A767FF] font-semibold shadow-lg hover:opacity-95 transform hover:-translate-y-0.5 transition"
+          >
+            Educators
+          </Link>
 
-        {/* Educators section */}
-        <div className="mb-16">
-          <SectionHeader
-            id="educators"
-            title="Educators"
-            desc="Subject experts and mentors responsible for teaching, concept clarity and exam strategy."
-          />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            {educators.map((m) => (
-              <div key={m.id} className="hover:translate-y-1 transition-transform duration-200">
-                <TeamMember member={m} />
-              </div>
-            ))}
-          </div>
-        </div>
+          <Link
+            to="/team/operations"
+            className="px-6 py-3 rounded-full bg-white text-[#2a7a47] font-semibold shadow-lg hover:opacity-95 transform hover:-translate-y-0.5 transition"
+          >
+            Operations
+          </Link>
 
-        {/* Operations section */}
-        <div className="mb-16">
-          <SectionHeader
-            id="operations"
-            title="Operations"
-            desc="The team that keeps Faction running — coordination, logistics, test management and growth."
-          />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            {operations.map((m) => (
-              <div key={m.id} className="hover:translate-y-1 transition-transform duration-200">
-                <TeamMember member={m} />
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* Content section */}
-        <div className="mb-12">
-          <SectionHeader
-            id="content"
-            title="Content & Media"
-            desc="Content creators, editors and media partners who build study material, videos and outreach."
-          />
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            {content.map((m) => (
-              <div key={m.id} className="hover:translate-y-1 transition-transform duration-200">
-                <TeamMember member={m} />
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* CTA */}
-        <div className="mt-12 text-center">
-          <p className="text-slate-600">
-            Want to join our team or collaborate?{" "}
-            <Link
-              to="/signin"
-              className="text-[black] font-semibold hover:underline hover:text-slate-600 transition"
-            >
-              Get in touch
-            </Link>
-          </p>
+          <Link
+            to="/team/webtech"
+            className="px-6 py-3 rounded-full bg-white text-[#7a3ecf] font-semibold shadow-lg hover:opacity-95 transform hover:-translate-y-0.5 transition"
+          >
+            Web &amp; Tech
+          </Link>
         </div>
       </div>
-    </section>
+
+      {/* Floating bot icon + panel */}
+      <div className="fixed bottom-6 right-6 z-50 flex items-end space-x-4">
+        {/* Desktop panel */}
+        <div className="hidden md:block">
+          <FactionBot open={botOpen} onClose={() => setBotOpen(false)} />
+        </div>
+
+        {/* Floating icon */}
+        <motion.button
+          onClick={() => setBotOpen((s) => !s)}
+          whileTap={{ scale: 0.95 }}
+          className="relative w-14 h-14 rounded-full bg-[#A767FF] text-white flex items-center justify-center shadow-xl border-4 border-white"
+          title="Open FactionBot"
+        >
+          {botIcon ? (
+            <img src={botIcon} alt="FactionBot" className="w-10 h-10 rounded-full object-cover" />
+          ) : (
+            <span className="text-2xl">🤖</span>
+          )}
+
+          <span className={`absolute -top-1 -right-1 w-3 h-3 rounded-full border-2 border-white ${botOpen ? "bg-green-400" : "bg-yellow-400"}`} />
+        </motion.button>
+      </div>
+
+      {/* Mobile stacked bot panel when open */}
+      <div className="md:hidden">
+        {botOpen && (
+          <div className="fixed left-4 right-4 bottom-24 z-40">
+            <FactionBot open={botOpen} onClose={() => setBotOpen(false)} />
+          </div>
+        )}
+      </div>
+    </main>
   );
 };
 
