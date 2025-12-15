@@ -8,12 +8,11 @@ const SplashScreen = ({ onFinish }) => {
     const video = videoRef.current;
     if (!video) return;
 
-    // 2x speed
+    // Play at 2x speed
     video.playbackRate = 2;
 
     // Lock scroll
     document.body.style.overflow = "hidden";
-
     return () => {
       document.body.style.overflow = "auto";
     };
@@ -29,8 +28,8 @@ const SplashScreen = ({ onFinish }) => {
     <div
       className="
         fixed inset-0 z-[9999]
-        bg-black
         flex items-center justify-center
+        bg-[#FEFCED]
       "
     >
       <video
@@ -42,11 +41,10 @@ const SplashScreen = ({ onFinish }) => {
         preload="auto"
         onTimeUpdate={handleTimeUpdate}
         className="
-          max-w-full
-          max-h-full
+          max-w-[90%]
+          max-h-[70%]
           w-auto
           h-auto
-          sm:w-full sm:h-full sm:object-cover
         "
       />
     </div>
