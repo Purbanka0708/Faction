@@ -128,13 +128,13 @@ const Contact = () => {
               {/* BACK LAYER (furthest, thin outline) */}
               <div
                 aria-hidden="true"
-                className="absolute rounded-2xl w-[90%] h-[88%] -top-7 -left-5 border-4 border-blue-400/50 transform blur-[0.2px] z-10"
+                className="absolute rounded-2xl w-[90%] h-[88%] -top-7 -left-5 border-4 border-violet-400/50 transform blur-[0.2px] z-10"
               />
 
               {/* MIDDLE LAYER (soft card, slightly larger) */}
               <div
                 aria-hidden="true"
-                className="absolute rounded-2xl w-[100%] h-[92%] -bottom-8 -right-8 bg-blue-500/50 backdrop-blur-sm shadow-lg z-20 transform "
+                className="absolute rounded-2xl w-[100%] h-[92%] -bottom-8 -right-8 bg-violet-500/50 backdrop-blur-sm shadow-lg z-20 transform "
               />
 
               {/* FRONT (main video card) */}
