@@ -30,19 +30,32 @@ import DroppingCards from "./components/UI/DroppingCards.jsx";
 
 const Home = () => {
   const items = [
-    {
-      title: "Faction is Different!",
-      lines: ["Hands-on problems", "Peer reviews", "Active learning"],
-    },
-    {
-      title: "Fast Feedback",
-      lines: ["Auto-check tests", "Detailed hints"],
-    },
-    {
-      title: "Community Driven",
-      lines: ["Discuss solutions", "Mentor guidance"],
-    },
-  ];
+  {
+    title: "Why FACTION?",
+    lines: [
+      "Practice-first learning",
+      "No rote memorization",
+      "Skills > certificates",
+    ],
+  },
+  {
+    title: "How You Learn",
+    lines: [
+      "Real-world problems",
+      "Project-based approach",
+      "Learn by building",
+    ],
+  },
+  {
+    title: "Grow Faster",
+    lines: [
+      "Instant feedback",
+      "Mentor-reviewed work",
+      "Continuous improvement",
+    ],
+  },
+];
+
 
   return (
     <main className="overflow-x-hidden bg-[#FEFCED] text-[#1e1e1e]">

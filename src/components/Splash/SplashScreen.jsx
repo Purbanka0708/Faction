@@ -1,17 +1,40 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import splashVideo from "../../assets/splash.mp4";
 
 const SplashScreen = ({ onFinish }) => {
   const videoRef = useRef(null);
 
+  useEffect(() => {
+    const video = videoRef.current;
+
+    if (!video) return;
+
+    // 2x speed
+    video.playbackRate = 2;
+
+    // Prevent background scroll
+    document.body.style.overflow = "hidden";
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, []);
+
   const handleTimeUpdate = () => {
-    if (videoRef.current && videoRef.current.currentTime >= 12) {
+    if (videoRef.current?.currentTime >= 12) {
       onFinish();
     }
   };
 
   return (
-    <div className="fixed inset-0 z-[9999] bg-black">
+    <div
+      className="
+        fixed inset-0 z-[9999]
+        bg-black
+        flex items-center justify-center
+        overflow-hidden
+      "
+    >
       <video
         ref={videoRef}
         src={splashVideo}
@@ -20,7 +43,12 @@ const SplashScreen = ({ onFinish }) => {
         playsInline
         preload="auto"
         onTimeUpdate={handleTimeUpdate}
-        className="w-full h-full object-cover"
+        className="
+          w-full h-full
+          object-cover
+          sm:object-cover
+          md:object-cover
+        "
       />
     </div>
   );

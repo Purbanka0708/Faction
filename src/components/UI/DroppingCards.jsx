@@ -8,34 +8,36 @@ gsap.registerPlugin(ScrollTrigger);
 
 const contentData = [
   {
-    title: "Projects & Hackathons",
+    title: "Bridging the Educational Gap",
     description:
-      "We keep learning hands-on so that you build real projects and win hackathons.",
-    image: "https://placehold.co/600x400/2a2a2a/FFF?text=Project+Dashboard",
-    tag: "Resume Builder",
+      "FACTION is an initiative built to uplift students from the Northeast by providing access to quality education, guidance, and opportunities once limited by geography.",
+    image: "https://placehold.co/600x400/2a2a2a/FFF?text=Education+Access",
+    tag: "Our Purpose",
   },
   {
-    title: "Live Sessions",
+    title: "Redefining JEE & NEET Preparation",
     description:
-      "Live sessions focus on problem-solving approaches rather than rote memorization.",
-    image: "https://placehold.co/600x400/1e293b/FFF?text=Live+Video+Call",
-    tag: "Interactive Learning",
+      "We go beyond traditional coaching by focusing on conceptual clarity, structured practice, and deep understanding rather than rote learning.",
+    image: "https://placehold.co/600x400/1e293b/FFF?text=Conceptual+Learning",
+    tag: "Academic Rigor",
   },
   {
-    title: "Tier-3 to MAANG",
+    title: "Technology-Driven Learning",
     description:
-      "Our mentorship and problem sets help students crack top tech roles.",
-    image: "https://placehold.co/600x400/0f172a/FFF?text=Success+Story",
-    tag: "Success Stories",
+      "FACTION leverages technology to personalize learning, track progress, and provide timely insights that help students improve efficiently.",
+    image: "https://placehold.co/600x400/0f172a/FFF?text=Smart+Learning",
+    tag: "Modern Approach",
   },
   {
-    title: "Competitive Programming",
+    title: "Mentorship Beyond Academics",
     description:
-      "Master DSA with a curriculum designed by industry experts.",
-    image: "https://placehold.co/600x400/334155/FFF?text=Code+Editor",
-    tag: "Algorithm Mastery",
+      "We believe success requires emotional support and mentorship. FACTION nurtures confidence, resilience, and clarity alongside academics.",
+    image: "https://placehold.co/600x400/334155/FFF?text=Student+Mentorship",
+    tag: "Holistic Growth",
   },
 ];
+
+
 
 const DroppingCards = () => {
   const containerRef = useRef(null);
@@ -105,7 +107,7 @@ const DroppingCards = () => {
     <section className="bg-[#FEFCED] overflow-x-hidden">
       <div
         ref={containerRef}
-        className="relative max-w-6xl mx-auto px-6 pt-20 pb-[320px]"
+        className="relative max-w-6xl mx-auto px-6 pt-20 pb-32"
       >
         {/* SVG PATH */}
         <div className="absolute inset-0 hidden md:block pointer-events-none">
@@ -168,18 +170,48 @@ const DroppingCards = () => {
           ))}
         </div>
 
-        {/* CTA BUTTON */}
-        <div className="absolute bottom-50 left-1/2 -translate-x-1/2 text-center">
-          <button
-            onClick={() => navigate("/signin")}
-            className="bg-slate-900 text-white px-10 py-4 rounded-full text-lg font-bold
-                       transition-all duration-300
-                       hover:bg-slate-800 hover:scale-105
-                       hover:shadow-[0_20px_40px_rgba(15,23,42,0.25)]"
-          >
-            Start Learning
-          </button>
-        </div>
+       {/* CTA BUTTON */}
+<div className="mt-32 flex justify-center">
+  <button
+  onClick={() => navigate("/signin")}
+  className="
+    group
+    inline-flex
+    items-center
+    gap-3
+    px-8 py-3
+    rounded-full
+
+    bg-[#F0D200]
+    text-[#0F172A]
+    text-base
+    font-semibold
+
+    transition-all
+    duration-300
+    ease-out
+
+    hover:bg-[#A767FF]
+    hover:text-white
+    hover:shadow-[0_12px_28px_rgba(167,103,255,0.35)]
+  "
+>
+  <span>Start Learning</span>
+
+  <span
+    className="
+      inline-block
+      transition-transform
+      duration-300
+      group-hover:translate-x-1
+    "
+  >
+    →
+  </span>
+</button>
+
+</div>
+
       </div>
     </section>
   );
