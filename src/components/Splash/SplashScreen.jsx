@@ -6,13 +6,12 @@ const SplashScreen = ({ onFinish }) => {
 
   useEffect(() => {
     const video = videoRef.current;
-
     if (!video) return;
 
     // 2x speed
     video.playbackRate = 2;
 
-    // Prevent background scroll
+    // Lock scroll
     document.body.style.overflow = "hidden";
 
     return () => {
@@ -32,7 +31,6 @@ const SplashScreen = ({ onFinish }) => {
         fixed inset-0 z-[9999]
         bg-black
         flex items-center justify-center
-        overflow-hidden
       "
     >
       <video
@@ -44,10 +42,11 @@ const SplashScreen = ({ onFinish }) => {
         preload="auto"
         onTimeUpdate={handleTimeUpdate}
         className="
-          w-full h-full
-          object-cover
-          sm:object-cover
-          md:object-cover
+          max-w-full
+          max-h-full
+          w-auto
+          h-auto
+          sm:w-full sm:h-full sm:object-cover
         "
       />
     </div>
