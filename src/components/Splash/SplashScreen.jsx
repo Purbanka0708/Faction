@@ -5,13 +5,10 @@ const SplashScreen = ({ onFinish }) => {
   const videoRef = useRef(null);
 
   useEffect(() => {
-    const video = videoRef.current;
-    if (!video) return;
+    if (videoRef.current) {
+      videoRef.current.playbackRate = 2; // ✅ keep 2x speed
+    }
 
-    // Play at 2x speed
-    video.playbackRate = 2;
-
-    // Lock scroll
     document.body.style.overflow = "hidden";
     return () => {
       document.body.style.overflow = "auto";
@@ -19,7 +16,7 @@ const SplashScreen = ({ onFinish }) => {
   }, []);
 
   const handleTimeUpdate = () => {
-    if (videoRef.current?.currentTime >= 12) {
+    if (videoRef.current && videoRef.current.currentTime >= 12) {
       onFinish();
     }
   };
@@ -28,8 +25,8 @@ const SplashScreen = ({ onFinish }) => {
     <div
       className="
         fixed inset-0 z-[9999]
+        bg-black md:bg-black
         flex items-center justify-center
-        bg-[#FEFCED]
       "
     >
       <video
@@ -41,10 +38,13 @@ const SplashScreen = ({ onFinish }) => {
         preload="auto"
         onTimeUpdate={handleTimeUpdate}
         className="
-          max-w-[90%]
-          max-h-[70%]
-          w-auto
-          h-auto
+          w-auto h-auto
+          max-w-[90%] max-h-[70%]
+          bg-[#FEFCED]
+
+          md:w-full md:h-full
+          md:max-w-none md:max-h-none
+          md:object-cover
         "
       />
     </div>
