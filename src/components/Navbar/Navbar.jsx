@@ -6,9 +6,10 @@ import { Link, useLocation } from "react-router-dom";
 const NavbarMenu = [
   { id: 1, title: "Home", path: "/" },
   { id: 2, title: "Courses", path: "/#courses" },
-  { id: 3, title: "About Us", path: "/#about" },
-  { id: 4, title: "Our Team", path: "/team" },
-  { id: 5, title: "Contact Us", path: "/contact" },
+  { id: 3, title: "About Us", path: "/about" },
+  { id: 4, title: "Results", path: "/results" }, // ✅ NEW
+  { id: 5, title: "Our Team", path: "/team" },
+  { id: 6, title: "Contact Us", path: "/contact" },
 ];
 
 const Navbar = () => {
@@ -19,6 +20,12 @@ const Navbar = () => {
   useEffect(() => {
     document.body.style.overflow = mobileOpen ? "hidden" : "auto";
   }, [mobileOpen]);
+
+  // active link logic
+  const isActiveLink = (path) => {
+    if (path === "/") return location.pathname === "/";
+    return location.pathname.startsWith(path);
+  };
 
   return (
     <nav className="relative z-50 bg-[#F8F4E8] shadow-sm">
@@ -38,14 +45,16 @@ const Navbar = () => {
         <div className="hidden lg:block">
           <ul className="flex items-center gap-6">
             {NavbarMenu.map((menu) => {
-              const isActive = location.pathname === menu.path;
+              const isActive = isActiveLink(menu.path);
 
               return (
                 <li key={menu.id} className="relative">
                   <Link
                     to={menu.path}
-                    className={`inline-block pb-2 text-slate-900 relative group transition-colors duration-200 ${
-                      isActive ? "text-[#A767FF]" : "hover:text-[#A767FF]"
+                    className={`inline-block pb-2 relative transition-colors duration-200 ${
+                      isActive
+                        ? "text-[#A767FF]"
+                        : "text-slate-900 hover:text-[#A767FF]"
                     }`}
                   >
                     {menu.title}
@@ -61,7 +70,7 @@ const Navbar = () => {
               );
             })}
 
-            {/* Sign In Button */}
+            {/* CTA */}
             <Link
               to="/signin"
               className="bg-[#F0D200] text-slate-900 font-semibold px-6 py-2 rounded-full ml-3

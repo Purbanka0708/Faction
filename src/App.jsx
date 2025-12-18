@@ -22,6 +22,9 @@ import Educators from "./components/Team/Educators";
 import Operations from "./components/Team/Operations";
 import WebTech from "./components/Team/WebTech";
 
+/* About */
+import AboutUs from "./components/About/AboutUs";
+
 /* Others */
 import Contact from "./components/Contact/Contact.jsx";
 import DroppingCards from "./components/UI/DroppingCards.jsx";
@@ -30,32 +33,31 @@ import DroppingCards from "./components/UI/DroppingCards.jsx";
 
 const Home = () => {
   const items = [
-  {
-    title: "Why FACTION?",
-    lines: [
-      "Practice-first learning",
-      "No rote memorization",
-      "Skills > certificates",
-    ],
-  },
-  {
-    title: "How You Learn",
-    lines: [
-      "Real-world problems",
-      "Project-based approach",
-      "Learn by building",
-    ],
-  },
-  {
-    title: "Grow Faster",
-    lines: [
-      "Instant feedback",
-      "Mentor-reviewed work",
-      "Continuous improvement",
-    ],
-  },
-];
-
+    {
+      title: "Why FACTION?",
+      lines: [
+        "Practice-first learning",
+        "No rote memorization",
+        "Skills > certificates",
+      ],
+    },
+    {
+      title: "How You Learn",
+      lines: [
+        "Real-world problems",
+        "Project-based approach",
+        "Learn by building",
+      ],
+    },
+    {
+      title: "Grow Faster",
+      lines: [
+        "Instant feedback",
+        "Mentor-reviewed work",
+        "Continuous improvement",
+      ],
+    },
+  ];
 
   return (
     <main className="overflow-x-hidden bg-[#FEFCED] text-[#1e1e1e]">
@@ -83,15 +85,21 @@ const App = () => {
           <Routes>
             <Route path="/" element={<Home />} />
 
+            {/* About */}
+            <Route path="/about" element={<AboutUs />} />
+
+            {/* Team */}
             <Route path="/team" element={<OurTeam />} />
             <Route path="/team/educators" element={<Educators />} />
             <Route path="/team/operations" element={<Operations />} />
             <Route path="/team/webtech" element={<WebTech />} />
 
+            {/* Others */}
             <Route path="/contact" element={<Contact />} />
             <Route path="/signin" element={<SignIn />} />
             <Route path="/signup" element={<SignUp />} />
 
+            {/* Fallback */}
             <Route path="*" element={<Home />} />
           </Routes>
 
