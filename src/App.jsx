@@ -28,6 +28,10 @@ import AboutUs from "./components/About/AboutUs";
 /* Others */
 import Contact from "./components/Contact/Contact.jsx";
 import DroppingCards from "./components/UI/DroppingCards.jsx";
+import CoursesPage from "./components/CoursesPage/CoursesPage.jsx";
+
+import Results from "./components/Results/Results";
+
 
 /* ---------------- HOME ---------------- */
 
@@ -93,6 +97,12 @@ const App = () => {
             <Route path="/team/educators" element={<Educators />} />
             <Route path="/team/operations" element={<Operations />} />
             <Route path="/team/webtech" element={<WebTech />} />
+
+
+            <Route path="/courses" element={<CoursesPage />} />
+
+            <Route path="/results" element={<Results />} />
+
 
             {/* Others */}
             <Route path="/contact" element={<Contact />} />

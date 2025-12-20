@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 const CoursesData = [
   {
     id: 1,
-    title: "Foundation Courses (Class 6–10)",
+    title: "Foundation Courses (Class 5-8)",
     link: "#",
     icon: <TbWorldWww />,
     delay: 0.2,
@@ -31,7 +31,7 @@ const CoursesData = [
   },
   {
     id: 4,
-    title: "Regular Tests & Analysis",
+    title: "Tests Series",
     link: "#",
     icon: <IoMdHappy />,
     delay: 0.5,

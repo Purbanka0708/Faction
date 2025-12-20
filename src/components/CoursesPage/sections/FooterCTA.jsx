@@ -1,0 +1,26 @@
+const FooterCTA = () => {
+  return (
+    <section className="bg-[#2D0B34] text-[#F8F4E8] py-16 text-center">
+
+      <h2 className="text-3xl font-bold mb-4">
+        Start Learning With Faction
+      </h2>
+      <p className="text-white/80 mb-8">
+        Join thousands of students achieving top results.
+      </p>
+
+      <div className="flex justify-center gap-4">
+        <button className="bg-[#FBDD57] text-[#2D0B34] px-6 py-3 rounded-lg font-semibold hover:opacity-90">
+
+          Talk to Counselor
+        </button>
+        <button className="border border-[#F8F4E8] px-6 py-3 rounded-lg hover:bg-[#F8F4E8] hover:text-[#2D0B34] transition">
+
+          Free Demo
+        </button>
+      </div>
+    </section>
+  );
+};
+
+export default FooterCTA;

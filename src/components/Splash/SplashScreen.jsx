@@ -6,7 +6,7 @@ const SplashScreen = ({ onFinish }) => {
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.playbackRate = 2; // ✅ keep 2x speed
+      videoRef.current.playbackRate = 2; 
     }
 
     document.body.style.overflow = "hidden";

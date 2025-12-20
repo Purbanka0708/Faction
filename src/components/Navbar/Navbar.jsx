@@ -5,9 +5,9 @@ import { Link, useLocation } from "react-router-dom";
 
 const NavbarMenu = [
   { id: 1, title: "Home", path: "/" },
-  { id: 2, title: "Courses", path: "/#courses" },
+  { id: 2, title: "Courses", path: "/courses" },
   { id: 3, title: "About Us", path: "/about" },
-  { id: 4, title: "Results", path: "/results" }, // ✅ NEW
+  { id: 4, title: "Results", path: "/results" },
   { id: 5, title: "Our Team", path: "/team" },
   { id: 6, title: "Contact Us", path: "/contact" },
 ];
