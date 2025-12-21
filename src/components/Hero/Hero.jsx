@@ -4,6 +4,7 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import Blob from "../../assets/blob.svg";
 import HeroPng from "../../assets/hero.png";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export const FadeUp = (delay) => {
   return {
@@ -32,6 +33,7 @@ const Hero = () => {
 
       <div className="container grid grid-cols-1 md:grid-cols-2 min-h-[650px]">
         
+        {/* LEFT CONTENT */}
         <div className="flex flex-col justify-center py-14 md:py-0 relative z-20">
           <div className="text-center md:text-left space-y-8 lg:max-w-[400px]">
 
@@ -52,8 +54,13 @@ const Hero = () => {
               animate="animate"
               className="text-sm md:text-base text-slate-700"
             >
-              At <span className="font-semibold text-slate-900">Faction Education</span>, 
-              academic strength, tech-driven learning, and mentorship unite to empower students and bridge the Northeast’s education gap in JEE, NEET, and foundational studies. 
+              At{" "}
+              <span className="font-semibold text-slate-900">
+                Faction Education
+              </span>
+              , academic strength, tech-driven learning, and mentorship unite to
+              empower students and bridge the Northeast’s education gap in JEE,
+              NEET, and foundational studies.
             </motion.p>
 
             <motion.div
@@ -62,15 +69,20 @@ const Hero = () => {
               animate="animate"
               className="flex justify-center md:justify-start"
             >
-              <button className="flex items-center gap-2 group bg-[#F0D200] text-slate-900 font-semibold px-6 py-3 rounded-full hover:bg-[#A767FF] hover:text-white transition-all duration-300">
+              {/* SIGN UP REDIRECT */}
+              <Link
+                to="/signup"
+                className="flex items-center gap-2 group bg-[#F0D200] text-slate-900 font-semibold px-6 py-3 rounded-full
+                           hover:bg-[#A767FF] hover:text-white transition-all duration-300"
+              >
                 Start Learning
                 <IoIosArrowRoundForward className="text-xl group-hover:translate-x-2 group-hover:-rotate-45 duration-300" />
-              </button>
+              </Link>
             </motion.div>
           </div>
         </div>
 
-        
+        {/* RIGHT IMAGE */}
         <div className="flex justify-center items-center">
           <motion.img
             initial={{ x: 50, opacity: 0 }}

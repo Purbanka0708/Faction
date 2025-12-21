@@ -3,20 +3,39 @@ import splashVideo from "../../assets/splash.mp4";
 
 const SplashScreen = ({ onFinish }) => {
   const videoRef = useRef(null);
+  const skippedRef = useRef(false);
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.playbackRate = 2; 
+      videoRef.current.playbackRate = 2; // keep 2x speed
     }
 
     document.body.style.overflow = "hidden";
+
+    const handleSkip = () => {
+      if (!skippedRef.current) {
+        skippedRef.current = true;
+        onFinish();
+      }
+    };
+
+    // Keyboard skip (desktop)
+    window.addEventListener("keydown", handleSkip);
+
+    // Cleanup
     return () => {
       document.body.style.overflow = "auto";
+      window.removeEventListener("keydown", handleSkip);
     };
-  }, []);
+  }, [onFinish]);
 
   const handleTimeUpdate = () => {
-    if (videoRef.current && videoRef.current.currentTime >= 12) {
+    if (
+      videoRef.current &&
+      videoRef.current.currentTime >= 12 &&
+      !skippedRef.current
+    ) {
+      skippedRef.current = true;
       onFinish();
     }
   };
@@ -25,10 +44,18 @@ const SplashScreen = ({ onFinish }) => {
     <div
       className="
         fixed inset-0 z-[9999]
-        bg-black md:bg-black
+        bg-black
         flex items-center justify-center
       "
+      // Tap / click skip (mobile-friendly)
+      onClick={() => {
+        if (!skippedRef.current) {
+          skippedRef.current = true;
+          onFinish();
+        }
+      }}
     >
+      {/* VIDEO */}
       <video
         ref={videoRef}
         src={splashVideo}
@@ -47,6 +74,20 @@ const SplashScreen = ({ onFinish }) => {
           md:object-cover
         "
       />
+
+      {/* SKIP HINT */}
+      <div
+        className="
+          absolute bottom-6 right-6
+          text-xs md:text-sm
+          text-white/70
+          tracking-wide
+          select-none
+          pointer-events-none
+        "
+      >
+        Press any key to skip
+      </div>
     </div>
   );
 };

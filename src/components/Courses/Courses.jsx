@@ -6,47 +6,42 @@ import { IoMdHappy } from "react-icons/io";
 import { BiSupport } from "react-icons/bi";
 import { IoPulseOutline } from "react-icons/io5";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const CoursesData = [
   {
     id: 1,
     title: "Foundation Courses (Class 5-8)",
-    link: "#",
     icon: <TbWorldWww />,
     delay: 0.2,
   },
   {
     id: 2,
     title: "IIT/JEE Preparation",
-    link: "#",
     icon: <CiMobile3 />,
     delay: 0.3,
   },
   {
     id: 3,
     title: "NEET Preparation",
-    link: "#",
     icon: <RiComputerLine />,
     delay: 0.4,
   },
   {
     id: 4,
     title: "Tests Series",
-    link: "#",
     icon: <IoMdHappy />,
     delay: 0.5,
   },
   {
     id: 5,
     title: "Doubt-Solving & Mentorship",
-    link: "#",
     icon: <IoPulseOutline />,
     delay: 0.6,
   },
   {
     id: 6,
     title: "24/7 Academic Support",
-    link: "#",
     icon: <BiSupport />,
     delay: 0.7,
   },
@@ -85,18 +80,24 @@ const Courses = () => {
               key={course.id}
               variants={SlideLeft(course.delay)}
               initial="initial"
-              whileInView={"animate"}
+              whileInView="animate"
               viewport={{ once: true }}
-              className="bg-[#FAF2B5] rounded-2xl flex flex-col gap-4 items-center justify-center p-4 py-7 
-              hover:bg-white hover:scale-110 duration-300 hover:shadow-2xl border border-transparent hover:border-[#F0D200]"
             >
-              <div className="text-4xl mb-4 text-[black]">
-                {course.icon}
-              </div>
+              {/* Redirect to Courses page */}
+              <Link
+                to="/courses"
+                className="bg-[#FAF2B5] rounded-2xl flex flex-col gap-4 items-center justify-center p-4 py-7
+                           hover:bg-white hover:scale-110 duration-300 hover:shadow-2xl
+                           border border-transparent hover:border-[#F0D200] cursor-pointer"
+              >
+                <div className="text-4xl mb-4 text-[black]">
+                  {course.icon}
+                </div>
 
-              <h1 className="text-lg font-semibold text-center px-3 text-slate-900">
-                {course.title}
-              </h1>
+                <h1 className="text-lg font-semibold text-center px-3 text-slate-900">
+                  {course.title}
+                </h1>
+              </Link>
             </motion.div>
           ))}
         </div>
