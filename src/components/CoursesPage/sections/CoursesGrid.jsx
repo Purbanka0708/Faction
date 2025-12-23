@@ -2,18 +2,15 @@ import { useState } from "react";
 import CourseCard from "../components/CourseCard";
 
 const CoursesGrid = ({ data }) => {
-  // detect subjects OR streams
   const items = data.subjects || data.streams;
-
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="container mx-auto px-6 py-16">
-      
-      {/* Section Header */}
-      <div className="mb-8">
-        <h2 className="text-2xl font-bold text-[#2D0B34] mb-8">
+    <section className="w-full h-full flex flex-col">
 
+      {/* Header */}
+      <div className="mb-6">
+        <h2 className="text-2xl font-bold text-[#2D0B34]">
           {data.title}
         </h2>
         <p className="text-sm text-gray-600 mt-1">
@@ -21,29 +18,30 @@ const CoursesGrid = ({ data }) => {
         </p>
       </div>
 
-      {/* Tabs (only if more than one subject/stream) */}
+      {/* Tabs (NORMAL SCROLL — NOT STICKY) */}
       {items.length > 1 && (
-  <div className="flex gap-4 mb-10 flex-wrap">
-    {items.map((item, index) => (
-      <button
-        key={item.id}
-        onClick={() => setActiveIndex(index)}
-        className={`px-5 py-2 rounded-full text-sm font-medium transition
-          ${
-            activeIndex === index
-              ? "bg-[#2D0B34] text-[#F8F4E8]"
-              : "bg-[#FBDD57]/40 text-[#2D0B34] hover:bg-[#FBDD57]"
-          }`}
-      >
-        {item.subject || item.stream}
-      </button>
-    ))}
-  </div>
-)}
-
+        <div className="mb-6">
+          <div className="flex gap-3 flex-wrap">
+            {items.map((item, index) => (
+              <button
+                key={item.id}
+                onClick={() => setActiveIndex(index)}
+                className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300
+                  ${
+                    activeIndex === index
+                      ? "bg-[#2D0B34] text-[#F8F4E8] shadow-md"
+                      : "bg-[#FBDD57]/40 text-[#2D0B34] hover:bg-[#FBDD57]"
+                  }`}
+              >
+                {item.subject || item.stream}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* Courses Grid */}
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
+      <div className="flex-1 grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-8">
         {items[activeIndex].courses.map((course) => (
           <CourseCard
             key={course.id}

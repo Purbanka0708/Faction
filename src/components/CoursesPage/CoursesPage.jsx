@@ -1,10 +1,6 @@
 import Navbar from "../Navbar/Navbar";
-import Footer from "../Footer/Footer";
-
 import HeroSection from "./sections/HeroSection";
-import FilterBar from "./sections/FilterBar";
 import CoursesGrid from "./sections/CoursesGrid";
-import SupportSection from "./sections/SupportSection";
 import FooterCTA from "./sections/FooterCTA";
 import { coursesData } from "./data/coursesData";
 
@@ -13,19 +9,25 @@ const CoursesPage = () => {
     <main className="min-h-screen bg-[#F8F4E8]">
 
       <Navbar />
-
       <HeroSection />
-      {/* <FilterBar /> */}
 
-      <CoursesGrid data={coursesData.class_5_8} />
-      <CoursesGrid data={coursesData.foundation} />
-      <CoursesGrid data={coursesData.neet} />
-      <CoursesGrid data={coursesData.jee} />
+      {/* ROW 1 */}
+      <section className="max-w-7xl mx-auto px-6 py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-stretch">
+          <CoursesGrid data={coursesData.class_5_8} />
+          <CoursesGrid data={coursesData.foundation} />
+        </div>
+      </section>
 
-      {/* <SupportSection /> */}
+      {/* ROW 2 */}
+      <section className="max-w-7xl mx-auto px-6 py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-stretch">
+          <CoursesGrid data={coursesData.neet} />
+          <CoursesGrid data={coursesData.jee} />
+        </div>
+      </section>
+
       <FooterCTA />
-
-      {/* <Footer /> */}
     </main>
   );
 };
