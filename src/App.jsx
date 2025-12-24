@@ -12,6 +12,8 @@ import Subscribe from "./components/Subscribe/Subscribe.jsx";
 import Banner2 from "./components/Banner/Banner2.jsx";
 import Footer from "./components/Footer/Footer.jsx";
 
+
+
 /* Auth */
 import SignIn from "./components/Auth/SignIn.jsx";
 import SignUp from "./components/Auth/SignUp.jsx";
@@ -29,9 +31,7 @@ import AboutUs from "./components/About/AboutUs";
 import Contact from "./components/Contact/Contact.jsx";
 import DroppingCards from "./components/UI/DroppingCards.jsx";
 import CoursesPage from "./components/CoursesPage/CoursesPage.jsx";
-
 import Results from "./components/Results/Results";
-
 
 /* ---------------- HOME ---------------- */
 
@@ -88,8 +88,6 @@ const App = () => {
         <>
           <Routes>
             <Route path="/" element={<Home />} />
-
-            {/* About */}
             <Route path="/about" element={<AboutUs />} />
 
             {/* Team */}
@@ -98,18 +96,15 @@ const App = () => {
             <Route path="/team/operations" element={<Operations />} />
             <Route path="/team/webtech" element={<WebTech />} />
 
-
+            {/* Courses & Results */}
             <Route path="/courses" element={<CoursesPage />} />
-
             <Route path="/results" element={<Results />} />
-
 
             {/* Others */}
             <Route path="/contact" element={<Contact />} />
             <Route path="/signin" element={<SignIn />} />
             <Route path="/signup" element={<SignUp />} />
 
-            {/* Fallback */}
             <Route path="*" element={<Home />} />
           </Routes>
 

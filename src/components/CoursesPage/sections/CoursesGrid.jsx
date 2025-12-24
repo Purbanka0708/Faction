@@ -19,7 +19,7 @@ const CoursesGrid = ({ data }) => {
       </div>
 
       {/* Tabs (NORMAL SCROLL — NOT STICKY) */}
-      {items.length > 1 && (
+      {items.length > 0 && (
         <div className="mb-6">
           <div className="flex gap-3 flex-wrap">
             {items.map((item, index) => (
@@ -41,7 +41,7 @@ const CoursesGrid = ({ data }) => {
       )}
 
       {/* Courses Grid */}
-      <div className="flex-1 grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-8">
+      <div className="flex-1">
         {items[activeIndex].courses.map((course) => (
           <CourseCard
             key={course.id}

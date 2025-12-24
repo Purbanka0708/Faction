@@ -13,7 +13,7 @@ const CoursesPage = () => {
 
       {/* ROW 1 */}
       <section className="max-w-7xl mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-stretch">
           <CoursesGrid data={coursesData.class_5_8} />
           <CoursesGrid data={coursesData.foundation} />
         </div>
@@ -21,7 +21,7 @@ const CoursesPage = () => {
 
       {/* ROW 2 */}
       <section className="max-w-7xl mx-auto px-6 py-12">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-stretch">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-stretch">
           <CoursesGrid data={coursesData.neet} />
           <CoursesGrid data={coursesData.jee} />
         </div>
