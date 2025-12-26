@@ -1,16 +1,32 @@
 import React from "react";
 
-const ExamSwitch = () => {
+const ExamSwitch = ({ active, setActive }) => {
   return (
-    <div className="flex justify-center gap-4 my-8">
-      <button className="px-5 py-2 rounded-full bg-yellow-400 text-black font-semibold">
+    <div className="flex justify-center gap-4 mb-10">
+      {/* NEET */}
+      <button
+        onClick={() => setActive("NEET")}
+        className={`px-6 py-2 rounded-full font-semibold transition
+          ${
+            active === "NEET"
+              ? "bg-yellow-400 text-black"
+              : "bg-white/10 text-white hover:bg-white/20"
+          }`}
+      >
         NEET
       </button>
-      <button className="px-5 py-2 rounded-full bg-white/10 text-white">
+
+      {/* JEE */}
+      <button
+        onClick={() => setActive("JEE")}
+        className={`px-6 py-2 rounded-full font-semibold transition
+          ${
+            active === "JEE"
+              ? "bg-yellow-400 text-black"
+              : "bg-white/10 text-white hover:bg-white/20"
+          }`}
+      >
         JEE
-      </button>
-      <button className="px-5 py-2 rounded-full bg-white/10 text-white">
-        JEE ADV
       </button>
     </div>
   );

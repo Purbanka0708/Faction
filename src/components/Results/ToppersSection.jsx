@@ -1,67 +1,86 @@
-import React from "react";
-import { motion } from "framer-motion";
+import React, { useState } from "react";
 import { toppersData } from "./data/ToppersData";
 
 const ToppersSection = () => {
+  const [activeExam, setActiveExam] = useState("NEET");
+
+  const filteredToppers = toppersData.filter(
+    (topper) => topper.exam === activeExam
+  );
+
   return (
-    <section className="container mx-auto px-6 py-20">
+    <section className="w-full py-24 bg-gradient-to-b from-[#2a0038] via-[#24002f] to-[#1a0022]">
+      
       {/* Heading */}
-      <h2 className="text-3xl md:text-4xl font-bold mb-16 text-center text-white">
+      <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
         Our Toppers
       </h2>
 
-      {/* Grid */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-y-16 gap-x-8">
-        {toppersData.map((topper, index) => (
-          <motion.div
-            key={index}
-            whileHover={{ y: -6 }}
-            transition={{ duration: 0.3, ease: "easeOut" }}
-            className="flex flex-col items-center text-center"
-          >
-            {/* Circular Image */}
-            <div className="w-28 h-28 md:w-32 md:h-32 rounded-full overflow-hidden shadow-lg mb-6 bg-white">
-              <img
-                src={topper.image}
-                alt={topper.name}
-                className="w-full h-full object-cover"
-              />
-            </div>
+      {/* Toggle Buttons (same style as ResultsTable) */}
+      <div className="flex justify-center gap-6 mb-20">
+        <button
+          onClick={() => setActiveExam("NEET")}
+          className={`px-8 py-3 rounded-full font-semibold transition
+            ${
+              activeExam === "NEET"
+                ? "bg-yellow-400 text-black"
+                : "bg-white/10 text-white hover:bg-white/20"
+            }`}
+        >
+          NEET
+        </button>
 
-            {/* Name */}
-            <h3 className="text-lg md:text-xl font-semibold text-white">
-              {topper.name}
-            </h3>
+        <button
+          onClick={() => setActiveExam("JEE")}
+          className={`px-8 py-3 rounded-full font-semibold transition
+            ${
+              activeExam === "JEE"
+                ? "bg-yellow-400 text-black"
+                : "bg-white/10 text-white hover:bg-white/20"
+            }`}
+        >
+          JEE
+        </button>
+      </div>
 
-            {/* Exam + Rank (optional) */}
-            {topper.exam && topper.rank && (
-              <p className="text-sm text-gray-300 mt-1">
-                {topper.exam} • {topper.rank}
-              </p>
-            )}
-
-            {/* Company / Institute Logo */}
-            {topper.companyLogo && (
-              <div className="mt-4 h-6 flex items-center">
+      {/* Toppers Grid */}
+      <div className="container mx-auto px-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-24 gap-x-16 text-center">
+          
+          {filteredToppers.map((topper, index) => (
+            <div key={index} className="flex flex-col items-center">
+              
+              {/* Circular Photo */}
+              <div className="w-40 h-40 rounded-full overflow-hidden bg-white mb-8">
                 <img
-                  src={topper.companyLogo}
-                  alt="Company logo"
-                  className="h-full object-contain"
+                  src={topper.image}
+                  alt={topper.name}
+                  className="w-full h-full object-cover"
                 />
               </div>
-            )}
 
-            {/* College / University */}
-            {topper.college && (
-              <p className="text-sm text-gray-300 mt-3">
+              {/* Name */}
+              <h3 className="text-xl font-semibold text-white mb-2">
+                {topper.name}
+              </h3>
+
+              {/* Exam + Rank / Score */}
+              <p className="text-sm text-gray-300 mb-4">
+                {topper.exam} • {topper.rank}
+              </p>
+
+              {/* College */}
+              <p className="text-sm text-gray-400">
                 {topper.college}
               </p>
-            )}
-          </motion.div>
-        ))}
+            </div>
+          ))}
+
+        </div>
       </div>
     </section>
   );
 };
 
 export default ToppersSection;
+ 
