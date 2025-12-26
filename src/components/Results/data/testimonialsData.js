@@ -1,18 +1,18 @@
+// src/components/Testimonials/data/testimonialsData.js
+
 export const testimonialsData = [
+  /* ====================== LONG-FORM TESTIMONIALS ====================== */
+
   {
     name: "Uditangshu Chakraborty",
     exam: "JEE Advanced",
-    college: "—",
-    year: "",
+    college: "IIT Kharagpur",
+    year: "2023",
     review: `When I think about my JEE Advanced journey, one name stands out — Soumyadeep Dada. He wasn't just a physics teacher; he was my Jeetu Bhaiya, an elder brother who genuinely cared about my success.
 
-Dada had a gift for simplifying complex concepts and making physics feel intuitive. Whether it was mechanics, electromagnetism, or modern physics, he made everything achievable. His passion was infectious, and every class felt like discovering the beauty of problem-solving together.
+He had a rare gift of simplifying complex concepts and making physics intuitive. Beyond academics, he supported me emotionally, believed in me when I doubted myself, and treated us like younger siblings.
 
-Beyond academics, Dada was there for the emotional journey too. He believed in me when I didn't believe in myself, offering support during the toughest moments of prep. He treated us not as students, but as younger siblings he was invested in.
-
-Dada didn't just teach physics — he taught resilience and curiosity. His guidance shaped not just how I approached problems, but how I approached life.
-
-I will always be grateful to Soumyadeep Dada for being my mentor, motivator, elder brother, and the reason I fell in love with physics.`,
+Dada didn’t just teach physics — he taught resilience, curiosity, and confidence. His guidance shaped not only my preparation, but also how I approach life.`,
   },
 
   {
@@ -20,13 +20,11 @@ I will always be grateful to Soumyadeep Dada for being my mentor, motivator, eld
     exam: "JEE",
     college: "IIT Patna",
     year: "ME ’28",
-    review: `I had the privilege of studying Physics at Faction Institute under the guidance of Soumyadeep Dada during my JEE preparation, and it was truly a transformative experience.
+    review: `Studying Physics at Faction Institute under Soumyadeep Dada was a transformative experience.
 
-The conceptual clarity, problem-solving techniques, and structured approach towards JEE-level questions helped me build a strong foundation in Physics. Dada made even the most challenging topics feel intuitive and engaging.
+The clarity of concepts, structured approach, and regular doubt-solving sessions helped me build a strong foundation for JEE. What stood out most was the personal attention and constant motivation throughout the journey.
 
-Regular doubt-clearing sessions and practice tests ensured I stayed on track and kept improving. What stood out the most was the personal attention and motivation provided throughout the journey. Whenever I felt demotivated or stuck, he was always there to help.
-
-I’m genuinely grateful for the guidance and support I received here, which played a crucial role in my JEE journey.`,
+I’m genuinely grateful for the guidance and support that played a crucial role in my success.`,
   },
 
   {
@@ -34,11 +32,9 @@ I’m genuinely grateful for the guidance and support I received here, which pla
     exam: "JEE Advanced",
     college: "IIT Kharagpur",
     year: "2023",
-    review: `My journey with Soumyadeep Dada during my JEE days was incredible. He was simultaneously a mentor, motivator, and a guiding force.
+    review: `My journey with Soumyadeep Dada during my JEE days was incredible. He was a mentor, motivator, and guiding force.
 
-The way he taught the toughest chapters of Physics — whether Rotational Mechanics or Ray Optics — was exceptional. Every topic was explained in depth, in a way that even an average student could understand clearly.
-
-His hard work, dedication, and constant motivation throughout my JEE journey helped me reach the position I am in today.`,
+The way he taught tough chapters like Rotational Mechanics and Ray Optics was exceptional. His dedication and constant encouragement helped me reach where I am today.`,
   },
 
   {
@@ -46,15 +42,9 @@ His hard work, dedication, and constant motivation throughout my JEE journey hel
     exam: "NEET",
     college: "SSKM",
     year: "2023",
-    review: `My journey with Faction began during the lockdown through online classes by Niladri Sir. Initially, I disliked biology and found it boring, but after just one class, my perception started to change.
+    review: `My journey with Faction began during the lockdown. Initially, I disliked biology, but Niladri Sir completely changed my perception by explaining concepts in our local language.
 
-He explained concepts in our local language, making biology feel familiar and engaging. Even though I wasn’t a topper and my marks were average, I began to enjoy studying — which meant everything to me.
-
-NEET was never my goal initially, but Niladri Sir believed in me and pushed me consistently. When Physics became a challenge, he introduced me to Soumyadeep Dada — and that changed everything.
-
-Dada made my concepts crystal clear and motivated me like no one else. Writing our names on the screen for correct answers may seem small, but it meant the world to me.
-
-Niladri Sir and Soumyadeep Dada became my guiding lights. Because of their belief and support, I am now pursuing a respected medical degree — something I never imagined for myself.`,
+When Physics became challenging, Soumyadeep Dada stepped in and made my concepts crystal clear. Their belief, encouragement, and emotional support helped me pursue a medical degree I once thought was impossible.`,
   },
 
   {
@@ -62,12 +52,72 @@ Niladri Sir and Soumyadeep Dada became my guiding lights. Because of their belie
     exam: "NEET",
     college: "LHMC",
     year: "2024",
-    review: `I would like to express my deepest gratitude to Faction for guiding me with dedication, clarity, and patience throughout my NEET journey.
+    review: `Faction guided me with dedication, clarity, and patience throughout my NEET journey.
 
-The commitment of the mentors went far beyond the syllabus. Every concept, every fact, and even the smallest doubts were addressed with care. They provided not just strategies, but constant emotional and academic support.
+Every concept and doubt was addressed with care, and the mentors provided both academic and emotional support. Their guidance shaped me not just as a student, but as a person.`,
+  },
 
-Each one of them played a crucial role in shaping not only my preparation, but also the kind of student and person I’ve become.
+  /* ====================== SHORT-FORM TESTIMONIALS ====================== */
 
-Whatever I achieve in the future, I’ll always carry their lessons with me.`,
+  {
+    name: "Pushpita Tapadar",
+    exam: "NEET",
+    college: "AGMC",
+    year: "2025",
+    review: `My experience with Faction has been really nice. Sir and Dada helped me not only academically but also emotionally. Whenever I felt low, they motivated and guided me.
+
+Thank you Niladri Sir and Soumyadeep Dada for always being there and for being the best teachers I ever had.`,
+  },
+
+  {
+    name: "Madhurita Kar",
+    exam: "NEET",
+    college: "RIMS",
+    year: "2025",
+    review: `The classes and test series helped me a lot during my NEET preparation. Sir always guided us on how to improve test scores, which proved extremely useful in the final exam.`,
+  },
+
+  {
+    name: "Arnisha Pal",
+    exam: "NEET",
+    college: "AGMC",
+    year: "2025",
+    review: `The overall environment at Faction played a huge role in my preparation. Regular practice, guidance, and encouragement boosted my confidence and helped me achieve my dream.`,
+  },
+
+  {
+    name: "Karnajit Saha",
+    exam: "NEET",
+    college: "AGMC",
+    year: "2025",
+    review: `Both Niladri Sir and Soumyadeep Sir explain concepts clearly and are very approachable. I could freely ask doubts and felt supported throughout my preparation.`,
+  },
+
+  {
+    name: "Jecika Roy",
+    exam: "NEET",
+    college: "AGMC",
+    year: "2025",
+    review: `Sir teaches in a very organized manner and explains problems step by step. Frequent tests and proper analysis helped me understand and correct my mistakes.`,
+  },
+
+  {
+    name: "Mitadru Ghosh",
+    exam: "NEET",
+    college: "NEIGRIHMS",
+    year: "2025",
+    review: `Faction is the best institute for Biology and Physics in the state. Niladri Sir strengthened my concepts, and Soumyadeep Sir made Physics logical and approachable.
+
+They treated us like younger brothers and constantly motivated us to achieve our goals.`,
+  },
+
+  {
+    name: "Saptarshi Deb",
+    exam: "JEE Advanced",
+    college: "IIT Madras",
+    year: "2025",
+    review: `During my preparation, I received immense support from Niladri Sir and Soumyadeep Sir.
+
+Their individual mentoring, structured content, and guidance transformed my understanding of Biology and Physics. I highly recommend Faction to aspiring students.`,
   },
 ];
