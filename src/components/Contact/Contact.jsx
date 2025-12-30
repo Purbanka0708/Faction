@@ -3,8 +3,8 @@ import React, { useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import FactionBot from "./FactionBot";
 import botIcon from "../../assets/factionbot.png";
-import bgImage from "../../assets/contact-bg.png"; // background image for the page
-import contactVideo from "../../assets/contact-video.mp4"; // place your mp4 here
+// import bgImage from "../../assets/contact-bg.png"; 
+// import contactVideo from "../../assets/contact-video.mp4";
 import { motion } from "framer-motion";
 
 const Contact = () => {
@@ -33,7 +33,7 @@ const Contact = () => {
   return (
     <main
       className="min-h-screen w-full relative bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `url(${bgImage})` }}
+      style={{ backgroundImage: `url(${"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Gemini_Generated_Image_ojfjfaojfjfaojfj.png"})` }}
     >
 
       <div className="relative z-10">
@@ -145,7 +145,7 @@ const Contact = () => {
                   style={{ paddingTop: "56.25%" }}
                 >
                   <video
-                    src={contactVideo}
+                    src={"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Faction%20Video.mp4"}
                     className="absolute inset-0 w-full h-full object-cover"
                     autoPlay
                     muted

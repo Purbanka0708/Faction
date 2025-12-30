@@ -1,5 +1,5 @@
 import React from "react";
-import BannerPng from "../../assets/education.png";
+// import BannerPng from "../../assets/education.png";
 import { GrUserExpert } from "react-icons/gr";
 import { MdOutlineAccessTime } from "react-icons/md";
 import { FaBookReader } from "react-icons/fa";
@@ -18,7 +18,7 @@ const Banner = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            src={BannerPng}
+            src={"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/education.png"}
             alt="Students studying for NEET and IIT/JEE at Faction coaching"
             className="w-[350px] md:max-w-[450px] object-cover drop-shadow"
           />

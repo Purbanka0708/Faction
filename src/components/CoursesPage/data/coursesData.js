@@ -1,10 +1,10 @@
-import scienceImg from "../../../assets/courses/Science.jpg";
-import mathImg from "../../../assets/courses/mathematics.jpg";
-import foundationBioImg from "../../../assets/courses/Foundation Bio.jpg";
-import foundationPhyImg from "../../../assets/courses/Foundation Physics.jpg";
-import neetBioImg from "../../../assets/courses/NEET bio.jpg";
-import neetPhyImg from "../../../assets/courses/NEET Physics.jpg";
-import jeePhyImg from "../../../assets/courses/JEE Physics.jpg";
+// import scienceImg from "../../../assets/courses/Science.jpg";
+// import mathImg from "../../../assets/courses/mathematics.jpg";
+// import foundationBioImg from "../../../assets/courses/Foundation Bio.jpg";
+// import foundationPhyImg from "../../../assets/courses/Foundation Physics.jpg";
+// import neetBioImg from "../../../assets/courses/NEET bio.jpg";
+// import neetPhyImg from "../../../assets/courses/NEET Physics.jpg";
+// import jeePhyImg from "../../../assets/courses/JEE Physics.jpg";
 
 export const coursesData = {
   class_5_8: {
@@ -20,7 +20,7 @@ export const coursesData = {
             title: "Class 5–8 Science",
             duration: "Academic Year",
             tag: "Science",
-            image: scienceImg,
+            image: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Science.jpg",
           },
         ],
       },
@@ -33,7 +33,7 @@ export const coursesData = {
             title: "Class 5–8 Mathematics",
             duration: "Academic Year",
             tag: "Mathematics",
-            image: mathImg,
+            image: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/mathematics.jpg",
           },
         ],
       },
@@ -53,7 +53,7 @@ export const coursesData = {
             title: "NEET Foundation Program",
             duration: "1 Year",
             tag: "Foundation",
-            image: foundationBioImg,
+            image: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Foundation%20Bio.jpg",
           },
         ],
       },
@@ -66,7 +66,7 @@ export const coursesData = {
             title: "JEE Foundation Program",
             duration: "1 Year",
             tag: "Foundation",
-            image: foundationPhyImg,
+            image: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Foundation%20Physics.jpg",
           },
         ],
       },
@@ -86,7 +86,7 @@ export const coursesData = {
             title: "NEET Biology",
             duration: "2 Years",
             tag: "NEET",
-            image: neetBioImg,
+            image: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/NEET%20bio.jpg",
           },
         ],
       },
@@ -99,7 +99,7 @@ export const coursesData = {
             title: "NEET Physics",
             duration: "2 Years",
             tag: "NEET",
-            image: neetPhyImg,
+            image: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/NEET%20Physics.jpg",
           },
         ],
       },
@@ -119,7 +119,7 @@ export const coursesData = {
             title: "JEE Physics (Main + Advanced)",
             duration: "2 Years",
             tag: "JEE",
-            image: jeePhyImg,
+            image: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/JEE%20Physics.jpg",
           },
         ],
       },

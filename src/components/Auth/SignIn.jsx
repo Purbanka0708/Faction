@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import AuthLayout from "./AuthLayout";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
-import HeroPng from "../../assets/hero.png"; 
+// import HeroPng from "../../assets/hero.png"; 
 
 const SignIn = () => {
   const navigate = useNavigate();
@@ -39,7 +39,7 @@ const SignIn = () => {
         
         <div className="hidden md:flex items-center justify-center bg-gradient-to-br from-[#A767FF]/10 to-[#F0D200]/10 p-8">
           <div className="text-center px-6">
-            <img src={HeroPng} alt="Faction" className="w-48 mx-auto drop-shadow" />
+            <img src={"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/hero.png"} alt="Faction" className="w-48 mx-auto drop-shadow" />
             <h3 className="mt-6 text-2xl font-semibold text-[black]">Welcome back to Faction</h3>
             <p className="mt-2 text-slate-600">Sign in to continue your learning journey</p>
           </div>

@@ -13,7 +13,7 @@ const ToppersSection = () => {
       
       {/* Heading */}
       <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
-        Our Toppers
+        Faction Hall of Fame
       </h2>
 
       {/* Toggle Buttons (same style as ResultsTable) */}

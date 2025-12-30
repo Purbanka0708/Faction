@@ -13,7 +13,7 @@ const CourseCard = ({ course }) => {
       "
     >
       {/* Image */}
-      <div className="h-44 rounded-t-2xl overflow-hidden relative">
+      <div className="h-80 rounded-t-2xl overflow-hidden relative">
         <img
           src={course.image}
           alt={course.title}

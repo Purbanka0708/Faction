@@ -1,11 +1,11 @@
 import React from "react";
 import { FaBell } from "react-icons/fa";
-import BgImage from "../../assets/bg.png";
+// import BgImage from "../../assets/bg.png";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const bgStyle = {
-  backgroundImage: `url(${BgImage})`,
+  backgroundImage: `url(${"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/bg.png"})`,
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
   backgroundPosition: "center",

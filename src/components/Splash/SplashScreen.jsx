@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import splashVideo from "../../assets/splash.mp4";
+// import splashVideo from "../../assets/splash.mp4";
 
 const SplashScreen = ({ onFinish }) => {
   const videoRef = useRef(null);
@@ -58,7 +58,7 @@ const SplashScreen = ({ onFinish }) => {
       {/* VIDEO */}
       <video
         ref={videoRef}
-        src={splashVideo}
+        src={"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/splash.mp4"}
         autoPlay
         muted
         playsInline

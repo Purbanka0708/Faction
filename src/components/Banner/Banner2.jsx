@@ -1,5 +1,5 @@
 import React from "react";
-import BannerPng from "../../assets/banner.png";
+// import BannerPng from "../../assets/banner.png";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -43,7 +43,7 @@ const Banner2 = () => {
           <motion.img
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            src={BannerPng}
+            src={"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/banner.png"}
             alt="Students joining Faction community"
             className="w-[350px] md:max-w-[450px] object-cover drop-shadow"
           />

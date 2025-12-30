@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../Navbar/Navbar";
 import { IoIosArrowRoundForward } from "react-icons/io";
 import Blob from "../../assets/blob.svg";
-import HeroPng from "../../assets/hero.png";
+// import HeroPng from "../../assets/hero.png";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
@@ -88,7 +88,7 @@ const Hero = () => {
             initial={{ x: 50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4, ease: "easeInOut" }}
-            src={HeroPng}
+            src={"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/hero.png"}
             alt="Student preparing for NEET and IIT/JEE at Faction coaching"
             className="w-[400px] xl:w-[600px] relative z-10 drop-shadow"
           />

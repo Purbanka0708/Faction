@@ -8,8 +8,8 @@ import FactionBot from "../Contact/FactionBot";
 import botIcon from "../../assets/factionbot.png";
 
 /* Images */
-import founderImg from "../../assets/about/founder.jpg";
-import coFounderImg from "../../assets/about/cofounder.jpg";
+// import founderImg from "../../assets/about/founder.jpg";
+// import coFounderImg from "../../assets/about/cofounder.jpg";
 
 /* ---------------- FLOATING BUBBLES (GLOBAL) ---------------- */
 
@@ -194,17 +194,17 @@ const AboutUs = () => {
 
         <InfoCard
           title="What is Faction?"
-          description="Founded in 2024, Faction is built around practice-first learning, structured thinking, and ethical mentorship. We prioritize conceptual clarity and real-world problem solving over rote memorization."
+          description="Founded in 2018, Faction is built around practice-first learning, structured thinking, and ethical mentorship. We prioritize conceptual clarity and real-world problem solving over rote memorization."
         />
 
         <InfoCard
-          image={founderImg}
+          image={"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/founder.jpg"}
           title="About the Founder"
           description="Dr. Niladri Deb is a highly respected biology mentor known for his calm, logic-driven teaching style and deep conceptual approach. Since 2018, his mentorship has guided students to top medical institutions including AIIMS, KGMU, RIMS, CMC, and other leading colleges. At Faction, his focus lies in building disciplined thinking, consistency, and first-principle understanding — shaping learners for sustained academic success and personal growth."
         />
 
         <InfoCard
-          image={coFounderImg}
+          image={"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/cofounder.jpg"}
           title="About the Co-Founder"
           reverse
           description="An IIT Kharagpur alumnus, Soumyadeep Nandi brings together academic rigor and modern educational design.Having cleared JEE Advanced, KVPY, and WBJEE (AIR 49), he emphasizes structured problem solving, clarity of fundamentals, and intellectual independence. At Faction, he leads technology-driven learning systems that combine pedagogy, analytics, and scalable mentorship — without compromising depth."

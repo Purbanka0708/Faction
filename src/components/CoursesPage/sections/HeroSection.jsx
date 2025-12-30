@@ -1,4 +1,4 @@
-import heroImage from "../../../assets/courses/Courses hero.jpg";
+// import heroImage from "../../../assets/courses/Courses hero.jpg";
 
 const HeroSection = () => {
   return (
@@ -36,12 +36,12 @@ const HeroSection = () => {
         </div>
 
         {/* RIGHT IMAGE — PERFECT FIT */}
-        <div className="hidden md:block">
-          <div className="relative h-72 rounded-2xl overflow-hidden bg-[#2D0B34]">
+        <div className="hidden md:block ">
+          <div className="relative h-72 overflow-hidden bg-[#2D0B34]">
             <img
-              src={heroImage}
+              src={"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Courses%20Hero.jpeg"}
               alt="Courses"
-              className="absolute inset-0 w-full h-full object-contain"
+              className="absolute inset-0 w-full h-full object-cover rounded-2xl"
               loading="lazy"
             />
           </div>
