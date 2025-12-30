@@ -186,4 +186,11 @@ export const toppersData = [
     college: "IIT Kharagpur",
     image: 'https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/jee.webp/Anirban%20Deb.jpg',
   },
+  {
+    name: "Dwija",
+    exam: "JEE",
+    rank: "NIT Trichy • 2023",
+    college: "NIT Trichy",
+    image: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/jee.webp/Dwija%20pic.jpeg",
+  }
 ];

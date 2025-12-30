@@ -28,7 +28,10 @@ const TeamData = [
 
   // Content / Web & Tech
   
-  { id: 12, name: "Purbanka Ghosh", role: "Academic Content Associate", img: null, group: "webtech" },
+  { id: 12, name: "Purbanka Ghosh", role: "Developer", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Purbanka%20pic.jpeg", group: "webtech" },
+  { id: 13, name: "Khushi Soni", role: "Developer", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Khushi.jpeg", group: "webtech" },
+  { id: 14, name: "Uditangshu Chakraborty", role: "Developer", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/jee.webp/Uditangshu%20Chakraborty.jpg", group: "webtech" },
+  { id:15, name: "Saransh",role: "Developer", img: null, group: "webtech" },
   
  
   

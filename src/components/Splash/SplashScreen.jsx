@@ -1,5 +1,4 @@
 import React, { useRef, useEffect } from "react";
-// import splashVideo from "../../assets/splash.mp4";
 
 const SplashScreen = ({ onFinish }) => {
   const videoRef = useRef(null);
@@ -7,7 +6,7 @@ const SplashScreen = ({ onFinish }) => {
 
   useEffect(() => {
     if (videoRef.current) {
-      videoRef.current.playbackRate = 2; // keep 2x speed
+      videoRef.current.playbackRate = 2;
     }
 
     document.body.style.overflow = "hidden";
@@ -19,10 +18,8 @@ const SplashScreen = ({ onFinish }) => {
       }
     };
 
-    // Keyboard skip (desktop)
     window.addEventListener("keydown", handleSkip);
 
-    // Cleanup
     return () => {
       document.body.style.overflow = "auto";
       window.removeEventListener("keydown", handleSkip);
@@ -46,8 +43,8 @@ const SplashScreen = ({ onFinish }) => {
         fixed inset-0 z-[9999]
         bg-black
         flex items-center justify-center
+        overflow-hidden
       "
-      // Tap / click skip (mobile-friendly)
       onClick={() => {
         if (!skippedRef.current) {
           skippedRef.current = true;
@@ -58,35 +55,33 @@ const SplashScreen = ({ onFinish }) => {
       {/* VIDEO */}
       <video
         ref={videoRef}
-        src={"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/splash.mp4"}
+        src="https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/splash.mp4"
         autoPlay
         muted
         playsInline
         preload="auto"
         onTimeUpdate={handleTimeUpdate}
         className="
-          w-auto h-auto
-          max-w-[90%] max-h-[70%]
-          bg-[#FEFCED]
-
-          md:w-full md:h-full
-          md:max-w-none md:max-h-none
-          md:object-cover
+          absolute inset-0
+          w-full h-full
+          object-contain sm:object-cover
+          bg-[#FFFFFF]
         "
       />
 
-      {/* SKIP HINT */}
+      {/* MOBILE / TABLET SKIP HINT */}
       <div
         className="
-          absolute bottom-6 right-6
-          text-xs md:text-sm
+          absolute bottom-4 right-4
+          sm:bottom-6 sm:right-6
+          text-[10px] sm:text-xs md:text-sm
           text-white/70
           tracking-wide
           select-none
           pointer-events-none
         "
       >
-        Press any key to skip
+        Tap anywhere to skip
       </div>
     </div>
   );

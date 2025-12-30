@@ -36,6 +36,21 @@ I’m genuinely grateful for the guidance and support that played a crucial role
 
 The way he taught tough chapters like Rotational Mechanics and Ray Optics was exceptional. His dedication and constant encouragement helped me reach where I am today.`,
   },
+  {
+    name:"Dwija",
+    exam:"JEE",
+    college:"NIT Trichy",
+    year:"2023",
+    review:`The day Dada walked into Faction to take that one Physics session for KVPY — I didn’t know then, but everything changed for me. From that moment on, he wasn’t just a teacher. He became an elder brother, a mentor, and someone who made me believe I could achieve things I never even dared to dream of.
+
+The day he told us to call him “Dada” instead of “Sir,” something shifted. He wasn’t standing on a pedestal anymore — he was sitting beside us, guiding us through. And the best part? He had gone through the same journey himself. He *knew* the struggle, the pressure, the fear — and that made all the difference. His advice wasn’t just theory; it came from lived experience.
+
+JEE was a tough time. It drained us, filled us with doubt, and often made us question our worth. But having him by our side helped me not drown in all of it. Whether it was a concept I couldn’t understand or a breakdown I didn’t see coming — he handled both with the same calm. He was our true agony aunt in every sense — someone who just *got it*, and never made us feel less for slipping.
+
+Somewhere along the way, I also found my tribe — a set of like-minded people, all working towards the same goal, without the drama, comparison, or pressure that usually surrounds this journey. He helped create that space.
+
+Apart from my beautiful parents, no one has impacted my life the way he has. Thank you, Dada, for everything — for your time, your belief, your patience, and for changing my game when I needed it the most.`,
+  },
 
   {
     name: "Trishagni Das",

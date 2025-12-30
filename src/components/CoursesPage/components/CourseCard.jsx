@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const CourseCard = ({ course }) => {
+  const navigate = useNavigate();
+
   return (
     <div
       className="
@@ -39,10 +42,21 @@ const CourseCard = ({ course }) => {
 
         {/* Buttons */}
         <div className="mt-auto flex gap-3">
-          <button className="flex-1 border border-[#2D0B34] rounded-lg py-2 text-sm hover:bg-[#2D0B34] hover:text-white transition">
+          {/* DETAILS → CONTACT US */}
+          <button
+            onClick={() => navigate("/contact")}
+            className="flex-1 border border-[#2D0B34] rounded-lg py-2 text-sm
+                       hover:bg-[#2D0B34] hover:text-white transition"
+          >
             Details
           </button>
-          <button className="flex-1 bg-[#2D0B34] text-white rounded-lg py-2 text-sm hover:opacity-90 transition">
+
+          {/* ENROLL → SIGN IN */}
+          <button
+            onClick={() => navigate("/signin")}
+            className="flex-1 bg-[#2D0B34] text-white rounded-lg py-2 text-sm
+                       hover:opacity-90 transition"
+          >
             Enroll
           </button>
         </div>

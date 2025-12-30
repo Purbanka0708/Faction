@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { IoMdMenu, IoMdClose } from "react-icons/io";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import { Link, useLocation } from "react-router-dom";
 
 const NavbarMenu = [
@@ -11,6 +11,33 @@ const NavbarMenu = [
   { id: 5, title: "Our Team", path: "/team" },
   { id: 6, title: "Contact Us", path: "/contact" },
 ];
+
+const menuContainer = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.08,
+      delayChildren: 0.15,
+    },
+  },
+};
+
+const menuItem = {
+  hidden: {
+    opacity: 0,
+    x: 20,
+  },
+  visible: {
+    opacity: 1,
+    x: 0,
+    transition: {
+      type: "spring",
+      stiffness: 260,
+      damping: 20,
+    },
+  },
+};
 
 const Navbar = () => {
   const location = useLocation();
@@ -92,28 +119,44 @@ const Navbar = () => {
       </motion.div>
 
       {/* ---------------- MOBILE MENU ---------------- */}
-      {mobileOpen && (
-        <div className="fixed inset-0 z-50 bg-black/40">
+      <AnimatePresence>
+  {mobileOpen && (
+    <motion.div
+      className="fixed inset-0 z-50 bg-black/40"
+      onClick={() => setMobileOpen(false)}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+    >
+
           <motion.div
             initial={{ x: "100%" }}
             animate={{ x: 0 }}
             exit={{ x: "100%" }}
-            transition={{ type: "tween", duration: 0.3 }}
-            className="absolute right-0 top-0 h-full w-72 bg-[#FEFCED] p-6 shadow-xl"
+            transition={{ type: "tween", duration: 0.35, ease: "easeInOut" }}
+            className="absolute right-0 top-0 w-72 bg-[#FEFCED] pt-10 px-6 pb-8 shadow-xl rounded-bl-2xl"
+            onClick={(e) => e.stopPropagation()}
           >
             {/* Close */}
             <button
-              className="mb-8 text-3xl text-slate-900"
+              className="absolute top-6 right-6 text-3xl text-slate-900"
               onClick={() => setMobileOpen(false)}
               aria-label="Close menu"
             >
               <IoMdClose />
             </button>
 
+            <div className="h-10" />
+
             {/* Mobile Links */}
-            <ul className="flex flex-col gap-6 text-lg font-medium text-slate-900">
+            <motion.ul
+              variants={menuContainer}
+              initial="hidden"
+              animate="visible"
+              className="flex flex-col gap-6 text-lg font-medium text-slate-900"
+            >
               {NavbarMenu.map((menu) => (
-                <li key={menu.id}>
+                <motion.li key={menu.id} variants={menuItem}>
                   <Link
                     to={menu.path}
                     onClick={() => setMobileOpen(false)}
@@ -121,23 +164,29 @@ const Navbar = () => {
                   >
                     {menu.title}
                   </Link>
-                </li>
+                </motion.li>
               ))}
 
               {/* CTA */}
-              <Link
-                to="/signin"
-                onClick={() => setMobileOpen(false)}
-                className="mt-4 inline-flex justify-center px-6 py-3 rounded-full
-                  bg-[#F0D200] text-slate-900 font-semibold
-                  hover:bg-[#A767FF] hover:text-white transition"
-              >
-                Start Solving
-              </Link>
-            </ul>
+              <motion.div variants={menuItem}>
+                <Link
+                  to="/signin"
+                  onClick={() => setMobileOpen(false)}
+                  className="
+      mt-4 inline-flex justify-center
+      px-6 py-3 rounded-full
+      bg-[#F0D200] text-slate-900 font-semibold
+      hover:bg-[#A767FF] hover:text-white transition
+    "
+                >
+                  Start Solving
+                </Link>
+              </motion.div>
+            </motion.ul>
           </motion.div>
-        </div>
+        </motion.div>
       )}
+      </AnimatePresence>
     </nav>
   );
 };

@@ -113,5 +113,10 @@ export const resultsData = {
       score: "IIT Kharagpur • 2023",
       college: "IIT Kharagpur",
     },
+    {
+      name: "Dwija",
+      score: "NIT Trichy • 2023",
+      college: "NIT Trichy",
+    },
   ],
 };
