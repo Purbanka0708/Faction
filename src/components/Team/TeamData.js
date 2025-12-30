@@ -4,16 +4,16 @@ import abhishekImg from "../../assets/team/Abhishek-pic.jpg";
 import suvamImg from "../../assets/team/Suvam-pic.jpg";
 import amitImg from "../../assets/team/Amit-pic.jpg";
 import arghyadeepImg from "../../assets/team/Arghyadeep-pic.jpg";
-// import niladriImg from "../../assets/team/Niladri-pic.jpg";
-// import soumyadeepImg from "../../assets/team/Soumyadeep-pic.jpg";
+import niladriImg from "../../assets/about/founder.jpg";
+import soumyadeepImg from "../../assets/about/cofounder.jpg";
 import trishaImg from "../../assets/team/Trisha-pic.jpg";
 import zakirImg from "../../assets/team/Zakir-pic.jpg";
 import tuliImg from "../../assets/team/Tuli-pic.jpg"; 
 
 const TeamData = [
   // Educators
-  { id: 1, name: "Dr. Niladri Deb", role: "Faction Biology Educator", img: null, group: "educators" },
-  { id: 2, name: "Er. Soumyadeep Nandi", role: "Faction Physics Educator", img: null, group: "educators" },
+  { id: 1, name: "Dr. Niladri Deb", role: "Faction Biology Educator", img: niladriImg, group: "educators" },
+  { id: 2, name: "Er. Soumyadeep Nandi", role: "Faction Physics Educator", img: soumyadeepImg, group: "educators" },
   { id: 3, name: "Trisha Saha", role: "Faction Juniors Mathematics Educator", img: trishaImg, group: "educators" },
   { id: 4, name: "Arghyadeep Majumder", role: "Faction Juniors Science Educator", img: arghyadeepImg, group: "educators" },
 
@@ -28,8 +28,8 @@ const TeamData = [
   { id: 10, name: "Zakir", role: "Facility Support Staff", img: zakirImg, group: "webtech" },
   { id: 11, name: "Purbanka Ghosh", role: "Academic Content Associate", img: null, group: "webtech" },
   { id: 12, name: "Saunak Debnath", role: "Video Editor - Faction Olympiads", img: null, group: "webtech" },
-  { id: 13, name: "Sagnik Debnath", role: "Media & Marketing Partner", img: null, group: "webtech" },
-  { id: 14, name: "Deeptalina Bhowmik", role: "Media & Marketing Partner", img: null, group: "webtech" },
+ 
+  
 ];
 
 export default TeamData;
