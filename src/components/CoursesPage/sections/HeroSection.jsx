@@ -1,8 +1,11 @@
+import heroImage from "../../../assets/courses/Courses hero.jpg";
+
 const HeroSection = () => {
   return (
     <section className="bg-[#2D0B34] text-[#F8F4E8]">
       <div className="container mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
 
+        {/* LEFT CONTENT — unchanged */}
         <div>
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
             Explore Courses
@@ -32,8 +35,16 @@ const HeroSection = () => {
           </div>
         </div>
 
+        {/* RIGHT IMAGE — PERFECT FIT */}
         <div className="hidden md:block">
-          <div className="h-72 rounded-2xl bg-[#FBDD57]/20"></div>
+          <div className="relative h-72 rounded-2xl overflow-hidden bg-[#2D0B34]">
+            <img
+              src={heroImage}
+              alt="Courses"
+              className="absolute inset-0 w-full h-full object-contain"
+              loading="lazy"
+            />
+          </div>
         </div>
 
       </div>
