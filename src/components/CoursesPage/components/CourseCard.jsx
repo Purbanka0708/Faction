@@ -1,15 +1,27 @@
+import React from "react";
+
 const CourseCard = ({ course }) => {
   return (
-    <div className="
-      w-full h-full
-      bg-white rounded-2xl
-      shadow-md
-      transition-all duration-300
-      hover:-translate-y-2 hover:shadow-xl
-      flex flex-col
-    ">
-      {/* Image placeholder */}
-      <div className="h-44 bg-gray-200 rounded-t-2xl relative">
+    <div
+      className="
+        w-full h-full
+        bg-white rounded-2xl
+        shadow-md
+        transition-all duration-300
+        hover:-translate-y-2 hover:shadow-xl
+        flex flex-col
+      "
+    >
+      {/* Image */}
+      <div className="h-44 rounded-t-2xl overflow-hidden relative">
+        <img
+          src={course.image}
+          alt={course.title}
+          className="w-full h-full object-cover"
+          loading="lazy"
+        />
+
+        {/* Tag */}
         <span className="absolute top-3 left-3 bg-[#FBDD57] text-xs px-3 py-1 rounded-full font-medium">
           {course.tag}
         </span>
@@ -27,10 +39,10 @@ const CourseCard = ({ course }) => {
 
         {/* Buttons */}
         <div className="mt-auto flex gap-3">
-          <button className="flex-1 border border-[#2D0B34] rounded-lg py-2 text-sm">
+          <button className="flex-1 border border-[#2D0B34] rounded-lg py-2 text-sm hover:bg-[#2D0B34] hover:text-white transition">
             Details
           </button>
-          <button className="flex-1 bg-[#2D0B34] text-white rounded-lg py-2 text-sm">
+          <button className="flex-1 bg-[#2D0B34] text-white rounded-lg py-2 text-sm hover:opacity-90 transition">
             Enroll
           </button>
         </div>

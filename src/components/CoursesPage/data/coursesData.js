@@ -1,3 +1,11 @@
+import scienceImg from "../../../assets/courses/Science.jpg";
+import mathImg from "../../../assets/courses/mathematics.jpg";
+import foundationBioImg from "../../../assets/courses/Foundation Bio.jpg";
+import foundationPhyImg from "../../../assets/courses/Foundation Physics.jpg";
+import neetBioImg from "../../../assets/courses/NEET bio.jpg";
+import neetPhyImg from "../../../assets/courses/NEET Physics.jpg";
+import jeePhyImg from "../../../assets/courses/JEE Physics.jpg";
+
 export const coursesData = {
   class_5_8: {
     title: "Class 5–8",
@@ -11,6 +19,8 @@ export const coursesData = {
             id: 1,
             title: "Class 5–8 Science",
             duration: "Academic Year",
+            tag: "Science",
+            image: scienceImg,
           },
         ],
       },
@@ -22,6 +32,8 @@ export const coursesData = {
             id: 2,
             title: "Class 5–8 Mathematics",
             duration: "Academic Year",
+            tag: "Mathematics",
+            image: mathImg,
           },
         ],
       },
@@ -40,6 +52,8 @@ export const coursesData = {
             id: 3,
             title: "NEET Foundation Program",
             duration: "1 Year",
+            tag: "Foundation",
+            image: foundationBioImg,
           },
         ],
       },
@@ -51,6 +65,8 @@ export const coursesData = {
             id: 4,
             title: "JEE Foundation Program",
             duration: "1 Year",
+            tag: "Foundation",
+            image: foundationPhyImg,
           },
         ],
       },
@@ -69,6 +85,8 @@ export const coursesData = {
             id: 5,
             title: "NEET Biology",
             duration: "2 Years",
+            tag: "NEET",
+            image: neetBioImg,
           },
         ],
       },
@@ -80,6 +98,8 @@ export const coursesData = {
             id: 6,
             title: "NEET Physics",
             duration: "2 Years",
+            tag: "NEET",
+            image: neetPhyImg,
           },
         ],
       },
@@ -98,6 +118,8 @@ export const coursesData = {
             id: 7,
             title: "JEE Physics (Main + Advanced)",
             duration: "2 Years",
+            tag: "JEE",
+            image: jeePhyImg,
           },
         ],
       },
