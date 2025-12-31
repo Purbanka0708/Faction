@@ -1,3 +1,4 @@
+
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -32,6 +33,7 @@ import Contact from "./components/Contact/Contact.jsx";
 import DroppingCards from "./components/UI/DroppingCards.jsx";
 import CoursesPage from "./components/CoursesPage/CoursesPage.jsx";
 import Results from "./components/Results/Results";
+import ScrollToTop from "./UI/ScrollToTop.jsx";
 
 /* ---------------- HOME ---------------- */
 
@@ -86,6 +88,7 @@ const App = () => {
 
       {!showSplash && (
         <>
+          <ScrollToTop/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutUs />} />

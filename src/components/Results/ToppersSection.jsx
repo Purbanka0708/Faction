@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import { toppersData } from "./data/ToppersData";
 
-const ToppersSection = () => {
-  const [activeExam, setActiveExam] = useState("NEET");
-
+const ToppersSection = ({ activeExam, setActiveExam }) => {
   const filteredToppers = toppersData.filter(
     (topper) => topper.exam === activeExam
   );
@@ -45,7 +43,7 @@ const ToppersSection = () => {
 
       {/* Toppers Grid */}
       <div className="container mx-auto px-6">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-y-24 gap-x-16 text-center">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-y-24 gap-x-16 text-center">
           
           {filteredToppers.map((topper, index) => (
             <div key={index} className="flex flex-col items-center">
@@ -83,4 +81,3 @@ const ToppersSection = () => {
 };
 
 export default ToppersSection;
- 

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Navbar from "../Navbar/Navbar";
 import FactionBot from "./FactionBot";
 import botIcon from "../../assets/factionbot.png";
-// import bgImage from "../../assets/contact-bg.png"; 
+// import bgImage from "../../assets/contact-bg.png";
 // import contactVideo from "../../assets/contact-video.mp4";
 import { motion } from "framer-motion";
 
@@ -33,9 +33,10 @@ const Contact = () => {
   return (
     <main
       className="min-h-screen w-full relative bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `url(${"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Gemini_Generated_Image_ojfjfaojfjfaojfj.png"})` }}
+      style={{
+        backgroundImage: `url(${"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Gemini_Generated_Image_ojfjfaojfjfaojfj.png"})`,
+      }}
     >
-
       <div className="relative z-10">
         <Navbar />
 
@@ -50,7 +51,7 @@ const Contact = () => {
           <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
             {/* LEFT — Animated Form */}
             <motion.div
-              className="w-full"
+              className="w-full order-2 md:order-1"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
@@ -119,7 +120,7 @@ const Contact = () => {
 
             {/* RIGHT — Video (fills the whole card, autoplay, muted, loop) */}
             <motion.div
-              className="relative flex items-center justify-center group"
+              className="relative flex items-center justify-center group order-1 md:order-2 mb-8 mt-2"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
@@ -134,7 +135,7 @@ const Contact = () => {
               {/* MIDDLE LAYER (soft card, slightly larger) */}
               <div
                 aria-hidden="true"
-                className="absolute rounded-2xl w-[100%] h-[92%] -bottom-8 -right-8 bg-violet-500/50 backdrop-blur-sm shadow-lg z-20 transform "
+                className="absolute rounded-2xl w-[92%] h-[92%] -bottom-8 -right-6 bg-violet-500/50 backdrop-blur-sm shadow-lg z-20 transform "
               />
 
               {/* FRONT (main video card) */}
@@ -145,7 +146,9 @@ const Contact = () => {
                   style={{ paddingTop: "56.25%" }}
                 >
                   <video
-                    src={"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Faction%20Video.mp4"}
+                    src={
+                      "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Faction%20Video.mp4"
+                    }
                     className="absolute inset-0 w-full h-full object-cover"
                     autoPlay
                     muted

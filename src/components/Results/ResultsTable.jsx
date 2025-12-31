@@ -1,10 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import ExamSwitch from "../../UI/ExamSwitch";
 import { resultsData } from "./data/resultsData";
 
-const ResultsTable = () => {
-  const [activeExam, setActiveExam] = useState("NEET");
-
+const ResultsTable = ({ activeExam, setActiveExam }) => {
   return (
     <section className="container mx-auto px-6 py-10">
       <h2 className="text-3xl md:text-4xl font-bold text-center mb-10">
@@ -14,7 +12,7 @@ const ResultsTable = () => {
       <ExamSwitch active={activeExam} setActive={setActiveExam} />
 
       <div className="overflow-x-auto">
-        <table className="w-full border border-white/10 rounded-xl overflow-hidden">
+        <table className="w-full border borderwhite/10 rounded-xl overflow-hidden">
           <thead className="bg-white/10">
             <tr>
               <th className="p-4 text-left">Student Name</th>
@@ -26,7 +24,7 @@ const ResultsTable = () => {
           <tbody>
             {resultsData[activeExam].map((row, index) => (
               <tr
-                key={index}
+                key={`${activeExam}-${index}`}
                 className="border-t border-white/10 hover:bg-white/5"
               >
                 <td className="p-4">{row.name}</td>

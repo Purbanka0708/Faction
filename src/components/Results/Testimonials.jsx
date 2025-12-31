@@ -20,12 +20,16 @@ const UserIcon = () => (
   </svg>
 );
 
-const Testimonials = () => {
+const Testimonials = ({ activeExam }) => {
   const [activeIndex, setActiveIndex] = useState(0);
   const containerRef = useRef(null);
   const cardsRef = useRef([]);
   const isAnimating = useRef(false);
   const timerRef = useRef(null);
+  const filteredTestimonials =
+    activeExam === "NEET"
+      ? testimonialsData.filter((t) => t.exam === "NEET")
+      : testimonialsData.filter((t) => t.exam !== "NEET");
 
   const { contextSafe } = useGSAP({ scope: containerRef });
 
@@ -34,7 +38,14 @@ const Testimonials = () => {
       case 0:
         return { x: 0, y: 0, rotation: 0, scale: 1, zIndex: 10, opacity: 1 };
       case 1:
-        return { x: 25, y: -8, rotation: 4, scale: 0.96, zIndex: 9, opacity: 1 };
+        return {
+          x: 25,
+          y: -8,
+          rotation: 4,
+          scale: 0.96,
+          zIndex: 9,
+          opacity: 1,
+        };
       case 2:
         return {
           x: -20,
@@ -53,7 +64,7 @@ const Testimonials = () => {
     if (isAnimating.current) return;
     isAnimating.current = true;
 
-    const total = testimonialsData.length;
+    const total = filteredTestimonials.length;
     const nextIndex = (activeIndex + 1) % total;
     const currentCard = cardsRef.current[activeIndex];
 
@@ -95,9 +106,26 @@ const Testimonials = () => {
     return stopAutoPlay;
   }, [handleNext]);
 
+  useEffect(() => {
+    setActiveIndex(0);
+    cardsRef.current = [];
+  }, [activeExam]);
+
+  useEffect(() => {
+  gsap.set(cardsRef.current, { opacity: 0, scale: 0.9 });
+  gsap.to(cardsRef.current, {
+    opacity: 1,
+    scale: 1,
+    stagger: 0.05,
+    duration: 0.4,
+    ease: "power2.out",
+  });
+}, [activeExam]);
+
+
   useGSAP(() => {
-    testimonialsData.forEach((_, i) => {
-      const total = testimonialsData.length;
+    filteredTestimonials.forEach((_, i) => {
+      const total = filteredTestimonials.length;
       let distance = (i - activeIndex + total) % total;
       if (distance > 2) distance = 3;
 
@@ -143,7 +171,7 @@ const Testimonials = () => {
           mb-14
         "
       >
-        {testimonialsData.map((t, i) => (
+        {filteredTestimonials.map((t, i) => (
           <div
             key={i}
             ref={(el) => (cardsRef.current[i] = el)}
@@ -168,9 +196,7 @@ const Testimonials = () => {
                   <UserIcon />
                 </div>
                 <div>
-                  <h4 className="text-white font-semibold text-sm">
-                    {t.name}
-                  </h4>
+                  <h4 className="text-white font-semibold text-sm">{t.name}</h4>
                   <p className="text-xs text-purple-300">
                     {t.exam}
                     {t.college !== "—" && ` • ${t.college}`}
