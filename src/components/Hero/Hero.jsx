@@ -58,9 +58,13 @@ const Hero = () => {
               <span className="font-semibold text-slate-900">
                 Faction Education
               </span>
-              , academic strength, tech-driven learning, and mentorship unite to
-              empower students and bridge the Northeast’s education gap in JEE,
-              NEET, and foundational studies.
+              , we don’t just prepare students for exams;
+we build clarity, discipline, and thinking ability.
+
+With strong academics, tech-driven learning, and personal mentorship,
+we help students from the Northeast compete confidently in JEE, NEET, and foundational programs — without needing to leave home.
+
+Start early. Think deeply. Build for life.
             </motion.p>
 
             <motion.div
@@ -88,7 +92,7 @@ const Hero = () => {
             initial={{ x: 50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4, ease: "easeInOut" }}
-            src={"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/hero.png"}
+            src={"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/hero%20banner.png"}
             alt="Student preparing for NEET and IIT/JEE at Faction coaching"
             className="w-[400px] xl:w-[600px] relative z-10 drop-shadow"
           />

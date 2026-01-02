@@ -7,10 +7,10 @@ const ToppersSection = ({ activeExam, setActiveExam }) => {
   );
 
   return (
-    <section className="w-full py-24 bg-gradient-to-b from-[#2a0038] via-[#24002f] to-[#1a0022]">
+    <section className="w-full py-16 bg-gradient-to-b from-[#2a0038] via-[#24002f] to-[#1a0022]">
       
       {/* Heading */}
-      <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
+      <h2 className="text-3xl md:text-4xl font-bold text-center  text-white mb-12">
         Faction Hall of Fame
       </h2>
 
