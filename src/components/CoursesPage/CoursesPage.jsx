@@ -14,7 +14,7 @@ const CoursesPage = () => {
       {/* ROW 1 */}
       <section className="max-w-7xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-stretch">
-          <CoursesGrid data={coursesData.class_5_8} />
+          <CoursesGrid data={coursesData.class_5_7} />
           <CoursesGrid data={coursesData.foundation} />
         </div>
       </section>
@@ -23,7 +23,15 @@ const CoursesPage = () => {
       <section className="max-w-7xl mx-auto px-6 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-stretch">
           <CoursesGrid data={coursesData.neet} />
-          <CoursesGrid data={coursesData.jee} />
+          <CoursesGrid data={coursesData.jee_mains} />
+        </div>
+      </section>
+
+      {/* ROW 3 — NEW COURSES */}
+      <section className="max-w-7xl mx-auto px-6 py-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-24 items-stretch">
+          <CoursesGrid data={coursesData.jee_advanced} />
+          <CoursesGrid data={coursesData.olympiad} />
         </div>
       </section>
 

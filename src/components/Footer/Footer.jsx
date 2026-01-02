@@ -34,7 +34,7 @@ const Footer = () => {
               <ul className="space-y-2 text-lg text-slate-700">
                 <li>
                   <Link to="/courses" className="hover:text-[#A767FF] duration-200">
-                    Faction Juniors (Class 5–8)
+                    Faction Juniors (Class 5–7)
                   </Link>
                 </li>
                 <li>
