@@ -92,7 +92,7 @@ Start early. Think deeply. Build for life.
             initial={{ x: 50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4, ease: "easeInOut" }}
-            src={"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/hero%20banner.png"}
+            src={"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/HeroPng-Photoroom.png"}
             alt="Student preparing for NEET and IIT/JEE at Faction coaching"
             className="w-[400px] xl:w-[600px] relative z-10 drop-shadow"
           />
@@ -103,7 +103,7 @@ Start early. Think deeply. Build for life.
             transition={{ duration: 0.6, delay: 0.2, ease: "easeInOut" }}
             src={Blob}
             alt="Decorative background shape"
-            className="absolute -bottom-32 w-[800px] md:w-[1500px] z-[1] hidden md:block opacity-80"
+            className="absolute -bottom-[170px] w-[800px] md:w-[1500px] z-[1] hidden md:block opacity-80"
           />
         </div>
       </div>
