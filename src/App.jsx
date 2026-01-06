@@ -68,7 +68,7 @@ const Home = () => {
   return (
     <main className="overflow-x-hidden bg-[#FEFCED] text-[#1e1e1e]">
       <Hero />
-      <Courses />
+      {/* <Courses /> */}
       <DroppingCards items={items} />
       <Banner />
       <Subscribe />

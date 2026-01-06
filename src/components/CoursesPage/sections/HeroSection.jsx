@@ -36,16 +36,17 @@ const HeroSection = () => {
         </div>
 
         {/* RIGHT IMAGE — PERFECT FIT */}
-        <div className="hidden md:block ">
-          <div className="relative h-72 overflow-hidden bg-[#2D0B34]">
-            <img
-              src={"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Courses%20Hero.jpeg"}
-              alt="Courses"
-              className="absolute inset-0 w-full h-full object-cover rounded-2xl"
-              loading="lazy"
-            />
-          </div>
-        </div>
+        <div className="hidden md:block">
+  <div className="relative aspect-video rounded-2xl overflow-hidden bg-[#2D0B34]">
+    <img
+      src="https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Black%20and%20White%20Modern%20Meet%20Our%20Team%20Instagram%20Post%20%281600%20x%20900%20px%29.png"
+      alt="Courses"
+      className="absolute inset-0 w-full h-full object-contain"
+      loading="lazy"
+    />
+  </div>
+</div>
+
 
       </div>
     </section>

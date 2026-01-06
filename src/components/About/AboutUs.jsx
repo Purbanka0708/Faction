@@ -7,11 +7,7 @@ import Navbar from "../Navbar/Navbar";
 import FactionBot from "../Contact/FactionBot";
 import botIcon from "../../assets/factionbot.png";
 
-/* Images */
-// import founderImg from "../../assets/about/founder.jpg";
-// import coFounderImg from "../../assets/about/cofounder.jpg";
-
-/* ---------------- FLOATING BUBBLES (GLOBAL) ---------------- */
+/* ---------------- FLOATING BUBBLES ---------------- */
 
 const bubbleConfigs = [
   { left: "6%", top: "12%", size: 110, delay: 0 },
@@ -44,13 +40,11 @@ const fadeRight = {
 
 const stagger = {
   visible: {
-    transition: {
-      staggerChildren: 0.18,
-    },
+    transition: { staggerChildren: 0.18 },
   },
 };
 
-/* ---------------- REUSABLE CARD ---------------- */
+/* ---------------- INFO CARD ---------------- */
 
 const InfoCard = ({
   image,
@@ -78,30 +72,31 @@ const InfoCard = ({
         cursor-${clickable ? "pointer" : "default"}
       `}
     >
-      {/* IMAGE */}
+      {/* IMAGE — NOW PERFECTLY CIRCULAR */}
       {image && (
         <div className="md:w-1/2 flex items-center justify-center p-10">
           <motion.div
             initial={{ scale: 1 }}
-            whileHover={{ scale: 1.04 }}
+            whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.5 }}
             className="
-              relative rounded-3xl overflow-hidden
+              relative w-64 h-64 md:w-72 md:h-72
+              rounded-full overflow-hidden
               shadow-[0_30px_80px_rgba(0,0,0,0.6)]
-              ring-1 ring-white/10
+              ring-1 ring-white/15
             "
           >
             <img
               src={image}
               alt={title}
-              className="w-full h-[420px] object-cover"
+              className="w-full h-full scale-[1.2] object-cover rounded-full"
             />
             <div className="absolute inset-0 bg-gradient-to-tr from-[#FBDD57]/10 via-transparent to-transparent" />
           </motion.div>
         </div>
       )}
 
-      {/* TEXT */}
+      {/* TEXT — UNCHANGED */}
       <div className="flex-1 px-8 py-12 md:px-14 md:py-16">
         <h3 className="text-2xl md:text-3xl font-semibold mb-6 tracking-wide">
           {title}
@@ -131,11 +126,10 @@ const AboutUs = () => {
     <main className="min-h-screen relative overflow-hidden bg-gradient-to-b from-[#2a0638] via-[#1b0627] to-[#12001a] text-white">
       <Navbar />
 
-      {/* FLOATING BUBBLES WITH ICONS */}
+      {/* FLOATING BUBBLES */}
       {bubbleConfigs.map((b, i) => (
         <motion.div
           key={i}
-          initial={{ opacity: 0 }}
           animate={{
             y: ["0%", i % 2 === 0 ? "-6%" : "6%", "0%"],
             opacity: [0.3, 0.7, 0.4],
@@ -158,14 +152,8 @@ const AboutUs = () => {
             backdropFilter: "blur(8px)",
             zIndex: 5,
           }}
-          aria-hidden
         >
-          <span
-            style={{
-              filter: "drop-shadow(0 2px 6px rgba(0,0,0,0.35))",
-              fontSize: Math.max(16, b.size / 4),
-            }}
-          >
+          <span style={{ fontSize: Math.max(16, b.size / 4) }}>
             {["📚", "⚗️", "🧮", "🔬", "✨", "🧩"][i % 6]}
           </span>
         </motion.div>
@@ -177,34 +165,40 @@ const AboutUs = () => {
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
-        className="max-w-5xl mx-auto px-6 py-28 space-y-32 relative z-10"
+        className="max-w-5xl mx-auto px-6 py-10 space-y-20 relative z-10"
       >
         <motion.div variants={fadeLeft} className="text-center max-w-3xl mx-auto">
-          <h1 className="relative inline-block text-4xl md:text-6xl font-bold mb-8">
+          <h1 className="relative inline-block text-4xl md:text-6xl font-bold">
             Building Thinkers,
             <span className="text-[#FBDD57]"> Not Just Toppers</span>
             <span className="absolute -bottom-4 left-1/2 -translate-x-1/2 w-40 h-1 rounded-full bg-[#FBDD57]/60" />
           </h1>
-
-          <p className="text-gray-300 text-base md:text-lg leading-relaxed">
-            Faction is a student-driven learning ecosystem focused on depth,
-            discipline, and long-term mastery — not shortcuts.
-          </p>
         </motion.div>
 
         <InfoCard
           title="What is Faction?"
-          description="Founded in 2018, Faction is built around practice-first learning, structured thinking, and ethical mentorship. We prioritize conceptual clarity and real-world problem solving over rote memorization."
+          description="If you’re here, you already know something.
+That real progress doesn’t come from shortcuts, tricks, or motivation videos.
+
+We built Faction for students who want to understand things deeply, think clearly under pressure, and grow steadily, even when no one is watching.
+
+Here, we won’t rush you through formulas or spoon-feed answers.
+I’ll help you build fundamentals so strong that exams like JEE and NEET stop feeling unpredictable.
+
+Faction is not about topping one test.
+It’s about becoming the kind of student who can handle any test.
+
+If you’re ready to be consistent, disciplined, and honest with your effort this place will feel like home."
         />
 
         <InfoCard
-          image={"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/founder.jpg"}
+          image="https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Niladri.png"
           title="About the Founder"
           description="Dr. Niladri Deb is a highly respected biology mentor known for his calm, logic-driven teaching style and deep conceptual approach. Since 2018, his mentorship has guided students to top medical institutions including AIIMS, KGMU, RIMS, CMC, and other leading colleges. At Faction, his focus lies in building disciplined thinking, consistency, and first-principle understanding — shaping learners for sustained academic success and personal growth."
         />
 
         <InfoCard
-          image={"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/cofounder.jpg"}
+          image="https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Soumya.png"
           title="About the Co-Founder"
           reverse
           description="An IIT Kharagpur alumnus, Soumyadeep Nandi brings together academic rigor and modern educational design.Having cleared JEE Advanced, KVPY, and WBJEE (AIR 49), he emphasizes structured problem solving, clarity of fundamentals, and intellectual independence. At Faction, he leads technology-driven learning systems that combine pedagogy, analytics, and scalable mentorship — without compromising depth."
@@ -218,7 +212,7 @@ const AboutUs = () => {
         />
       </motion.section>
 
-      {/* FACTION BOT */}
+      {/* BOT */}
       <div className="fixed bottom-6 right-6 z-50 flex items-end">
         <div className="hidden md:block">
           <FactionBot open={botOpen} onClose={() => setBotOpen(false)} />

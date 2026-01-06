@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const bgStyle = {
-  backgroundImage: `url(${"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/bg.png"})`,
+  backgroundImage: `url(${"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/ChatGPT%20Image%20Jan%205%2C%202026%2C%2006_27_23%20PM.png"})`,
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
   backgroundPosition: "center",

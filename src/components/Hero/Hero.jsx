@@ -56,15 +56,17 @@ const Hero = () => {
             >
               At{" "}
               <span className="font-semibold text-slate-900">
-                Faction Education
+                Faction Education,
               </span>
-              , we don’t just prepare students for exams;
-we build clarity, discipline, and thinking ability.
+              <br/>
+               We don’t just prepare students for exams,<br/>
 
+We build clarity, discipline, and thinking ability.
+<br/>
 With strong academics, tech-driven learning, and personal mentorship,
-we help students from the Northeast compete confidently in JEE, NEET, and foundational programs — without needing to leave home.
+we help students from the Northeast compete confidently in JEE, NEET, and foundational programs without needing to leave home.
 
-Start early. Think deeply. Build for life.
+<p className="font-bold">Start early. Think deeply. Build for life.</p>
             </motion.p>
 
             <motion.div
@@ -87,14 +89,15 @@ Start early. Think deeply. Build for life.
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center ">
           <motion.img
             initial={{ x: 50, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4, ease: "easeInOut" }}
             src={"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/HeroPng-Photoroom.png"}
             alt="Student preparing for NEET and IIT/JEE at Faction coaching"
-            className="w-[400px] xl:w-[600px] relative z-10 drop-shadow"
+           className="bottom-[70px] w-[700px] md:w-[800px] xl:w-[1000px] absolute z-10 drop-shadow-2xl"
+
           />
 
           <motion.img

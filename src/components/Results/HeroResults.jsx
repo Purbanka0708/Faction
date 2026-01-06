@@ -18,8 +18,7 @@ const HeroResults = () => {
         transition={{ delay: 0.2 }}
         className="max-w-3xl mx-auto text-[#e9e4de]/80 text-base md:text-lg"
       >
-        From NEET to JEE Advanced, our students consistently secure top ranks
-        and admissions into India’s most prestigious institutions.
+        Year after year, our Factionites have proven the path to top ranks across India’s leading institutions. Now it’s your turn to walk it.
       </motion.p>
     </section>
   );

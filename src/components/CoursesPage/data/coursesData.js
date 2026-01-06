@@ -13,7 +13,7 @@ export const coursesData = {
             duration: "Academic Year",
             tag: "Class 5–7",
             image:
-              "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Science.jpg",
+              "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Science.png",
           },
         ],
       },
@@ -27,7 +27,7 @@ export const coursesData = {
             duration: "Academic Year",
             tag: "Class 5–7",
             image:
-              "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/mathematics.jpg",
+              "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Mathematics.png",
           },
         ],
       },
@@ -48,7 +48,7 @@ export const coursesData = {
             duration: "1 Year",
             tag: "Foundation",
             image:
-              "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Foundation%20Bio.jpg",
+              "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/NEET%20Foundation.png",
           },
         ],
       },
@@ -62,7 +62,7 @@ export const coursesData = {
             duration: "1 Year",
             tag: "Foundation",
             image:
-              "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Foundation%20Physics.jpg",
+              "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/JEE%20Foundation.png",
           },
         ],
       },
@@ -83,7 +83,7 @@ export const coursesData = {
             duration: "2 Years",
             tag: "NEET",
             image:
-              "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/NEET%20bio.jpg",
+              "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Biology.png",
           },
         ],
       },
@@ -97,7 +97,7 @@ export const coursesData = {
             duration: "2 Years",
             tag: "NEET",
             image:
-              "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/NEET%20Physics.jpg",
+              "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Physics.png",
           },
         ],
       },
@@ -118,7 +118,7 @@ export const coursesData = {
             duration: "2 Years",
             tag: "JEE",
             image:
-              "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/JEE%20Physics.jpg",
+              "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Physics.png",
           },
         ],
       },
@@ -139,7 +139,7 @@ export const coursesData = {
             duration: "1–2 Years",
             tag: "JEE Advanced",
             image:
-              "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/JEE%20Physics.jpg",
+              "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Physics.png",
           },
         ],
       },
@@ -160,7 +160,7 @@ export const coursesData = {
           duration: "1 Year",
           tag: "Olympiad",
           image:
-            "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Foundation%20Physics.jpg",
+            "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Physics.png",
         },
       ],
     },
@@ -174,7 +174,7 @@ export const coursesData = {
           duration: "1 Year",
           tag: "Olympiad",
           image:
-            "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Foundation%20Bio.jpg",
+            "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Biology.png",
         },
       ],
     },
