@@ -1,64 +1,134 @@
 export const resultsData = {
   NEET: [
     {
+      name:"Mitadru Ghosh",
+      score:"528/ 720 • 2025",
+      college:"NEIGRIHMS",
+    },
+    {
+      name:"Rasmita Sarkar",
+      score:"509/ 720 • 2025",
+      college:"King George's Medical College",
+    },
+    {
+      name:"Souvik Datta",
+      score:"506/ 720 • 2025",
+      college:"Agartala Government Medical College",
+    },
+    {
+      name:"Abantika Das",
+      score:"2025",
+      college:"Calcutta National Medical College & Hospital",
+    },
+    {
+      name:"Madhurita Kar",
+      score:"2025",
+      college:"Regional Institute of Medical Sciences Manipur",
+    },
+    {
+      name:"Pushpita Tapadar",
+      score:"2025",
+      college:"Agartala Government Medical College",
+    },
+    {
+      name:"Karnajit",
+      score:"2025",
+      college:"Agartala Government Medical College",
+    },
+    {
+      name:"Arnisha Paul",
+      score:"2025",
+      college:"Agartala Government Medical College",
+    },
+    {
+      name:"Debanjali Das",
+      score:"2025",
+      college:"Agartala Government Medical College",
+    },
+    {
+      name:"Jecika Roy",
+      score:"2025",
+      college:"Agartala Government Medical College",
+    },
+    {
+      name:"Julia Mog",
+      score:"2025",
+      college:"Agartala Government Medical College",
+    },
+    {
+      name:"Sankhadeep Chakraborty",
+      score:"2025",
+      college:"Agartala Government Medical College",
+    },
+    {
+      name:"Anirban",
+      score:"2025",
+      college:"Agartala Government Medical College",
+    },
+    {
+      name: "Krishti Sarkar",
+      score: "690/ 720 • 2024",
+      college: "Lady Hardinge Medical College",
+    },
+    {
       name: "Krish Kumar Deb",
       score: "685 / 720 • 2024",
-      college: "Medical Aspirant",
+      college: "Nil Ratan Sarkar Medical College and Hospital",
     },
     {
       name: "Sourit Dey",
       score: "646 / 720 • 2024",
-      college: "Medical Aspirant",
+      college: "Regional Institute of Medical Sciences Manipur",
     },
     {
       name: "Zenith Paul",
       score: "627 / 720 • 2024",
-      college: "Medical Aspirant",
+      college: "Regional Institute of Medical Sciences Manipur",
     },
     {
       name: "Binoy Krishna",
       score: "625 / 720 • 2024",
-      college: "Medical Aspirant",
+      college: "Agartala Government Medical College",
     },
     {
       name: "Snehalika Das",
       score: "615 / 720 • 2024",
-      college: "Medical Aspirant",
+      college: "Agartala Government Medical College",
     },
     {
       name: "Shristi Paul",
       score: "605 / 720 • 2024",
-      college: "Medical Aspirant",
+      college: "Agartala Government Medical College",
     },
     {
       name: "Saptaparna Biswas",
       score: "601 / 720 • 2024",
-      college: "Medical Aspirant",
+      college: "Goa Medical College",
     },
     {
       name: "Sutapa Deb",
       score: "589 / 720 • 2024",
-      college: "Medical Aspirant",
+      college: "Tripura Medical College",
     },
     {
       name: "Nisa Aktar",
       score: "582 / 720 • 2024",
-      college: "Medical Aspirant",
+      college: "Regional Institute of Medical Sciences Manipur",
     },
     {
       name: "Niloy Das",
       score: "579 / 720 • 2024",
-      college: "Medical Aspirant",
+      college: "Medico",
     },
     {
       name: "Nirmita Das",
       score: "554 / 720 • 2024",
-      college: "Medical Aspirant",
+      college: "Agartala Government Medical College",
     },
     {
       name: "Poushali Das Choudhury",
       score: "521 / 720 • 2024",
-      college: "Medical Aspirant",
+      college: "Agartala Government Medical College",
     },
   ],
 
@@ -77,6 +147,16 @@ export const resultsData = {
       name: "Shreelekha",
       score: "IIT Madras • 2025",
       college: "IIT Madras",
+    },
+    {
+      name:"Debayan Sarkar",
+      score:"2025",
+      college:"IISER Kolkata",
+    },
+    {
+      name:"Poushali",
+      score:"2025",
+      college:"IISER Mohali",
     },
     {
       name: "Swasti Nath",

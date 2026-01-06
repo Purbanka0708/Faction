@@ -1,39 +1,104 @@
-// src/components/Results/data/ToppersData.js
+import { image } from "framer-motion/client";
 
-/* JEE Images */
-// import anirban from "../../../assets/toppers/jee/Anirban Deb.jpg";
-// import arkadeep from "../../../assets/toppers/jee/Arkadeep.jpg";
-// import ayushi from "../../../assets/toppers/jee/Ayushi Sarkar.jpg";
-// import ayushkar from "../../../assets/toppers/jee/Ayushkar Nath.jpg";
-// import saptarshi from "../../../assets/toppers/jee/Saptarshi Deb.jpg";
-// import Shreelekha from "../../../assets/toppers/jee/Shreelekha.jpg";
-// import Shubhranil from "../../../assets/toppers/jee/Shubhranil.jpg";
-// import swasti from "../../../assets/toppers/jee/Swasti Nath.jpg";
-// import udit from "../../../assets/toppers/jee/Uditangshu Chakraborty.jpg";
-// import utsab from "../../../assets/toppers/jee/Utsab Das.jpg";
-
-// /* NEET Images */
-// import binoy from "../../../assets/toppers/neet/Binoy Krishna.jpg";
-// import krish from "../../../assets/toppers/neet/Krish Kumar Deb.jpg";
-// import niloy from "../../../assets/toppers/neet/Niloy Das.jpg";
-// import nirmita from "../../../assets/toppers/neet/Nirmita Das.jpg";
-// import nisa from "../../../assets/toppers/neet/Nisa Aktar.jpg";
-// import poushali from "../../../assets/toppers/neet/Poushali Das Choudhury.jpg";
-// import saptaparna from "../../../assets/toppers/neet/Saptaparna Biswas.jpg";
-// import shristi from "../../../assets/toppers/neet/Shristi Paul.jpg";
-// import snehalika from "../../../assets/toppers/neet/Snehalika Das.jpg";
-// import sourit from "../../../assets/toppers/neet/Sourit Dey.jpg";
-// import sutapa from "../../../assets/toppers/neet/Sutapa Deb.jpg";
-// import zenith from "../../../assets/toppers/neet/Zenith Paul.jpg";
 
 export const toppersData = [
   /* ================= NEET TOPPERS ================= */
-
+  {
+    name:"Mitadru Ghosh",
+    exam:"NEET",
+    rank:"528/720 • 2025",
+    college:"North Eastern Indira Gandhi Regional Institute of health and Medical Sciences",
+    image:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Mitadru%20Ghosh.png",
+  },
+  {
+    name:"Rasmita Sarkar",
+    exam:"NEET",
+    rank:"509/720 • 2025",
+    college:"King George's Medical College",
+    image:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Rasmita%20Sarkar.png", 
+  },
+  {
+    name:"Souvik Datta",
+    exam:"NEET",
+    rank:"506/720 • 2025",
+    college:"Agartala Government Medical College",
+    image:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Souvik%20Datta.png",
+  },
+  {
+    name:"Abantika Das",
+    exam:"NEET",
+    rank:"2025",
+    college:"Calcutta National Medical College & Hospital",
+    image:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Abantika%20Das%20CNMC.png",
+  },
+  {
+    name:"Madhurita Kar",
+    exam:"NEET",
+    rank:"2025",
+    college:"Regional Institute of Medical Sciences Manipur",
+    image:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Madhurita%20kar%20Rims%20Manipur.png",
+  },
+  {
+    name:"Pushpita Tapadar",
+    exam:"NEET",
+    rank:"2025",
+    college:"Agartala Government Medical College",
+    image:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Pushpita%20Tapadar%20AGMC.png",
+  },
+  {
+    name:"Karnajit",
+    exam:"NEET",
+    rank:"2025",
+    college:"Agartala Government Medical College",
+    image:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Karnajit%20AGMC.png",
+  },
+  {
+    name:"Arnisha Paul",
+    exam:"NEET",
+    rank:"2025",
+    college:"Agartala Government Medical College",
+    image:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Arnisha%20Paul%20Agmc.png",
+  },
+  {
+    name:"Debanjali Das",
+    exam:"NEET",
+    rank:"2025",
+    college:"Agartala Government Medical College",
+    image:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Debanjali%20Das%20Agmc.png",
+  },
+  {
+    name:"Jecika Roy",
+    exam:"NEET",
+    rank:"2025",
+    college:"Agartala Government Medical College",
+    image:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Jecika%20Roy%20Agmc.png",
+  },
+  {
+    name:"Julia Mog",
+    exam:"NEET",
+    rank:"2025",
+    college:"Agartala Government Medical College",
+    image:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Julia%20Mog%20Agmc.png",
+  },
+  {
+    name:"Sankhadeep Chakraborty",
+    exam:"NEET",
+    rank:"2025",
+    college:"Agartala Government Medical College",
+    image:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Sankhadeep%20Chakraborty%20Agmc.png",
+  },
+  {
+    name:"Anirban",
+    exam:"NEET",
+    rank:"2025",
+    college:"Agartala Government Medical College",
+    image:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Anirban%20Agmc.png",
+  },
   {
     name:"Krishti Sarkar",
     exam:"NEET",
-    score:"690/720 • 2024",
-    college:"LHMC",
+    rank:"690/720 • 2024",
+    college:"Lady Hardinge Medical College",
     image:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Krishti%20Sarkar.png",
   },
 
@@ -41,42 +106,42 @@ export const toppersData = [
     name: "Krish Kumar Deb",
     exam: "NEET",
     rank: "685 / 720 • 2024",
-    college: "Nil RS Kolkata",
+    college: "Nil Ratan Sarkar Medical College and Hospital",
     image: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Krish%20Kumar%20Deb.jpg",
   },
   {
     name: "Sourit Dey",
     exam: "NEET",
     rank: "646 / 720 • 2024",
-    college: "Rims Manipur",
+    college: "Regional Institute of Medical Sciences Manipur",
     image: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Sourit%20Dey.jpg",
   },
   {
     name: "Zenith Paul",
     exam: "NEET",
     rank: "627 / 720 • 2024",
-    college: "Rims Manipur",
+    college: "Regional Institute of Medical Sciences Manipur",
     image: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Zenith%20Paul.jpg",
   },
   {
     name: "Binoy Krishna",
     exam: "NEET",
     rank: "625 / 720 • 2024",
-    college: "AGMC",
+    college: "Agartala Government Medical College",
     image: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Binoy%20Krishna.jpg",
   },
   {
     name: "Snehalika Das",
     exam: "NEET",
     rank: "615 / 720 • 2024",
-    college: "AGMC",
+    college: "Agartala Government Medical College",
     image: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Snehalika%20Das.jpg",
   },
   {
     name: "Shristi Paul",
     exam: "NEET",
     rank: "605 / 720 • 2024",
-    college: "AGMC",
+    college: "Agartala Government Medical College",
     image: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Shristi%20Paul.jpg",
   },
   {
@@ -97,7 +162,7 @@ export const toppersData = [
     name: "Nisa Aktar",
     exam: "NEET",
     rank: "582 / 720 • 2024",
-    college: "RIMS Manipur",
+    college: "Regional Institute of Medical Sciences Manipur",
     image: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Nisa%20Aktar.jpg",
   },
   {
@@ -111,14 +176,14 @@ export const toppersData = [
     name: "Nirmita Das",
     exam: "NEET",
     rank: "554 / 720 • 2024",
-    college: "AGMC",
+    college: "Agartala Government Medical College",
     image: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Nirmita%20Das.jpg",
   },
   {
     name: "Poushali Das Choudhury",
     exam: "NEET",
     rank: "521 / 720 • 2024",
-    college: "AGMC",
+    college: "Agartala Government Medical College",
     image: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Poushali%20Das%20Choudhury.jpg",
   },
 
@@ -144,6 +209,20 @@ export const toppersData = [
     rank: "IIT Madras • 2025",
     college: "IIT Madras",
     image: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/jee.webp/Shreelekha.jpg",
+  },
+  {
+    name:"Debayan Sarkar",
+    exam:"JEE",
+    rank:"2025",
+    college:"IISER Kolkata",
+    image: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Debayan%20Sarkar%20IISER%20Kolkata.png",
+  },
+  {
+    name:"Poushali",
+    exam:"JEE",
+    rank:"2025",
+    college:"IISER Mohali",
+    image: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Poushali%20IISER%20Mohali.png",
   },
   {
     name: "Swasti Nath",

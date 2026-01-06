@@ -43,7 +43,7 @@ const Banner2 = () => {
           <motion.img
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            src={"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/banner.png"}
+            src={"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/banner%20%281%29.png"}
             alt="Students joining Faction community"
             className="w-[350px] md:max-w-[450px] object-cover drop-shadow"
           />
