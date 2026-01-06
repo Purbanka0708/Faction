@@ -136,7 +136,7 @@ export const toppersData = [
     exam: "JEE",
     rank: "IIT Gandhinagar • 2025",
     college: "IIT Gandhinagar",
-    image:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/jee.webp/Shubhranil.jpg",
+    image:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/jee.webp/Shubhranil.png",
   },
   {
     name: "Shreelekha",
