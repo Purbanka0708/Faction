@@ -41,7 +41,7 @@ Every concept and doubt was addressed with care, and the mentors provided both a
     stat: "Know what our Toppers say",
     title: "The NEET journey with Faction",
     description:
-      `The structured roadmap and constant mentorship helped me crack interviews I never thought I could. AZ bridges the gap colleges leave behind.`,
+      `The structured roadmap and constant mentorship helped me crack interviews I never thought I could. Faction bridges the gap colleges leave behind.`,
     name: "Krish Kumar Deb",
     company: "Nil Ratan Sarkar Medical College and Hospital (2024)",
     image: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Krish%20Kumar%20Deb.jpg",
