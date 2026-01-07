@@ -140,10 +140,10 @@ function HeroTestimonials() {
   if (!slide) return null;
 
   return (
-    <section className="w-full bg-[#FEFCED] py-16">
+    <section className="w-full bg-white py-16">
       <div className="max-w-6xl mx-auto px-4 md:px-6">
 
-        <div className="relative bg-[#FEFCED] p-6 md:p-12 min-h-[520px]">
+        <div className="relative bg-white p-6 md:p-12 min-h-[520px]">
           <AnimatePresence mode="wait">
             <motion.div
               key={index}

@@ -104,7 +104,7 @@ const DroppingCards = () => {
   );
 
   return (
-    <section className="bg-[#FEFCED] overflow-x-hidden">
+    <section className="bg-white overflow-x-hidden">
       <div
         ref={containerRef}
         className="relative max-w-6xl mx-auto px-6 pt-20 pb-32"

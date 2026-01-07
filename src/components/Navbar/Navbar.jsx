@@ -55,7 +55,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="relative z-50 bg-[#F8F4E8] shadow-sm">
+    <nav className="relative z-50 bg-white shadow-sm">
       <motion.div
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}

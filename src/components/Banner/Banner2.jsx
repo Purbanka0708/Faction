@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Banner2 = () => {
   return (
-    <section className="bg-[#FEFCED]">
+    <section className="bg-white">
       <div className="container py-14 md:py-24 grid grid-cols-1 md:grid-cols-2 gap-8 space-y-6 md:space-y-0">
         
         {/* LEFT CONTENT */}
