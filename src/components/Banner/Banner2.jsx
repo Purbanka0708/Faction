@@ -43,9 +43,9 @@ const Banner2 = () => {
           <motion.img
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            src={"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/banner%20%281%29.png"}
+            src={"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/ChatGPT%20Image%20Jan%207%2C%202026%2C%2004_13_06%20PM.png"}
             alt="Students joining Faction community"
-            className="w-[350px] md:max-w-[450px] object-cover drop-shadow"
+            className="w-[500px] md:max-w-[500px] object-cover drop-shadow"
           />
         </div>
 

@@ -53,6 +53,7 @@ const InfoCard = ({
   reverse = false,
   clickable = false,
   onClick,
+  compact = false, // ✅ NEW
 }) => {
   const motionVariant = reverse ? fadeRight : fadeLeft;
 
@@ -72,37 +73,47 @@ const InfoCard = ({
         cursor-${clickable ? "pointer" : "default"}
       `}
     >
-      {/* IMAGE — NOW PERFECTLY CIRCULAR */}
+      {/* IMAGE */}
       {image && (
         <div className="md:w-1/2 flex items-center justify-center p-10">
           <motion.div
-            initial={{ scale: 1 }}
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.5 }}
-            className="
-              relative w-64 h-64 md:w-72 md:h-72
-              rounded-full overflow-hidden
-              shadow-[0_30px_80px_rgba(0,0,0,0.6)]
-              ring-1 ring-white/15
-            "
+            className="relative w-64 h-64 md:w-72 md:h-72 rounded-full overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.6)] ring-1 ring-white/15"
           >
             <img
               src={image}
               alt={title}
               className="w-full h-full scale-[1.2] object-cover rounded-full"
             />
-            <div className="absolute inset-0 bg-gradient-to-tr from-[#FBDD57]/10 via-transparent to-transparent" />
           </motion.div>
         </div>
       )}
 
-      {/* TEXT — UNCHANGED */}
-      <div className="flex-1 px-8 py-12 md:px-14 md:py-16">
-        <h3 className="text-2xl md:text-3xl font-semibold mb-6 tracking-wide">
+      {/* TEXT */}
+      <div
+        className={`
+          flex-1
+          ${compact ? "px-8 py-8 md:px-10 md:py-10" : "px-8 py-12 md:px-14 md:py-16"}
+        `}
+      >
+        <h3
+          className={`
+            font-semibold tracking-wide mb-4
+            ${compact ? "text-xl md:text-2xl" : "text-2xl md:text-3xl"}
+          `}
+        >
           {title}
         </h3>
 
-        <p className="text-gray-300 leading-relaxed text-sm md:text-base whitespace-pre-line">
+        <p
+          className={`
+            text-gray-300 whitespace-pre-line
+            ${compact
+              ? "text-sm leading-relaxed"
+              : "text-sm md:text-base leading-relaxed"}
+          `}
+        >
           {description}
         </p>
 
@@ -115,6 +126,7 @@ const InfoCard = ({
     </motion.div>
   );
 };
+
 
 /* ---------------- PAGE ---------------- */
 
@@ -175,9 +187,11 @@ const AboutUs = () => {
           </h1>
         </motion.div>
 
+        {/* ✅ FITS SCREEN */}
         <InfoCard
-          title="What is Faction?"
-          description="If you’re here, you already know something.
+  compact
+  title="What is Faction?"
+  description={`If you’re here, you already know something.
 That real progress doesn’t come from shortcuts, tricks, or motivation videos.
 
 We built Faction for students who want to understand things deeply, think clearly under pressure, and grow steadily, even when no one is watching.
@@ -188,8 +202,9 @@ I’ll help you build fundamentals so strong that exams like JEE and NEET stop f
 Faction is not about topping one test.
 It’s about becoming the kind of student who can handle any test.
 
-If you’re ready to be consistent, disciplined, and honest with your effort this place will feel like home."
-        />
+If you’re ready to be consistent, disciplined, and honest with your effort this place will feel like home.`}
+/>
+
 
         <InfoCard
           image="https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Niladri.png"

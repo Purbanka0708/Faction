@@ -16,7 +16,7 @@ const ResultsTable = ({ activeExam, setActiveExam }) => {
           <thead className="bg-white/10">
             <tr>
               <th className="p-4 text-left">Student Name</th>
-              <th className="p-4 text-left">Score / Rank</th>
+              <th className="p-4 text-left">Year of Passing </th>
               <th className="p-4 text-left">College</th>
             </tr>
           </thead>

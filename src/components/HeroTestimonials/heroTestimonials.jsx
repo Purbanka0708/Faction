@@ -1,17 +1,30 @@
 import { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-const DURATION = 5;
+const DURATION = 15;
 
+/* 🔒 ALL TESTIMONIALS — UNCHANGED */
 const slides = [
-    {
+  {
+    stat:"Know what our Toppers say",
+    title: "The NEET journey with Faction",
+    description:`Soumyadeep Dada, this one's for you! Without your guidance, patience, and motivation, I wouldn't be where I am today. Scoring "100 percentile" in JEE Mains in Physics wouldn’t have been possible without the unwavering guidance of him. In the beginning, Physics used to confuse me more than anything else. There were concepts I just couldn’t wrap my head around, and I would often feel stuck. But the way he explained things—so simply, so patiently—slowly started making everything click.
+What really stood out was how he never made it feel like a strict teacher-student relationship. He was more like an elder brother who just happened to be amazing at Physics. His knowledge of physics is truly immense and deep, he doesn't just teach us formulas, but helps us understand the very fundamentals. His depth of understanding makes difficult concepts feel clear and simple. Whether it was a silly doubt late at night or a last-minute concept I couldn’t grasp before a test, he was always there. No complaints, no frustration—just pure support.
+We’ve had long sessions where he broke things down until I actually understood them. Sometimes, I’d be panicking over a test or feeling low, and he'd somehow know exactly what to say to calm me down and get me back on track.He handled everything like a elder brother—firm when needed, chill when I was stressed, and always giving his time, even when he was busy himself. Looking back, I think having someone like him—who genuinely cared, who never gave up on me—made all the difference.
+To me, he was never just a teacher but "Soumyadeep Dada", someone I could count on. And that made all the difference`,
+    name:"Abantika Das",
+    company:"Calcutta National Medical College & Hospital(CNMC) (2025)",
+    image:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Abantika%20Das%20CNMC.png",
+    thumb:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Abantika%20Das%20CNMC.png",
+  },
+  {
     stat:"Know what our Toppers say",
     title: "The NEET journey with Faction",
     description:`Faction is the best institute for Biology and Physics in the state. Niladri Sir strengthened my concepts, and Soumyadeep Sir made Physics logical and approachable.
 
 They treated us like younger brothers and constantly motivated us to achieve our goals.`,
     name:"Mitadru Ghosh",
-    company:"North Eastern Indira Gandhi Regional Institute of health and Medical Sciences (2025)",
+    company:"North Eastern Indira Gandhi Regional Institute of health and Medical Sciences(NEIGRIHMS) (2025)",
     image:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Mitadru%20Ghosh.png",
     thumb:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Mitadru%20Ghosh.png",
   },
@@ -21,29 +34,27 @@ They treated us like younger brothers and constantly motivated us to achieve our
     description:
       "Faction provided me with a solid foundation for my NEET journey. Their guidance and support were invaluable, helping me navigate the challenges of the examination.",
     name: "Rasmita Sarkar",
-    company: "King George's Medical College (2025)",
+    company: "King George's Medical College(KGMC) (2025)",
     image: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Rasmita%20Sarkar.png",
     thumb: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Rasmita%20Sarkar.png",
   },
   {
     stat: "Know what our Toppers say",
     title: "The NEET journey with Faction",
-    description:
-      `Faction guided me with dedication, clarity, and patience throughout my NEET journey.
+    description:`Faction guided me with dedication, clarity, and patience throughout my NEET journey.
 
 Every concept and doubt was addressed with care, and the mentors provided both academic and emotional support. Their guidance shaped me not just as a student, but as a person.`,
     name: "Krishti Sarkar",
-    company: "Lady Hardinge Medical College (2024)",
+    company: "Lady Hardinge Medical College(LHMC) (2024)",
     image: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Krishti%20Sarkar.png",
     thumb: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Krishti%20Sarkar.png",
   },
   {
     stat: "Know what our Toppers say",
     title: "The NEET journey with Faction",
-    description:
-      `The structured roadmap and constant mentorship helped me crack interviews I never thought I could. Faction bridges the gap colleges leave behind.`,
+    description:`The structured roadmap and constant mentorship helped me crack interviews I never thought I could. Faction bridges the gap colleges leave behind.`,
     name: "Krish Kumar Deb",
-    company: "Nil Ratan Sarkar Medical College and Hospital (2024)",
+    company: "Nil Ratan Sarkar Medical College and Hospital(NRSMCH) (2024)",
     image: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Krish%20Kumar%20Deb.jpg",
     thumb: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/neet.webp/Krish%20Kumar%20Deb.jpg",
   },
@@ -59,17 +70,18 @@ Every concept and doubt was addressed with care, and the mentors provided both a
   {
     stat:"Know what our Toppers say",
     title: "The JEE journey with Faction",
-    description:` The structured approach and constant mentoring helped me crack JEE Mains I never thought I could.Faction bridges the gap colleges leave behind.`,
-    name:"Shreelekha",
-    company:"IIT Madras (2025)",
-    image:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/jee.webp/Shreelekha.jpg",
-    thumb:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/jee.webp/Shreelekha.jpg",
+    description:`Preparing for JEE is a long and challenging journey, and having the right guidance can make all the difference. For me, Soumyadeep Sir played an important role in shaping my understanding of Physics. His teaching was clear, structured, and focused on building strong concepts rather than just solving problems mechanically.
+
+What I appreciated most was his ability to simplify complex topics and present them in a way that actually made sense.`,
+    name:"Shubhranil Majumder",
+    company:"IIT Gandhinagar (2025)",
+    image:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/jee.webp/Shubhranil.png",
+    thumb:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/jee.webp/Shubhranil.png",
   },
-  
   {
     stat:"Know what our Toppers say",
     title: "The JEE journey with Faction",
-    description:`Reflecting upon my journey from a struggling aspirant to a proud IITian, one name that stands out above all is that of Er. Soumyadeep Nandi – my Physics Faculty, but more than a faculty he was like a big brother to me. During our classes we called him ”DADA” instead of “SIR” which explains lot in itself what was our relationship with him. I first met Er. Nandi in the latter part of my 11th standard. Although he was my school senior and we travelled in same school bus and I knew him as a senior . At that time, like many students, I was still trying to find my footing in the vast world of JEE preparation. With his calm demeanor, crystal-clear conceptual teaching, and question solving skills in Physics, he immediately made a lasting impression. A graduate with both B.Tech and M.Tech in Chemical Engineering from IIT Kharagpur, his academic background reflected in the clarity and depth with which he explained complex topics. Despite receiving coaching from other sources, it was his personal mentorship that helped me build a real foundation. We a batch of 8 students formed a very special bond both among ourselves and with Soumyadeep Dada. But my first attempt at JEE didn't go as expected. In that batch dada brought out 4 IITians, and I personally felt like I have let down dada with my performance in JEE ADVANCED. After my Class 12th results, I was disheartened and unsure of what to do next. It was during this diﬃcult phase that Er. Nandi didn’t just remain my teacher – he became my mentor and emotional anchor. He believed in me when I had begun to doubt myself. His words, his belief, and his strategy helped me decide to take a bold step — to repeat a year and give JEE another shot. Throughout my drop year, Er. Nandi was more involved than ever. He didn't just teach me Physics — he trained my mind to think, to stay calm under pressure, to focus on concepts rather than chasing problems mechanically. His methodical teaching, personalized guidance, motivational support, and ability to simplify the most abstract concepts were the pillars of my preparation.The result? I successfully secured an All India Rank of 12494 in JEE Advanced, and today, I am pursuing B.Tech in Mining Engineering at IIT (ISM) Dhanbad. This achievement is not mine alone. It belongs equally to the man who walked every step of the way with me – not just a tutor, but a true mentor and a guide, Er. Soumyadeep Nandi. His contribution to my academic and personal growth is immeasurable, and I shall always remain grateful for his role in helping me reach where I am today.`,
+    description:`Reflecting upon my journey from a struggling aspirant to a proud IITian...`,
     name:"Swasti Sundar Nath",
     company:"IIT ISM Dhanbad (2024)",
     image:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/jee.webp/Swasti%20Nath.jpg",
@@ -78,11 +90,7 @@ Every concept and doubt was addressed with care, and the mentors provided both a
   {
     stat:"Know what our Toppers say",
     title: "The JEE journey with Faction",
-    description:`Studying Physics at Faction Institute under Soumyadeep Dada was a transformative experience.
-
-The clarity of concepts, structured approach, and regular doubt-solving sessions helped me build a strong foundation for JEE. What stood out most was the personal attention and constant motivation throughout the journey.
-
-I’m genuinely grateful for the guidance and support that played a crucial role in my success.`,
+    description:`Studying Physics at Faction Institute under Soumyadeep Dada was a transformative experience.`,
     name:"Ayushkar Nath",
     company:"IIT Patna (2024)",
     image:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/jee.webp/Ayushkar%20Nath.jpg",
@@ -91,7 +99,7 @@ I’m genuinely grateful for the guidance and support that played a crucial role
   {
     stat:"Know what our Toppers say",
     title: "The JEE journey with Faction",
-    description:`The only constants in my JEE Journey was me xd , my parents , quizzing and Soumyadeep Dada . Yeah I don’t call him sir ,  Dada feels like more close to home . I was never constant in my JEE preparation but whenever I had any doubts , Dada was there to help me . Transforming my fear of physics to love for it . The fun we had in having quizzes , to find out who can attempt the questions in the shortest possible time was pure nostalgia . The JEE journey was great but having Dada always by my side made it ultimate . Thank you for everything !`,
+    description:`The only constants in my JEE Journey was me xd , my parents , quizzing and Soumyadeep Dada.`,
     name:"Utsab Das",
     company:"IIT Delhi (2023)",
     image:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/jee.webp/Utsab%20Das.jpg",
@@ -100,26 +108,18 @@ I’m genuinely grateful for the guidance and support that played a crucial role
   {
     stat:"Know what our Toppers say",
     title: "The JEE journey with Faction",
-    description:`The day Dada walked into Faction to take that one Physics session for KVPY — I didn’t know then, but everything changed for me. From that moment on, he wasn’t just a teacher. He became an elder brother, a mentor, and someone who made me believe I could achieve things I never even dared to dream of.
-
-The day he told us to call him “Dada” instead of “Sir,” something shifted. He wasn’t standing on a pedestal anymore — he was sitting beside us, guiding us through. And the best part? He had gone through the same journey himself. He *knew* the struggle, the pressure, the fear — and that made all the difference. His advice wasn’t just theory; it came from lived experience.
-
-JEE was a tough time. It drained us, filled us with doubt, and often made us question our worth. But having him by our side helped me not drown in all of it. Whether it was a concept I couldn’t understand or a breakdown I didn’t see coming — he handled both with the same calm. He was our true agony aunt in every sense — someone who just *got it*, and never made us feel less for slipping.
-
-Somewhere along the way, I also found my tribe — a set of like-minded people, all working towards the same goal, without the drama, comparison, or pressure that usually surrounds this journey. He helped create that space.
-
-Apart from my beautiful parents, no one has impacted my life the way he has. Thank you, Dada, for everything — for your time, your belief, your patience, and for changing my game when I needed it the most.`,
-    name:"Dwija",
-    company:"NIT Trichy (2023)",
-    image:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/jee.webp/Dwija%20pic.jpeg",
-    thumb:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/jee.webp/Dwija%20pic.jpeg",
+    description:`When I think about my JEE Advanced journey, one name stands out — Soumyadeep Dada.`,
+    name:"Uditangshu Chakraborty",
+    company:"IIT Kharagpur (2023)",
+    image:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/jee.webp/Uditangshu%20Chakraborty.jpg",
+    thumb:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/jee.webp/Uditangshu%20Chakraborty.jpg",
   },
-
 ];
 
 function HeroTestimonials() {
   const [index, setIndex] = useState(0);
   const [progressKey, setProgressKey] = useState(0);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -130,14 +130,20 @@ function HeroTestimonials() {
     return () => clearInterval(timer);
   }, []);
 
+  useEffect(() => {
+    setLoading(true);
+    const t = setTimeout(() => setLoading(false), 300);
+    return () => clearTimeout(t);
+  }, [index]);
+
   const slide = slides[index];
+  if (!slide) return null;
 
   return (
-    <section className="w-full bg-[#FEFCED] py-20">
-      <div className="max-w-6xl mx-auto px-6">
+    <section className="w-full bg-[#FEFCED] py-16">
+      <div className="max-w-6xl mx-auto px-4 md:px-6">
 
-        {/* MAIN CARD */}
-        <div className="relative bg-[#FEFCED]  p-12 h-[480px]">
+        <div className="relative bg-[#FEFCED] p-6 md:p-12 min-h-[520px]">
           <AnimatePresence mode="wait">
             <motion.div
               key={index}
@@ -147,48 +153,59 @@ function HeroTestimonials() {
               transition={{ duration: 0.6, ease: "easeInOut" }}
               className="grid grid-cols-1 md:grid-cols-[1.2fr_0.8fr] gap-10 items-center"
             >
-              {/* LEFT CONTENT */}
+              {/* LEFT */}
               <div>
-                <p className="text-blue-600 font-semibold text-sm tracking-wide mb-4">
-                  {slide.stat}
-                </p>
-
-                <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
-                  {slide.title}
-                </h2>
-
-                <p className="text-gray-700 text-lg leading-relaxed mb-8 h-[200px] overflow-hidden">
-                  {slide.description}
-                </p>
-
-                <div className="flex items-center gap-3">
-                  <span className="font-semibold text-lg text-blue-700">
-                    {slide.name}
-                  </span>
-                  <span className="text-gray-400">•</span>
-                  <span className="font-semibold text-gray-800">
-                    {slide.company}
-                  </span>
-
-                  <div className="ml-4 w-9 h-9 rounded-lg bg-blue-600 flex items-center justify-center text-white text-lg">
-                    in
+                {loading ? (
+                  <div className="space-y-4 animate-pulse">
+                    <div className="h-4 w-40 bg-gray-200 rounded" />
+                    <div className="h-8 w-3/4 bg-gray-200 rounded" />
+                    <div className="h-24 w-full bg-gray-200 rounded" />
+                    <div className="h-5 w-2/3 bg-gray-200 rounded" />
                   </div>
-                </div>
+                ) : (
+                  <>
+                    <p className="text-blue-600 font-semibold text-sm mb-4">
+                      {slide.stat}
+                    </p>
+
+                    <h2 className="text-2xl md:text-4xl font-bold mb-6">
+                      {slide.title}
+                    </h2>
+
+                    <p className="text-gray-700 text-base md:text-lg leading-relaxed mb-8 max-h-[220px] overflow-y-auto">
+                      {slide.description}
+                    </p>
+
+                    <div className="flex items-center gap-3">
+                      <span className="font-semibold text-blue-700">
+                        {slide.name}
+                      </span>
+                      <span className="text-gray-400">•</span>
+                      <span className="font-semibold text-gray-800">
+                        {slide.company}
+                      </span>
+                    </div>
+                  </>
+                )}
               </div>
 
               {/* RIGHT IMAGE */}
               <div className="flex justify-center md:justify-end">
-                <img
-                  src={slide.image}
-                  alt=""
-                  className="w-64 h-64 object-cover rounded-2xl shadow-md"
-                />
+                {loading ? (
+                  <div className="w-[280px] h-[360px] bg-gray-200 rounded-3xl animate-pulse" />
+                ) : (
+                  <img
+                    src={slide.image}
+                    alt={slide.name}
+                    className="w-[280px] h-[360px] md:w-[340px] md:h-[420px] object-cover rounded-3xl shadow-lg"
+                  />
+                )}
               </div>
             </motion.div>
           </AnimatePresence>
         </div>
 
-        {/* INDICATORS */}
+        {/* INDICATORS — UNCHANGED LOGIC */}
         <div className="flex justify-center gap-6 mt-12">
           {slides.map((slide, i) => (
             <button

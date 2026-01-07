@@ -1,13 +1,13 @@
 import { useState } from "react";
 import CourseCard from "../components/CourseCard";
+import CourseCardSkeleton from "../components/CourseCardSkeleton";
 
-const CoursesGrid = ({ data }) => {
+const CoursesGrid = ({ data, loading }) => {
   const items = data.subjects || data.streams;
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
     <section className="w-full h-full flex flex-col">
-
       {/* Header */}
       <div className="mb-6">
         <h2 className="text-2xl font-bold text-[#2D0B34]">
@@ -18,7 +18,7 @@ const CoursesGrid = ({ data }) => {
         </p>
       </div>
 
-      {/* Tabs (NORMAL SCROLL — NOT STICKY) */}
+      {/* Tabs */}
       {items.length > 0 && (
         <div className="mb-6">
           <div className="flex gap-3 flex-wrap">
@@ -40,18 +40,22 @@ const CoursesGrid = ({ data }) => {
         </div>
       )}
 
-      {/* Courses Grid */}
+      {/* Courses Grid — DESIGN UNCHANGED */}
       <div className="flex-1">
-        {items[activeIndex].courses.map((course) => (
-          <CourseCard
-            key={course.id}
-            course={{
-              ...course,
-              tag: data.title,
-              mode: data.mode,
-            }}
-          />
-        ))}
+        {loading ? (
+          <CourseCardSkeleton />
+        ) : (
+          items[activeIndex].courses.map((course) => (
+            <CourseCard
+              key={course.id}
+              course={{
+                ...course,
+                tag: data.title,
+                mode: data.mode,
+              }}
+            />
+          ))
+        )}
       </div>
     </section>
   );

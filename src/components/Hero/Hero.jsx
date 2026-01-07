@@ -49,25 +49,33 @@ const Hero = () => {
             </motion.h1>
 
             <motion.p
-              variants={FadeUp(0.7)}
-              initial="initial"
-              animate="animate"
-              className="text-sm md:text-base text-slate-700"
-            >
-              At{" "}
-              <span className="font-semibold text-slate-900">
-                Faction Education,
-              </span>
-              <br/>
-               We don’t just prepare students for exams,<br/>
+  variants={FadeUp(0.7)}
+  initial="initial"
+  animate="animate"
+  className="text-sm md:text-base text-slate-700 space-y-4"
+>
+  <p>
+    At{" "}
+    <span className="font-semibold text-slate-900">
+      Faction Education,
+    </span>
+    <br />
+    We don’t just prepare students for exams,
+    <br />
+    We build clarity, discipline, and thinking ability.
+  </p>
 
-We build clarity, discipline, and thinking ability.
-<br/>
-With strong academics, tech-driven learning, and personal mentorship,
-we help students from the Northeast compete confidently in JEE, NEET, and foundational programs without needing to leave home.
+  <p>
+    With strong academics, tech-driven learning, and personal mentorship,
+    we help students from the Northeast compete confidently in JEE, NEET,
+    and foundational programs without needing to leave home.
+  </p>
 
-<p className="font-bold">Start early. Think deeply. Build for life.</p>
-            </motion.p>
+  <p className="font-bold text-slate-900">
+    Start early. Think deeply. Build for life.
+  </p>
+</motion.p>
+
 
             <motion.div
               variants={FadeUp(0.8)}

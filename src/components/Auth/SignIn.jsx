@@ -39,7 +39,7 @@ const SignIn = () => {
         
         <div className="hidden md:flex items-center justify-center bg-gradient-to-br from-[#A767FF]/10 to-[#F0D200]/10 p-8">
           <div className="text-center px-6">
-            <img src={"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/hero.png"} alt="Faction" className="w-48 mx-auto drop-shadow" />
+            <img src={"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/ChatGPT%20Image%20Jan%207%2C%202026%2C%2004_13_06%20PM.png"} alt="Faction" className="w-auto mx-auto drop-shadow" />
             <h3 className="mt-6 text-2xl font-semibold text-[black]">Welcome back to Faction</h3>
             <p className="mt-2 text-slate-600">Sign in to continue your learning journey</p>
           </div>
