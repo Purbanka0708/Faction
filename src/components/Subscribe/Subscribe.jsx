@@ -13,7 +13,7 @@ const bgStyle = {
 
 const Subscribe = () => {
   return (
-    <section className="bg-[#F8F4E8]">
+    <section className="bg-[#FEFCED]">
       <motion.div
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}

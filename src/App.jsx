@@ -12,6 +12,7 @@ import Banner from "./components/Banner/Banner.jsx";
 import Subscribe from "./components/Subscribe/Subscribe.jsx";
 import Banner2 from "./components/Banner/Banner2.jsx";
 import Footer from "./components/Footer/Footer.jsx";
+import HeroTestimonials from "./components/HeroTestimonials/heroTestimonials.jsx";
 
 
 
@@ -69,6 +70,7 @@ const Home = () => {
     <main className="overflow-x-hidden bg-[#FEFCED] text-[#1e1e1e]">
       <Hero />
       {/* <Courses /> */}
+      <HeroTestimonials />
       <DroppingCards items={items} />
       <Banner />
       <Subscribe />

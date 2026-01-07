@@ -199,7 +199,7 @@ export const toppersData = [
   {
     name: "Shubhranil",
     exam: "JEE",
-    rank: "IIT Gandhinagar • 2025",
+    rank: "IIT Gandhinagar • 2023",
     college: "IIT Gandhinagar",
     image:"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/jee.webp/Shubhranil.png",
   },
