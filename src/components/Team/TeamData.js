@@ -14,16 +14,16 @@ const TeamData = [
   // Educators
   { id: 1, name: "Dr. Niladri Deb", role: "Faction Biology Educator", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/founder.jpg", group: "educators" },
   { id: 2, name: "Er. Soumyadeep Nandi", role: "Faction Physics Educator", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/cofounder.jpg", group: "educators" },
-  { id: 3, name: "Trisha Saha", role: "Faction Juniors Mathematics Educator", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Trisha.png", group: "educators" },
+  { id: 3, name: "Trisha Saha", role: "Faction Juniors Mathematics Educator", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Trisha%20%281%29.png", group: "educators" },
   { id: 4, name: "Arghyadeep Majumder", role: "Faction Juniors Science Educator", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Arghyadeep-pic.JPG", group: "educators" },
 
   // Operations
   { id: 5, name: "Swarupa Aich", role: "Growth Team lead", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Swarupa%20Aich.jpg", group: "operations" },
-  { id: 6, name: "Abhishek Dey", role: "Operations Coordinator", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Abhishek-pic.jpg", group: "operations" },
-  { id: 7, name: "Suvam Das", role: "Operations Coordinator", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Suvam-pic.jpg", group: "operations" },
-  { id: 8, name: "Amit Choudhury", role: "Test Coordinator", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Amit-pic.jpg", group: "operations" },
-  { id: 9, name: "Tuli Mukherjee", role: "Academic Content Associate", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Tuli-pic.jpg", group: "operations" },
-  { id: 10, name: "Zakir", role: "Facility Support Staff", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Zakir-pic.jpg", group: "operations" },
+  { id: 6, name: "Abhishek Dey", role: "Operations Coordinator", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Abhishek-pic%20%281%29.jpg", group: "operations" },
+  { id: 7, name: "Suvam Das", role: "Operations Coordinator", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Suvam-pic%20%281%29.jpg", group: "operations" },
+  { id: 8, name: "Amit Choudhury", role: "Test Coordinator", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Amit-pic%20%281%29.jpg", group: "operations" },
+  { id: 9, name: "Tuli Mukherjee", role: "Academic Content Associate", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Tuli-pic%20%281%29.jpg", group: "operations" },
+  { id: 10, name: "Zakir", role: "Facility Support Staff", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Zakir-pic%20%281%29.jpg", group: "operations" },
   { id: 11, name: "Saunak Debnath", role: "Video Editor - Faction Olympiads", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Saunak.jpeg", group: "operations" },
 
   // Content / Web & Tech

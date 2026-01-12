@@ -75,19 +75,33 @@ const InfoCard = ({
     >
       {/* IMAGE */}
       {image && (
-        <div className="md:w-1/2 flex items-center justify-center p-10">
-          <motion.div
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.5 }}
-            className="relative w-64 h-64 md:w-72 md:h-72 rounded-full overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.6)] ring-1 ring-white/15"
-          >
-            <img
-              src={image}
-              alt={title}
-              className="w-full h-full scale-[1.2] object-cover rounded-full"
-            />
-          </motion.div>
-        </div>
+  <div className="md:w-1/2 flex items-center justify-center p-10">
+    {/* WHITE RING (VERY THIN) */}
+    <motion.div
+      whileHover={{ scale: 1.05 }}
+      transition={{ duration: 0.5 }}
+      className="
+        relative
+        w-64 h-64
+        md:w-72 md:h-72
+        rounded-full
+        bg-[#f8f4e8]
+        p-[6px]               /* 🔥 THIS CONTROLS RING THICKNESS */
+        shadow-[0_30px_80px_rgba(0,0,0,0.6)]
+      "
+    >
+      {/* IMAGE — FILLS ALMOST EVERYTHING */}
+      <div className="w-full h-full rounded-full overflow-hidden">
+        <img
+          src={image}
+          alt={title}
+          className="w-full h-full object-cover object-top rounded-full"
+        />
+      </div>
+    </motion.div>
+  </div>
+
+
       )}
 
       {/* TEXT */}
@@ -207,7 +221,7 @@ If you’re ready to be consistent, disciplined, and honest with your effort thi
 
 
         <InfoCard
-          image="https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Niladri.png"
+          image="https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Niladri%20%281%29%20%281%29.png"
           title="About the Founder"
           description="Dr. Niladri Deb is a highly respected biology mentor known for his calm, logic-driven teaching style and deep conceptual approach. Since 2018, his mentorship has guided students to top medical institutions including AIIMS, KGMU, RIMS, CMC, and other leading colleges. At Faction, his focus lies in building disciplined thinking, consistency, and first-principle understanding — shaping learners for sustained academic success and personal growth."
         />
