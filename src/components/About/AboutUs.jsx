@@ -235,6 +235,7 @@ If you’re ready to be consistent, disciplined, and honest with your effort thi
 
         <InfoCard
           title="Our Team"
+          image="https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Team.jpeg"
           description="Faction is powered by educators, operations leaders, and technologists united by a shared vision — building an education ecosystem rooted in clarity, discipline, and trust."
           clickable
           onClick={() => navigate("/team")}

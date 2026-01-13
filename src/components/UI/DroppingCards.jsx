@@ -11,33 +11,31 @@ const contentData = [
     title: "Bridging the Educational Gap",
     description:
       "FACTION is an initiative built to uplift students from the Northeast by providing access to quality education, guidance, and opportunities once limited by geography.",
-    image: "https://placehold.co/600x400/2a2a2a/FFF?text=Education+Access",
+    video: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/niladri-da.mp4",
     tag: "Our Purpose",
   },
   {
     title: "Redefining JEE & NEET Preparation",
     description:
       "We go beyond traditional coaching by focusing on conceptual clarity, structured practice, and deep understanding rather than rote learning.",
-    image: "https://placehold.co/600x400/1e293b/FFF?text=Conceptual+Learning",
+    video: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Soumya%20da-.mp4",
     tag: "Academic Rigor",
   },
   {
     title: "Technology-Driven Learning",
     description:
       "FACTION leverages technology to personalize learning, track progress, and provide timely insights that help students improve efficiently.",
-    image: "https://placehold.co/600x400/0f172a/FFF?text=Smart+Learning",
+    video: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Final-library.mp4",
     tag: "Modern Approach",
   },
   {
     title: "Mentorship Beyond Academics",
     description:
       "We believe success requires emotional support and mentorship. FACTION nurtures confidence, resilience, and clarity alongside academics.",
-    image: "https://placehold.co/600x400/334155/FFF?text=Student+Mentorship",
+    video: "",
     tag: "Holistic Growth",
   },
 ];
-
-
 
 const DroppingCards = () => {
   const containerRef = useRef(null);
@@ -154,13 +152,16 @@ const DroppingCards = () => {
                 </p>
               </div>
 
-              {/* CARD */}
+              {/* VIDEO CARD */}
               <div className="w-full md:w-5/12 flex justify-center relative z-20">
                 <div className="timeline-card bg-white p-4 rounded-2xl shadow-2xl max-w-md w-full border border-slate-100">
-                  <div className="aspect-video rounded-xl overflow-hidden bg-slate-200">
-                    <img
-                      src={item.image}
-                      alt={item.title}
+                  <div className="aspect-video rounded-xl overflow-hidden bg-black">
+                    <video
+                      src={item.video}
+                      autoPlay
+                      loop
+                      muted
+                      playsInline
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -170,48 +171,24 @@ const DroppingCards = () => {
           ))}
         </div>
 
-       {/* CTA BUTTON */}
-<div className="mt-32 flex justify-center">
-  <button
-  onClick={() => navigate("/signin")}
-  className="
-    group
-    inline-flex
-    items-center
-    gap-3
-    px-8 py-3
-    rounded-full
-
-    bg-[#F0D200]
-    text-[#0F172A]
-    text-base
-    font-semibold
-
-    transition-all
-    duration-300
-    ease-out
-
-    hover:bg-[#A767FF]
-    hover:text-white
-    hover:shadow-[0_12px_28px_rgba(167,103,255,0.35)]
-  "
->
-  <span>Start Learning</span>
-
-  <span
-    className="
-      inline-block
-      transition-transform
-      duration-300
-      group-hover:translate-x-1
-    "
-  >
-    →
-  </span>
-</button>
-
-</div>
-
+        {/* CTA BUTTON */}
+        <div className="mt-32 flex justify-center">
+          <button
+            onClick={() => navigate("/signin")}
+            className="
+              group inline-flex items-center gap-3 px-8 py-3 rounded-full
+              bg-[#F0D200] text-[#0F172A] text-base font-semibold
+              transition-all duration-300 ease-out
+              hover:bg-[#A767FF] hover:text-white
+              hover:shadow-[0_12px_28px_rgba(167,103,255,0.35)]
+            "
+          >
+            <span>Start Learning</span>
+            <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">
+              →
+            </span>
+          </button>
+        </div>
       </div>
     </section>
   );
