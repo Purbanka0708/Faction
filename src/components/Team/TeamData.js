@@ -22,9 +22,9 @@ const TeamData = [
   { id: 6, name: "Abhishek Dey", role: "Operations Coordinator", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Abhishek-pic%20%281%29.jpg", group: "operations" },
   { id: 7, name: "Suvam Das", role: "Operations Coordinator", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Suvam-pic%20%281%29.jpg", group: "operations" },
   { id: 8, name: "Amit Choudhury", role: "Test Coordinator", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Amit-pic%20%281%29.jpg", group: "operations" },
-  { id: 9, name: "Tuli Mukherjee", role: "Academic Content Associate", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Tuli-pic%20%281%29.jpg", group: "operations" },
+  { id: 9, name: "Tuli Mukherjee", role: "Academic Associate", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Tuli-pic%20%281%29.jpg", group: "operations" },
   { id: 10, name: "Zakir", role: "Facility Support Staff", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Zakir-pic%20%281%29.jpg", group: "operations" },
-  { id: 11, name: "Saunak Debnath", role: "Video Editor - Faction Olympiads", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Saunak.jpeg", group: "operations" },
+  { id: 11, name: "Saunak Debnath", role: "Faction Olympiads Editor", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Saunak.jpeg", group: "operations" },
 
   // Content / Web & Tech
   
