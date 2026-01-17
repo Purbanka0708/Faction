@@ -8,32 +8,32 @@ gsap.registerPlugin(ScrollTrigger);
 
 const contentData = [
   {
-    title: "Bridging the Educational Gap",
+    title: "Visionary Leadership in Biology Education",
     description:
-      "FACTION is an initiative built to uplift students from the Northeast by providing access to quality education, guidance, and opportunities once limited by geography.",
+      "Under the guidance of Niladri Deb, FACTION’s Biology program is built on clarity, concept-first teaching, and deep understanding of life sciences. His mentorship inspires students to think scientifically, approach problems analytically, and build a strong foundation essential for NEET and beyond.",
     video: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/niladri-da.mp4",
-    tag: "Our Purpose",
+    tag: "Foundational Vision",
   },
   {
-    title: "Redefining JEE & NEET Preparation",
+    title: "Physics Taught with Precision and Purpose",
     description:
-      "We go beyond traditional coaching by focusing on conceptual clarity, structured practice, and deep understanding rather than rote learning.",
+      "Led by Soumyadeep Nandi, FACTION’s Physics education emphasizes logical reasoning, problem-solving strategies, and real conceptual depth. His teaching bridges theory with application, empowering students to confidently tackle even the most challenging JEE and NEET problems.",
     video: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Soumya%20da-.mp4",
-    tag: "Academic Rigor",
+    tag: "Academic Excellence",
   },
   {
-    title: "Technology-Driven Learning",
+    title: "A Learning Space Designed for Focus and Growth",
     description:
-      "FACTION leverages technology to personalize learning, track progress, and provide timely insights that help students improve efficiently.",
+      "FACTION’s well-equipped library offers a calm, disciplined environment where students can study, revise, and practice without distractions. With curated academic resources and a student-friendly atmosphere, the library plays a crucial role in nurturing consistency, self-study habits, and academic excellence.",
     video: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Final-library.mp4",
-    tag: "Modern Approach",
+    tag: "Focused Learning",
   },
   {
-    title: "Mentorship Beyond Academics",
+    title: "A Future-Ready Campus for Competitive Excellence",
     description:
-      "We believe success requires emotional support and mentorship. FACTION nurtures confidence, resilience, and clarity alongside academics.",
-    video: "",
-    tag: "Holistic Growth",
+      "FACTION provides a fully modern learning ecosystem featuring smart classrooms, dedicated test halls, computer-based test rooms, and innovative academic facilities. Every space is designed to simulate real exam conditions while fostering comfort, confidence, and high-performance learning for today’s competitive exams.",
+    video: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Centre-2.mp4",
+    tag: "Future-Ready Campus",
   },
 ];
 
