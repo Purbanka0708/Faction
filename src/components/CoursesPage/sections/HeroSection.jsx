@@ -39,7 +39,7 @@ const HeroSection = () => {
         <div className="hidden md:block">
   <div className="relative aspect-video rounded-2xl overflow-hidden bg-[#2D0B34]">
     <img
-      src="https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/Black%20and%20White%20Modern%20Meet%20Our%20Team%20Instagram%20Post%20%281600%20x%20900%20px%29.png"
+      src="https://res.cloudinary.com/dttquxaro/image/upload/v1769068131/Black_and_White_Modern_Meet_Our_Team_Instagram_Post_1600_x_900_px_trsorc.png"
       alt="Courses"
       className="absolute inset-0 w-full h-full object-contain"
       loading="lazy"

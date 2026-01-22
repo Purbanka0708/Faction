@@ -1,36 +1,25 @@
-// src/components/Team/TeamData.js
-// import swarupaImg from "../../assets/team/swarupa-aich.jpg"; 
-// import abhishekImg from "../../assets/team/Abhishek-pic.jpg";
-// import suvamImg from "../../assets/team/Suvam-pic.jpg";
-// import amitImg from "../../assets/team/Amit-pic.jpg";
-// import arghyadeepImg from "../../assets/team/Arghyadeep-pic.jpg";
-// import niladriImg from "../../assets/about/founder.jpg";
-// import soumyadeepImg from "../../assets/about/cofounder.jpg";
-// import trishaImg from "../../assets/team/Trisha-pic.jpg";
-// import zakirImg from "../../assets/team/Zakir-pic.jpg";
-// import tuliImg from "../../assets/team/Tuli-pic.jpg"; 
 
 const TeamData = [
   // Educators
-  { id: 1, name: "Dr. Niladri Deb", role: "Faction Biology Educator", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/founder.jpg", group: "educators" },
-  { id: 2, name: "Er. Soumyadeep Nandi", role: "Faction Physics Educator", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/cofounder.jpg", group: "educators" },
-  { id: 3, name: "Trisha Saha", role: "Faction Juniors Mathematics Educator", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Trisha%20%281%29.png", group: "educators" },
-  { id: 4, name: "Arghyadeep Majumder", role: "Faction Juniors Science Educator", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Arghyadeep-pic.JPG", group: "educators" },
+  { id: 1, name: "Dr. Niladri Deb", role: "Faction Biology Educator", img: "https://res.cloudinary.com/dttquxaro/image/upload/v1769064827/Niladri_1_1_mm6asv.png", group: "educators" },
+  { id: 2, name: "Er. Soumyadeep Nandi", role: "Faction Physics Educator", img: "https://res.cloudinary.com/dttquxaro/image/upload/v1769065063/Soumya_ebktih.png", group: "educators" },
+  { id: 3, name: "Trisha Saha", role: "Faction Juniors Mathematics Educator", img: "https://res.cloudinary.com/dttquxaro/image/upload/v1769064822/Trisha_1_vvgwwd.png", group: "educators" },
+  { id: 4, name: "Arghyadeep Majumder", role: "Faction Juniors Science Educator", img: "https://res.cloudinary.com/dttquxaro/image/upload/v1769065509/Arghyadeep-pic_t3ob56.jpg", group: "educators" },
 
   // Operations
-  { id: 5, name: "Swarupa Aich", role: "Growth Team lead", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Swarupa%20Aich.jpg", group: "operations" },
-  { id: 6, name: "Abhishek Dey", role: "Operations Coordinator", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Abhishek-pic%20%281%29.jpg", group: "operations" },
-  { id: 7, name: "Suvam Das", role: "Operations Coordinator", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Suvam-pic%20%281%29.jpg", group: "operations" },
-  { id: 8, name: "Amit Choudhury", role: "Test Coordinator", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Amit-pic%20%281%29.jpg", group: "operations" },
-  { id: 9, name: "Tuli Mukherjee", role: "Academic Associate", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Tuli-pic%20%281%29.jpg", group: "operations" },
-  { id: 10, name: "Zakir", role: "Facility Support Staff", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Zakir-pic%20%281%29.jpg", group: "operations" },
-  { id: 11, name: "Saunak Debnath", role: "Faction Olympiads Editor", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Saunak.jpeg", group: "operations" },
+  { id: 5, name: "Swarupa Aich", role: "Growth Team lead", img: "https://res.cloudinary.com/dttquxaro/image/upload/v1769065510/Swarupa_Aich_mrjfls.jpg", group: "operations" },
+  { id: 6, name: "Abhishek Dey", role: "Operations Coordinator", img: "https://res.cloudinary.com/dttquxaro/image/upload/v1769064814/Abhishek-pic_1_roov8k.jpg", group: "operations" },
+  { id: 7, name: "Suvam Das", role: "Operations Coordinator", img: "https://res.cloudinary.com/dttquxaro/image/upload/v1769064813/Suvam-pic_1_allpjd.jpg", group: "operations" },
+  { id: 8, name: "Amit Choudhury", role: "Test Coordinator", img: "https://res.cloudinary.com/dttquxaro/image/upload/v1769064813/Amit-pic_1_ciljnq.jpg", group: "operations" },
+  { id: 9, name: "Tuli Mukherjee", role: "Academic Associate", img: "https://res.cloudinary.com/dttquxaro/image/upload/v1769064813/Tuli-pic_1_zsoinz.jpg", group: "operations" },
+  { id: 10, name: "Zakir", role: "Facility Support Staff", img: "https://res.cloudinary.com/dttquxaro/image/upload/v1769064813/Zakir-pic_1_kyy6gz.jpg", group: "operations" },
+  { id: 11, name: "Saunak Debnath", role: "Faction Olympiads Editor", img: "https://res.cloudinary.com/dttquxaro/image/upload/v1769065427/Saunak_drhmrg.jpg", group: "operations" },
 
   // Content / Web & Tech
   
-  { id: 12, name: "Purbanka Ghosh", role: "Developer", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Purbanka%20pic.jpeg", group: "webtech" },
-  { id: 13, name: "Khushi Soni", role: "Developer", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/team/Khushi.jpeg", group: "webtech" },
-  { id: 14, name: "Uditangshu Chakraborty", role: "Developer", img: "https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/toppers/jee.webp/Uditangshu%20Chakraborty.jpg", group: "webtech" },
+  { id: 12, name: "Purbanka Ghosh", role: "Developer", img: "https://res.cloudinary.com/dttquxaro/image/upload/v1769065429/Purbanka_pic_szedrx.jpg", group: "webtech" },
+  { id: 13, name: "Khushi Soni", role: "Developer", img: "https://res.cloudinary.com/dttquxaro/image/upload/v1769065430/Khushi_olcdoz.jpg", group: "webtech" },
+  { id: 14, name: "Uditangshu Chakraborty", role: "Developer", img: "https://res.cloudinary.com/dttquxaro/image/upload/v1769065448/Uditangshu_Chakraborty_xwancc.jpg", group: "webtech" },
   { id:15, name: "Saransh",role: "Developer", img: null, group: "webtech" },
   
  

@@ -55,7 +55,7 @@ const SplashScreen = ({ onFinish }) => {
       {/* VIDEO */}
       <video
         ref={videoRef}
-        src="https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/splash.mp4"
+        src="https://res.cloudinary.com/dttquxaro/video/upload/v1769065506/splash_vc5vad.mp4"
         autoPlay
         muted
         playsInline
