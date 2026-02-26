@@ -54,17 +54,17 @@ They treated us like younger brothers and constantly motivated us to achieve our
     thumb:
       "https://res.cloudinary.com/dttquxaro/image/upload/v1769065055/Krishti_Sarkar_qbz1fs.png",
   },
-  {
-    stat: "Know what our Toppers say",
-    title: "The NEET journey with Faction",
-    description: ``,
-    name: "Krish Kumar Deb",
-    company: "Nil Ratan Sarkar Medical College and Hospital(NRSMCH) (2024)",
-    image:
-      "https://res.cloudinary.com/dttquxaro/image/upload/v1769065501/Krish_Kumar_Deb_rrwiyz.jpg",
-    thumb:
-      "https://res.cloudinary.com/dttquxaro/image/upload/v1769065501/Krish_Kumar_Deb_rrwiyz.jpg",
-  },
+  // {
+  //   stat: "Know what our Toppers say",
+  //   title: "The NEET journey with Faction",
+  //   description: ``,
+  //   name: "Krish Kumar Deb",
+  //   company: "Nil Ratan Sarkar Medical College and Hospital(NRSMCH) (2024)",
+  //   image:
+  //     "https://res.cloudinary.com/dttquxaro/image/upload/v1769065501/Krish_Kumar_Deb_rrwiyz.jpg",
+  //   thumb:
+  //     "https://res.cloudinary.com/dttquxaro/image/upload/v1769065501/Krish_Kumar_Deb_rrwiyz.jpg",
+  // },
   {
     stat: "Know what our Toppers say",
     title: "The JEE journey with Faction",
