@@ -99,7 +99,7 @@ const Navbar = () => {
 
             {/* CTA */}
             <Link
-              to="/signin"
+              to="/arena"
               className="bg-[#F0D200] text-slate-900 font-semibold px-6 py-2 rounded-full ml-3
                 hover:bg-[#A767FF] hover:text-white transition-colors duration-300"
             >

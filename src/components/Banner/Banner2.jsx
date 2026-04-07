@@ -28,7 +28,7 @@ const Banner2 = () => {
 
             {/* SIGN UP REDIRECT */}
             <Link
-              to="/signup"
+              to="/contact"
               className="inline-block bg-[#F0D200] text-slate-900 font-semibold px-8 py-3 rounded-full !mt-8
               hover:bg-[#A767FF] hover:text-white transition-all duration-300"
             >
@@ -43,7 +43,7 @@ const Banner2 = () => {
           <motion.img
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            src={"https://ao0klrqx42lirtpn.public.blob.vercel-storage.com/background/ChatGPT%20Image%20Jan%207%2C%202026%2C%2004_13_06%20PM.png"}
+            src={"https://res.cloudinary.com/dttquxaro/image/upload/v1775484860/Hompage3-Photoroom_tbsrqe.png"}
             alt="Students joining Faction community"
             className="w-[500px] md:max-w-[500px] object-cover drop-shadow"
           />

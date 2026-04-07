@@ -35,6 +35,7 @@ import DroppingCards from "./components/UI/DroppingCards.jsx";
 import CoursesPage from "./components/CoursesPage/CoursesPage.jsx";
 import Results from "./components/Results/Results";
 import ScrollToTop from "./UI/ScrollToTop.jsx";
+import ArenaPage from "./components/Arena/ArenaPage";
 
 /* ---------------- HOME ---------------- */
 
@@ -104,6 +105,8 @@ const App = () => {
             {/* Courses & Results */}
             <Route path="/courses" element={<CoursesPage />} />
             <Route path="/results" element={<Results />} />
+
+            <Route path="/arena" element={<ArenaPage />} />
 
             {/* Others */}
             <Route path="/contact" element={<Contact />} />

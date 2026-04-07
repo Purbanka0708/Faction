@@ -53,7 +53,7 @@ const CourseCard = ({ course }) => {
 
           {/* ENROLL → SIGN IN */}
           <button
-            onClick={() => navigate("/signin")}
+            onClick={() => navigate("/contact")}
             className="flex-1 bg-[#2D0B34] text-white rounded-lg py-2 text-sm
                        hover:opacity-90 transition"
           >

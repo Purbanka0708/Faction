@@ -40,7 +40,7 @@ const Subscribe = () => {
 
             {/* Enroll Now → Signup Page */}
             <Link
-              to="/signup"
+              to="/contact"
               className="inline-flex items-center gap-4 group bg-[#F0D200]
                          text-slate-900 font-semibold px-8 py-3 rounded-full !mt-8
                          hover:bg-[#A767FF] hover:text-white transition-all duration-300"
