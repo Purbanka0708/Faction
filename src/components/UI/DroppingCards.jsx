@@ -174,7 +174,7 @@ const DroppingCards = () => {
         {/* CTA BUTTON */}
         <div className="mt-32 flex justify-center">
           <button
-            onClick={() => navigate("/contact")}
+            onClick={() => navigate("/arena")}
             className="
               group inline-flex items-center gap-3 px-8 py-3 rounded-full
               bg-[#F0D200] text-[#0F172A] text-base font-semibold
