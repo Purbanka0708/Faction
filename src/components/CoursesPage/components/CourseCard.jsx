@@ -4,6 +4,15 @@ import { useNavigate } from "react-router-dom";
 const CourseCard = ({ course }) => {
   const navigate = useNavigate();
 
+  // WhatsApp redirect function
+  const handleEnrollClick = () => {
+    const phoneNumber = "916909986306";
+    const message = `Hello, I want to enroll in ${course.title}`;
+    const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+
+    window.open(whatsappURL, "_blank");
+  };
+
   return (
     <div
       className="
@@ -42,7 +51,7 @@ const CourseCard = ({ course }) => {
 
         {/* Buttons */}
         <div className="mt-auto flex gap-3">
-          {/* DETAILS → CONTACT US */}
+          {/* DETAILS */}
           <button
             onClick={() => navigate("/contact")}
             className="flex-1 border border-[#2D0B34] rounded-lg py-2 text-sm
@@ -51,9 +60,9 @@ const CourseCard = ({ course }) => {
             Details
           </button>
 
-          {/* ENROLL → SIGN IN */}
+          {/* ENROLL → WHATSAPP */}
           <button
-            onClick={() => navigate("/contact")}
+            onClick={handleEnrollClick}
             className="flex-1 bg-[#2D0B34] text-white rounded-lg py-2 text-sm
                        hover:opacity-90 transition"
           >
