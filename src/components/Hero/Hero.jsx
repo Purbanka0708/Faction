@@ -82,7 +82,7 @@ const Hero = () => {
             >
               {/* SIGN UP REDIRECT */}
               <Link
-                to="/contact"
+                to="/arena"
                 className="flex items-center gap-2 group bg-[#F0D200] text-slate-900 font-semibold px-7 py-4 rounded-full text-base shadow-md hover:bg-[#A767FF] hover:text-white transition-all duration-300"
               >
                 Start Learning

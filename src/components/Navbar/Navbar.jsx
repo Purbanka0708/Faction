@@ -170,7 +170,7 @@ const Navbar = () => {
               {/* CTA */}
               <motion.div variants={menuItem}>
                 <Link
-                  to="/signin"
+                  to="/arena"
                   onClick={() => setMobileOpen(false)}
                   className="
       mt-4 inline-flex justify-center
