@@ -5,6 +5,7 @@ import Navbar from "../Navbar/Navbar";
 import FactionBot from "../Contact/FactionBot";
 import botIcon from "../../assets/factionbot.png";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
 
 /**
  * Colour palette used:
@@ -67,6 +68,43 @@ const cardVariants = {
 
 const OurTeam = () => {
   const [botOpen, setBotOpen] = useState(false);
+  const [openForm, setOpenForm] = useState(false);
+const [submitted, setSubmitted] = useState(false);
+
+const [formData, setFormData] = useState({
+  name: "",
+  email: "",
+  phone: "",
+  role: "",
+});
+
+const handleChange = (e) => {
+  setFormData({ ...formData, [e.target.name]: e.target.value });
+};
+
+const handleSubmit = (e) => {
+  e.preventDefault();
+
+  emailjs
+    .send(
+      "service_ehz1vmo",
+      "template_co7c3os",
+      formData,
+      "j4JhiqKh7AywnmgvL"
+    )
+    .then(() => {
+      setSubmitted(true);
+
+      setTimeout(() => {
+        setOpenForm(false);
+        setSubmitted(false);
+      }, 2500);
+    })
+    .catch((error) => {
+      console.log(error);
+      alert("Failed to send. Try again.");
+    });
+};
 
   return (
     <main className="min-h-screen pb-20 relative overflow-hidden" style={{ background: "radial-gradient(1200px 600px at 10% 10%, rgba(46,11,53,0.65), transparent), linear-gradient(180deg,#2E0B35 0%, #1d0723 100%)" }}>
@@ -186,7 +224,25 @@ const OurTeam = () => {
             </motion.div>
           ))}
         </motion.div>
+        {/* JOIN TEAM SECTION (ONLY ADDITION) */}
+<div className="mt-20 text-center">
+  <h2 className="text-4xl md:text-5xl font-extrabold" style={{ color: "#F8F4E8" }}>
+    Want to join us?
+  </h2>
+
+  <button
+    onClick={() => setOpenForm(true)}
+    className="mt-6 px-8 py-4 rounded-xl text-lg font-semibold"
+    style={{
+      background: "#FBDD57",
+      color: "#2E0B35",
+    }}
+  >
+    Drop Your Details
+  </button>
+</div>
       </div>
+      
 
       {/* Floating bot icon + panel */}
       <div className="fixed bottom-6 right-6 z-50 flex items-end space-x-4">
@@ -222,6 +278,7 @@ const OurTeam = () => {
           />
         </motion.button>
       </div>
+      
 
       {/* Mobile stacked bot panel when open */}
       <div className="md:hidden">
@@ -231,6 +288,69 @@ const OurTeam = () => {
           </div>
         )}
       </div>
+      {/* JOIN FORM MODAL */}
+{openForm && (
+  <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50">
+    <div className="bg-[#1d0723] p-8 rounded-xl w-[90%] max-w-md relative">
+      {!submitted ? (
+        <form onSubmit={handleSubmit} className="space-y-4">
+          <input 
+  name="name"
+  value={formData.name}
+  onChange={handleChange}
+  placeholder="Name"
+  required
+  className="w-full p-2 rounded bg-black/30 text-white"
+/>
+
+<input 
+  name="email"
+  value={formData.email}
+  onChange={handleChange}
+  placeholder="Email"
+  required
+  className="w-full p-2 rounded bg-black/30 text-white"
+/>
+
+<input 
+  name="phone"
+  value={formData.phone}
+  onChange={handleChange}
+  placeholder="Phone"
+  required
+  className="w-full p-2 rounded bg-black/30 text-white"
+/>
+
+<input 
+  name="role"
+  value={formData.role}
+  onChange={handleChange}
+  placeholder="Role"
+  required
+  className="w-full p-2 rounded bg-black/30 text-white"
+/>
+
+          <button className="w-full py-2 bg-[#FBDD57] text-[#2E0B35] rounded">
+            Submit
+          </button>
+        </form>
+      ) : (
+        <div className="text-white text-center">
+          ✅ Thanks for your time! <br />
+          Our expert team will reach you.
+        </div>
+      )}
+
+      <button
+        onClick={() => setOpenForm(false)}
+        className="absolute top-2 right-3 text-white"
+      >
+        ×
+      </button>
+    </div>
+  </div>
+)}
+      
     </main>
   );
 };
