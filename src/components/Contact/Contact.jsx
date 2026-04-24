@@ -1,5 +1,7 @@
 // src/components/Contact/Contact.jsx
+
 import React, { useState } from "react";
+import emailjs from "@emailjs/browser";
 import Navbar from "../Navbar/Navbar";
 import FactionBot from "./FactionBot";
 import botIcon from "../../assets/factionbot.png";
@@ -8,7 +10,16 @@ import { motion } from "framer-motion";
 const Contact = () => {
   const [botOpen, setBotOpen] = useState(false);
 
-  // form animation
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+    message: "",
+    callback: false,
+  });
+
+  const [loading, setLoading] = useState(false);
+  const [statusMessage, setStatusMessage] = useState("");
+
   const formVariants = {
     hidden: { opacity: 0, y: 24 },
     visible: {
@@ -18,7 +29,6 @@ const Contact = () => {
     },
   };
 
-  // video animation
   const videoVariants = {
     hidden: { opacity: 0, scale: 0.98 },
     visible: {
@@ -26,6 +36,61 @@ const Contact = () => {
       scale: 1,
       transition: { duration: 0.6, ease: "easeOut" },
     },
+  };
+
+  // Handle Inputs
+  const handleChange = (e) => {
+    const { name, value, checked, type } = e.target;
+
+    setFormData({
+      ...formData,
+      [name]: type === "checkbox" ? checked : value,
+    });
+  };
+
+  // Submit Form
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    if (
+      !formData.name.trim() ||
+      !formData.phone.trim() ||
+      !formData.message.trim()
+    ) {
+      setStatusMessage("Please fill all fields.");
+      return;
+    }
+
+    setLoading(true);
+    setStatusMessage("");
+
+    try {
+      await emailjs.send(
+        "service_b5lwgjl",
+        "template_eqlpa18",
+        {
+          user_name: formData.name,
+          user_phone: formData.phone,
+          message: formData.message,
+          callback: formData.callback ? "Yes" : "No",
+        },
+        "lvXAG4_UNu6eXv5P3"
+      );
+
+      setStatusMessage("Message sent successfully ✅");
+
+      setFormData({
+        name: "",
+        phone: "",
+        message: "",
+        callback: false,
+      });
+    } catch (error) {
+      console.error(error);
+      setStatusMessage("Failed to send message ❌");
+    }
+
+    setLoading(false);
   };
 
   return (
@@ -39,7 +104,6 @@ const Contact = () => {
       <div className="relative z-10">
         <Navbar />
 
-        {/* CONTENT */}
         <div className="container mx-auto px-6 py-12">
           <h1 className="text-4xl md:text-5xl font-bold text-center text-white mb-2">
             Contact Us
@@ -50,12 +114,13 @@ const Contact = () => {
           </p>
 
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-            {/* LEFT — FORM */}
+
+            {/* LEFT FORM */}
             <motion.div
               className="w-full order-2 md:order-1"
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true }}
               variants={formVariants}
             >
               <div className="bg-white/95 backdrop-blur-sm rounded-2xl shadow-2xl p-6 md:p-8 max-w-2xl mx-auto md:mx-0">
@@ -63,12 +128,17 @@ const Contact = () => {
                   Any Queries? Drop a message
                 </h2>
 
-                <form className="space-y-3">
+                <form onSubmit={handleSubmit} className="space-y-3">
+
                   <div>
                     <label className="text-sm font-medium text-slate-700">
                       Name
                     </label>
+
                     <input
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
                       className="mt-1 w-full p-3 rounded-xl border border-slate-200"
                       placeholder="Your name"
                     />
@@ -78,7 +148,11 @@ const Contact = () => {
                     <label className="text-sm font-medium text-slate-700">
                       Contact number
                     </label>
+
                     <input
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
                       className="mt-1 w-full p-3 rounded-xl border border-slate-200"
                       placeholder="+91 98xxxxxxxx"
                     />
@@ -88,8 +162,12 @@ const Contact = () => {
                     <label className="text-sm font-medium text-slate-700">
                       Message
                     </label>
+
                     <textarea
-                      rows={1}
+                      rows={3}
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
                       className="mt-1 w-full p-3 rounded-xl border border-slate-200"
                       placeholder="Tell us about your query"
                     />
@@ -98,9 +176,13 @@ const Contact = () => {
                   <div className="flex items-center gap-3">
                     <input
                       id="callback"
+                      name="callback"
+                      checked={formData.callback}
+                      onChange={handleChange}
                       type="checkbox"
                       className="w-4 h-4 rounded border-slate-300"
                     />
+
                     <label
                       htmlFor="callback"
                       className="text-sm text-slate-700"
@@ -110,37 +192,37 @@ const Contact = () => {
                   </div>
 
                   <button
-                    type="button"
+                    type="submit"
+                    disabled={loading}
                     className="mt-2 w-full bg-yellow-400 hover:bg-purple-700 hover:text-white transition py-3 rounded-full font-semibold"
                   >
-                    Send Message
+                    {loading ? "Sending..." : "Send Message"}
                   </button>
+
+                  {statusMessage && (
+                    <p className="text-center mt-2 font-medium text-purple-700">
+                      {statusMessage}
+                    </p>
+                  )}
+
                 </form>
               </div>
             </motion.div>
 
-            {/* RIGHT — VIDEO */}
+
+            {/* RIGHT VIDEO */}
             <motion.div
               className="relative flex items-center justify-center group order-1 md:order-2 mb-6 mt-2"
               initial="hidden"
               whileInView="visible"
-              viewport={{ once: true, amount: 0.3 }}
+              viewport={{ once: true }}
               variants={videoVariants}
             >
-              {/* BACK LAYER */}
-              <div
-                aria-hidden="true"
-                className="absolute rounded-2xl w-[90%] h-[88%] -top-4 -left-4 border-4 border-violet-400/50 z-10"
-              />
+              <div className="absolute rounded-2xl w-[90%] h-[88%] -top-4 -left-4 border-4 border-violet-400/50 z-10" />
 
-              {/* MIDDLE LAYER */}
-              <div
-                aria-hidden="true"
-                className="absolute rounded-2xl w-[92%] h-[92%] -bottom-4 -right-4 bg-violet-500/50 backdrop-blur-sm shadow-lg z-20"
-              />
+              <div className="absolute rounded-2xl w-[92%] h-[92%] -bottom-4 -right-4 bg-violet-500/50 backdrop-blur-sm shadow-lg z-20" />
 
-              {/* FRONT VIDEO CARD */}
-              <div className="relative z-30 rounded-2xl overflow-hidden border border-white/10 shadow-2xl w-full max-w-2xl transition-transform duration-300 group-hover:-translate-y-1 group-hover:scale-[1.01]">
+              <div className="relative z-30 rounded-2xl overflow-hidden border border-white/10 shadow-2xl w-full max-w-2xl">
                 <div
                   className="relative w-full"
                   style={{ paddingTop: "56.25%" }}
@@ -152,14 +234,15 @@ const Contact = () => {
                     muted
                     loop
                     playsInline
-                    aria-hidden="true"
                   />
                 </div>
               </div>
             </motion.div>
+
           </div>
         </div>
       </div>
+
 
       {/* BOT */}
       <div className="fixed bottom-6 right-6 z-50 flex items-end">
@@ -186,7 +269,6 @@ const Contact = () => {
         </motion.button>
       </div>
 
-      {/* MOBILE BOT PANEL */}
       <div className="md:hidden">
         {botOpen && (
           <div className="fixed left-4 right-4 bottom-24 z-40">
@@ -194,6 +276,7 @@ const Contact = () => {
           </div>
         )}
       </div>
+
     </main>
   );
 };
