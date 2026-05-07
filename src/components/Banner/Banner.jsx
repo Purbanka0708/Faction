@@ -18,7 +18,7 @@ const Banner = () => {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, ease: "easeInOut" }}
-            src={"https://res.cloudinary.com/dttquxaro/image/upload/v1775484822/Hompage2-Photoroom_vky1xf.png"}
+            src={"https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158032/Hompage2-Photoroom_h4ry8h.png"}
             alt="Students studying for NEET and IIT/JEE at Faction coaching"
             className="w-auto md:max-w-[500px] object-cover drop-shadow"
           />

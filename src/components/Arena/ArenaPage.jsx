@@ -94,7 +94,7 @@ const ArenaPage = () => {
           className="backdrop-blur-xl bg-white/10 border border-white/20 shadow-2xl rounded-2xl p-4"
         >
           <img
-            src="https://res.cloudinary.com/dttquxaro/image/upload/v1775476043/Arena_z9cwqd.jpg"
+            src="https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158770/Arena_uncdaj.jpg"
             alt="Arena"
             className="w-full max-w-md rounded-xl"
           />

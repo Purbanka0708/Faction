@@ -13,7 +13,7 @@ export const coursesData = {
             duration: "Academic Year",
             tag: "Class 5–7",
             image:
-              "https://res.cloudinary.com/dttquxaro/image/upload/v1769065031/Science_b1xsfr.png",
+              "https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158784/Science_iyy1kv.png",
           },
         ],
       },
@@ -27,7 +27,7 @@ export const coursesData = {
             duration: "Academic Year",
             tag: "Class 5–7",
             image:
-              "https://res.cloudinary.com/dttquxaro/image/upload/v1769065031/Mathematics_fh2g84.png",
+              "https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158783/Mathematics_f078ex.png",
           },
         ],
       },
@@ -48,7 +48,7 @@ export const coursesData = {
             duration: "1 Year",
             tag: "Foundation",
             image:
-              "https://res.cloudinary.com/dttquxaro/image/upload/v1769065030/NEET_Foundation_mkbnvn.png",
+              "https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158781/NEET_Foundation_slczdp.png",
           },
         ],
       },
@@ -62,7 +62,7 @@ export const coursesData = {
             duration: "1 Year",
             tag: "Foundation",
             image:
-              "https://res.cloudinary.com/dttquxaro/image/upload/v1769065030/JEE_Foundation_zgzn35.png",
+              "https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158779/JEE_Foundation_fdpscm.png",
           },
         ],
       },
@@ -83,7 +83,7 @@ export const coursesData = {
             duration: "2 Years",
             tag: "NEET",
             image:
-              "https://res.cloudinary.com/dttquxaro/image/upload/v1769065031/Biology_me1fet.png",
+              "https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158784/Biology_v6vrwq.png",
           },
         ],
       },
@@ -97,7 +97,7 @@ export const coursesData = {
             duration: "2 Years",
             tag: "NEET",
             image:
-              "https://res.cloudinary.com/dttquxaro/image/upload/v1769065033/Physics_uc9qb1.png",
+              "https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158785/Physics_l2klxk.png",
           },
         ],
       },
@@ -118,7 +118,7 @@ export const coursesData = {
             duration: "2 Years",
             tag: "JEE",
             image:
-              "https://res.cloudinary.com/dttquxaro/image/upload/v1769065033/Physics_uc9qb1.png",
+              "https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158785/Physics_l2klxk.png",
           },
         ],
       },
@@ -139,7 +139,7 @@ export const coursesData = {
             duration: "1–2 Years",
             tag: "JEE Advanced",
             image:
-              "https://res.cloudinary.com/dttquxaro/image/upload/v1769065033/Physics_uc9qb1.png",
+              "https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158785/Physics_l2klxk.png",
           },
         ],
       },
@@ -160,7 +160,7 @@ export const coursesData = {
           duration: "1 Year",
           tag: "Olympiad",
           image:
-            "https://res.cloudinary.com/dttquxaro/image/upload/v1769065033/Physics_uc9qb1.png",
+            "https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158785/Physics_l2klxk.png",
         },
       ],
     },
@@ -174,7 +174,7 @@ export const coursesData = {
           duration: "1 Year",
           tag: "Olympiad",
           image:
-            "https://res.cloudinary.com/dttquxaro/image/upload/v1769065031/Biology_me1fet.png",
+            "https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158784/Biology_v6vrwq.png",
         },
       ],
     },

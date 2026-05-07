@@ -12,9 +12,9 @@ const slides = [
     name: "Abantika Das",
     company: "Calcutta National Medical College & Hospital (CNMC) (2025)",
     image:
-      "https://res.cloudinary.com/dttquxaro/image/upload/v1769065051/Abantika_Das_CNMC_wlp9ix.png",
+      "https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158792/Abantika_Das_CNMC_x0r2kd.png",
     thumb:
-      "https://res.cloudinary.com/dttquxaro/image/upload/v1769065051/Abantika_Das_CNMC_wlp9ix.png",
+      "https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158792/Abantika_Das_CNMC_x0r2kd.png",
   },
 
   {
@@ -27,9 +27,9 @@ They treated us like younger brothers and constantly motivated us to achieve our
     company:
       "North Eastern Indira Gandhi Regional Institute of health and Medical Sciences(NEIGRIHMS) (2025)",
     image:
-      "https://res.cloudinary.com/dttquxaro/image/upload/v1769065056/Mitadru_Ghosh_waugl7.png",
+      "https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158793/Mitadru_Ghosh_n15bod.png",
     thumb:
-      "https://res.cloudinary.com/dttquxaro/image/upload/v1769065056/Mitadru_Ghosh_waugl7.png",
+      "https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158793/Mitadru_Ghosh_n15bod.png",
   },
   {
     stat: "Know what our Toppers say",
@@ -39,9 +39,9 @@ They treated us like younger brothers and constantly motivated us to achieve our
     name: "Rasmita Sarkar",
     company: "King George's Medical College(KGMC) (2025)",
     image:
-      "https://res.cloudinary.com/dttquxaro/image/upload/v1769065055/Rasmita_Sarkar_qhe5pn.png",
+      "https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158792/Rasmita_Sarkar_p0ekgu.png",
     thumb:
-      "https://res.cloudinary.com/dttquxaro/image/upload/v1769065055/Rasmita_Sarkar_qhe5pn.png",
+      "https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158792/Rasmita_Sarkar_p0ekgu.png",
   },
   {
     stat: "Know what our Toppers say",
@@ -50,9 +50,9 @@ They treated us like younger brothers and constantly motivated us to achieve our
     name: "Krishti Sarkar",
     company: "Lady Hardinge Medical College(LHMC) (2024)",
     image:
-      "https://res.cloudinary.com/dttquxaro/image/upload/v1769065055/Krishti_Sarkar_qbz1fs.png",
+      "https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158794/Krishti_Sarkar_szf06k.png",
     thumb:
-      "https://res.cloudinary.com/dttquxaro/image/upload/v1769065055/Krishti_Sarkar_qbz1fs.png",
+      "https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158794/Krishti_Sarkar_szf06k.png",
   },
   // {
   //   stat: "Know what our Toppers say",
@@ -72,9 +72,9 @@ They treated us like younger brothers and constantly motivated us to achieve our
     name: "Saptarshi Deb",
     company: "IIT Madras (2025)",
     image:
-      "https://res.cloudinary.com/dttquxaro/image/upload/v1769065443/Saptarshi_Deb_voxvfw.jpg",
+      "https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158798/Saptarshi_Deb_nnl4dg.jpg",
     thumb:
-      "https://res.cloudinary.com/dttquxaro/image/upload/v1769065443/Saptarshi_Deb_voxvfw.jpg",
+      "https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158798/Saptarshi_Deb_nnl4dg.jpg",
   },
   {
     stat: "Know what our Toppers say",
@@ -83,9 +83,9 @@ They treated us like younger brothers and constantly motivated us to achieve our
     name: "Shubhranil Majumder",
     company: "IIT Gandhinagar (2025)",
     image:
-      "https://res.cloudinary.com/dttquxaro/image/upload/v1769065029/Shubhranil_hyp9jp.png",
+      "https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158776/Shubhranil_fntv9c.png",
     thumb:
-      "https://res.cloudinary.com/dttquxaro/image/upload/v1769065029/Shubhranil_hyp9jp.png",
+      "https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158776/Shubhranil_fntv9c.png",
   },
 
   {
@@ -94,8 +94,8 @@ They treated us like younger brothers and constantly motivated us to achieve our
     description:`From a struggling JEE aspirant to an IITian, Er. Soumyadeep Nandi has been the biggest influence in my journey. More than a Physics teacher, he was a mentor, guide, and our beloved “DADA.” When my first attempt didn’t go well, he believed in me, supported my drop year, and helped me build strong concepts and mental clarity. Today, with an AIR 12494 in JEE Advanced, I am pursuing B.Tech at IIT (ISM) Dhanbad—a success that belongs equally to him.`,
     name:"Swasti Sundar Nath",
     company:"IIT ISM Dhanbad (2024)",
-    image:"https://res.cloudinary.com/dttquxaro/image/upload/v1769065435/Swasti_Nath_lg4rmb.jpg",
-    thumb:"https://res.cloudinary.com/dttquxaro/image/upload/v1769065435/Swasti_Nath_lg4rmb.jpg",
+    image:"https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158797/Swasti_Nath_r6xydj.jpg",
+    thumb:"https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158797/Swasti_Nath_r6xydj.jpg",
   },
   {
     stat:"Know what our Toppers say",
@@ -107,8 +107,8 @@ The clarity of concepts, structured approach, and regular doubt-solving sessions
 I’m genuinely grateful for the guidance and support that played a crucial role in my success.`,
     name:"Ayushkar Nath",
     company:"IIT Patna (2024)",
-    image:"https://res.cloudinary.com/dttquxaro/image/upload/v1769065434/Ayushkar_Nath_zdyj5x.jpg",
-    thumb:"https://res.cloudinary.com/dttquxaro/image/upload/v1769065434/Ayushkar_Nath_zdyj5x.jpg",
+    image:"https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158796/Ayushkar_Nath_wa7bun.jpg",
+    thumb:"https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158796/Ayushkar_Nath_wa7bun.jpg",
   },
   {
     stat:"Know what our Toppers say",
@@ -116,8 +116,8 @@ I’m genuinely grateful for the guidance and support that played a crucial role
     description:`The only constants in my JEE Journey was me xd , my parents , quizzing and Soumyadeep Dada . Yeah I don’t call him sir ,  Dada feels like more close to home . I was never constant in my JEE preparation but whenever I had any doubts , Dada was there to help me . Transforming my fear of physics to love for it . The fun we had in having quizzes , to find out who can attempt the questions in the shortest possible time was pure nostalgia . The JEE journey was great but having Dada always by my side made it ultimate . Thank you for everything !`,
     name:"Utsab Das",
     company:"IIT Delhi (2023)",
-    image:"https://res.cloudinary.com/dttquxaro/image/upload/v1769065454/Utsab_Das_iy5ijw.jpg",
-    thumb:"https://res.cloudinary.com/dttquxaro/image/upload/v1769065454/Utsab_Das_iy5ijw.jpg",
+    image:"https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158799/Utsab_Das_x8ywic.jpg",
+    thumb:"https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158799/Utsab_Das_x8ywic.jpg",
   },
   {
     stat:"Know what our Toppers say",
@@ -129,8 +129,8 @@ He had a rare gift of simplifying complex concepts and making physics intuitive.
 Dada didn’t just teach physics — he taught resilience, curiosity, and confidence. His guidance shaped not only my preparation, but also how I approach life.`,
     name:"Uditangshu Chakraborty",
     company:"IIT Kharagpur (2023)",
-    image:"https://res.cloudinary.com/dttquxaro/image/upload/v1769065448/Uditangshu_Chakraborty_xwancc.jpg",
-    thumb:"https://res.cloudinary.com/dttquxaro/image/upload/v1769065448/Uditangshu_Chakraborty_xwancc.jpg",
+    image:"https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158799/Uditangshu_Chakraborty_ypbbyn.jpg",
+    thumb:"https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158799/Uditangshu_Chakraborty_ypbbyn.jpg",
   },
 ];
 

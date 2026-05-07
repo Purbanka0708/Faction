@@ -98,7 +98,7 @@ const Contact = () => {
       className="min-h-screen w-full relative bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage:
-          "url(https://res.cloudinary.com/dttquxaro/image/upload/v1769065833/Gemini_Generated_Image_ojfjfaojfjfaojfj_vavmr8.png)",
+          "url(https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158811/contact-bg_ocwxhd.png)",
       }}
     >
       <div className="relative z-10">
@@ -228,7 +228,7 @@ const Contact = () => {
                   style={{ paddingTop: "56.25%" }}
                 >
                   <video
-                    src="https://res.cloudinary.com/dttquxaro/video/upload/v1769065558/Faction_Video_teewf1.mp4"
+                    src="https://res.cloudinary.com/dauzmtrfz/video/upload/q_auto/f_auto/v1778158853/Faction_Video_pslkmi.mp4"
                     className="absolute inset-0 w-full h-full object-cover"
                     autoPlay
                     muted

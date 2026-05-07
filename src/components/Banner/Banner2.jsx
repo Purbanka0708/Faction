@@ -43,7 +43,7 @@ const Banner2 = () => {
           <motion.img
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
-            src={"https://res.cloudinary.com/dttquxaro/image/upload/v1775484860/Hompage3-Photoroom_tbsrqe.png"}
+            src={"https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158033/Hompage3-Photoroom_nipy15.png"}
             alt="Students joining Faction community"
             className="w-[500px] md:max-w-[500px] object-cover drop-shadow"
           />

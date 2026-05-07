@@ -11,28 +11,28 @@ const contentData = [
     title: "Visionary Leadership in Biology Education",
     description:
       "Under the guidance of Niladri Deb, FACTION’s Biology program is built on clarity, concept-first teaching, and deep understanding of life sciences. His mentorship inspires students to think scientifically, approach problems analytically, and build a strong foundation essential for NEET and beyond.",
-    video: "https://res.cloudinary.com/dttquxaro/video/upload/v1769065042/niladri-da_zqtfdr.mp4",
+    video: "https://res.cloudinary.com/dauzmtrfz/video/upload/q_auto/f_auto/v1778158844/niladri-da_sjrggl.mp4",
     tag: "Foundational Vision",
   },
   {
     title: "Physics Taught with Precision and Purpose",
     description:
       "Led by Soumyadeep Nandi, FACTION’s Physics education emphasizes logical reasoning, problem-solving strategies, and real conceptual depth. His teaching bridges theory with application, empowering students to confidently tackle even the most challenging JEE and NEET problems.",
-    video: "https://res.cloudinary.com/dttquxaro/video/upload/v1769065053/Soumya_da-_osr6pk.mp4",
+    video: "https://res.cloudinary.com/dauzmtrfz/video/upload/q_auto/f_auto/v1778158841/Soumya_da-_xwgmdz.mp4",
     tag: "Academic Excellence",
   },
   {
     title: "A Learning Space Designed for Focus and Growth",
     description:
       "FACTION’s well-equipped library offers a calm, disciplined environment where students can study, revise, and practice without distractions. With curated academic resources and a student-friendly atmosphere, the library plays a crucial role in nurturing consistency, self-study habits, and academic excellence.",
-    video: "https://res.cloudinary.com/dttquxaro/video/upload/v1769065065/Final-library_iymink.mp4",
+    video: "https://res.cloudinary.com/dauzmtrfz/video/upload/q_auto/f_auto/v1778158853/Final-library_qtroi1.mp4",
     tag: "Focused Learning",
   },
   {
     title: "A Future-Ready Campus for Competitive Excellence",
     description:
       "FACTION provides a fully modern learning ecosystem featuring smart classrooms, dedicated test halls, computer-based test rooms, and innovative academic facilities. Every space is designed to simulate real exam conditions while fostering comfort, confidence, and high-performance learning for today’s competitive exams.",
-    video: "https://res.cloudinary.com/dttquxaro/video/upload/v1769065046/Centre-2_rlngfk.mp4",
+    video: "https://res.cloudinary.com/dauzmtrfz/video/upload/q_auto/f_auto/v1778158835/Centre-2_uyalzr.mp4",
     tag: "Future-Ready Campus",
   },
 ];

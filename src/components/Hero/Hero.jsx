@@ -99,7 +99,7 @@ const Hero = () => {
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.4, ease: "easeInOut" }}
             src={
-              "https://res.cloudinary.com/dttquxaro/image/upload/v1775484101/icon_1_xukzpg.svg"
+              "https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158033/HeroPng-Photoroom_mvvfzu_bg09he.png"
             }
             alt="Student preparing for NEET and IIT/JEE at Faction coaching"
             className="relative md:absolute w-full sm:w-[360px] md:w-[800px] xl:w-[1000px] -mt-10 md:mt-0 z-10 drop-shadow-sm -translate-y-4"

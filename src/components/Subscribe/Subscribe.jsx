@@ -3,7 +3,7 @@ import { FaBell } from "react-icons/fa";
 import { motion } from "framer-motion";
 
 const bgStyle = {
-  backgroundImage: `url(${"https://res.cloudinary.com/dttquxaro/image/upload/v1769065221/ChatGPT_Image_Jan_5_2026_06_27_23_PM_irgfen.png"})`,
+  backgroundImage: `url(${"https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158795/ChatGPT_Image_Jan_5_2026_06_27_23_PM_eetxpb.png"})`,
   backgroundRepeat: "no-repeat",
   backgroundSize: "cover",
   backgroundPosition: "center",

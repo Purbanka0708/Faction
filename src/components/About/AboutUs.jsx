@@ -221,13 +221,13 @@ If you’re ready to be consistent, disciplined, and honest with your effort thi
 
 
         <InfoCard
-          image="https://res.cloudinary.com/dttquxaro/image/upload/v1769064827/Niladri_1_1_mm6asv.png"
+          image="https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778159183/Niladri_tcln1p.jpg"
           title="About the Founder"
           description="Dr. Niladri Deb is a highly respected biology mentor known for his calm, logic-driven teaching style and deep conceptual approach. Since 2018, his mentorship has guided students to top medical institutions including AIIMS, KGMU, RIMS, CMC, and other leading colleges. At Faction, his focus lies in building disciplined thinking, consistency, and first-principle understanding — shaping learners for sustained academic success and personal growth."
         />
 
         <InfoCard
-          image="https://res.cloudinary.com/dttquxaro/image/upload/v1769065063/Soumya_ebktih.png"
+          image="https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158799/Soumya_llrzix.png"
           title="About the Co-Founder"
           reverse
           description="An IIT Kharagpur alumnus, Soumyadeep Nandi brings together academic rigor and modern educational design.Having cleared JEE Advanced, KVPY, and WBJEE (AIR 49), he emphasizes structured problem solving, clarity of fundamentals, and intellectual independence. At Faction, he leads technology-driven learning systems that combine pedagogy, analytics, and scalable mentorship — without compromising depth."
@@ -235,7 +235,7 @@ If you’re ready to be consistent, disciplined, and honest with your effort thi
 
         <InfoCard
           title="Our Team"
-          image="https://res.cloudinary.com/dttquxaro/image/upload/v1769065026/Team_ey9xde.jpg"
+          image="https://res.cloudinary.com/dauzmtrfz/image/upload/q_auto/f_auto/v1778158770/Team_n0sxfs.jpg"
           description="Faction is powered by educators, operations leaders, and technologists united by a shared vision — building an education ecosystem rooted in clarity, discipline, and trust."
           clickable
           onClick={() => navigate("/team")}

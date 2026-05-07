@@ -55,7 +55,7 @@ const SplashScreen = ({ onFinish }) => {
       {/* VIDEO */}
       <video
         ref={videoRef}
-        src="https://res.cloudinary.com/dttquxaro/video/upload/v1769065506/splash_vc5vad.mp4"
+        src="https://res.cloudinary.com/dauzmtrfz/video/upload/q_auto/f_auto/v1778158809/splash_p2blui.mp4"
         autoPlay
         muted
         playsInline
