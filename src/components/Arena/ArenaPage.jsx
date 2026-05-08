@@ -15,7 +15,7 @@ const ArenaPage = () => {
   const [timeLeft, setTimeLeft] = useState("");
 
   useEffect(() => {
-  const targetDate = new Date("2026-04-30T23:59:59");
+  const targetDate = new Date("2026-05-20T23:59:59");
 
   const updateCountdown = () => {
     const now = new Date();
